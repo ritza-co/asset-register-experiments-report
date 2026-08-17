@@ -56,6 +56,8 @@ The ten calls repeat one question. They are evidence of consistency for these ex
 
 ### Reproduce it
 
+No credentials are stored in this repository. Set `TYPESAFE_API_KEY` and `OPENAI_API_KEY` as environment variables in the shell where you run the scripts, as shown below. Do not add them to a tracked file.
+
 ```bash
 git clone git@github.com:typesafe-ai/TypeSafeClientAdapter.git ../TypeSafeClientAdapter
 python3 -m venv .venv --clear
