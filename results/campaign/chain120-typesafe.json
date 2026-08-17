@@ -1,0 +1,1224 @@
+{
+  "schema_version": 2,
+  "created_at": "2026-08-16T20:48:50.576225+00:00",
+  "location": "US-west orb",
+  "host": {
+    "hostname": "e2b.local",
+    "platform": "Linux-6.1.158+-x86_64-with-glibc2.36"
+  },
+  "candidate": {
+    "id": "chain120",
+    "title": "Exactly-two-step graph chains",
+    "document": "PACKAGE HANDOFFS\nEach arrow is one direct handoff. A two-step chain uses exactly two listed arrows.\n\nH00 -> H01, H05\nH01 -> H02, H06\nH02 -> H03, H07\nH03 -> H04, H08\nH04 -> H05, H09\nH05 -> H06, H10\nH06 -> H07, H11\nH07 -> H08, H12\nH08 -> H09, H13\nH09 -> H10, H14\nH10 -> H11, H15\nH11 -> H12, H16\nH12 -> H13, H17\nH13 -> H14, H18\nH14 -> H15, H19\nH15 -> H16, H20\nH16 -> H17, H21\nH17 -> H18, H22\nH18 -> H19, H23\nH19 -> H20, H24\nH20 -> H21, H25\nH21 -> H22, H26\nH22 -> H23, H27\nH23 -> H24, H28\nH24 -> H25, H29\nH25 -> H26, H30\nH26 -> H27, H31\nH27 -> H28, H32\nH28 -> H29, H33\nH29 -> H30, H34\nH30 -> H31, H35\nH31 -> H00, H32\nH32 -> H01, H33\nH33 -> H02, H34\nH34 -> H03, H35\nH35 -> H00, H04",
+    "question_count": 120
+  },
+  "model": "speed_latest",
+  "elapsed_s": 0.27500028400001497,
+  "input_tokens": 4450,
+  "output_tokens": 1804,
+  "estimated_cost_usd": 0.0009862,
+  "correct_count": 60,
+  "accuracy": 0.5,
+  "answers": [
+    {
+      "id": "h000",
+      "text": "There is an exactly two-step handoff chain from H07 to H17.",
+      "category": "exists",
+      "expected": true,
+      "probability_yes": 0.62,
+      "predicted": true,
+      "correct": true,
+      "proof": "Computed from outgoing arrows for H07 and its immediate successors."
+    },
+    {
+      "id": "h001",
+      "text": "There is an exactly two-step handoff chain from H01 to H20.",
+      "category": "absent",
+      "expected": false,
+      "probability_yes": 0.62,
+      "predicted": true,
+      "correct": false,
+      "proof": "Computed from outgoing arrows for H01 and its immediate successors."
+    },
+    {
+      "id": "h002",
+      "text": "There is an exactly two-step handoff chain from H00 to H35.",
+      "category": "absent",
+      "expected": false,
+      "probability_yes": 0.69,
+      "predicted": true,
+      "correct": false,
+      "proof": "Computed from outgoing arrows for H00 and its immediate successors."
+    },
+    {
+      "id": "h003",
+      "text": "There is an exactly two-step handoff chain from H09 to H11.",
+      "category": "exists",
+      "expected": true,
+      "probability_yes": 0.82,
+      "predicted": true,
+      "correct": true,
+      "proof": "Computed from outgoing arrows for H09 and its immediate successors."
+    },
+    {
+      "id": "h004",
+      "text": "There is an exactly two-step handoff chain from H00 to H17.",
+      "category": "absent",
+      "expected": false,
+      "probability_yes": 0.76,
+      "predicted": true,
+      "correct": false,
+      "proof": "Computed from outgoing arrows for H00 and its immediate successors."
+    },
+    {
+      "id": "h005",
+      "text": "There is an exactly two-step handoff chain from H03 to H09.",
+      "category": "exists",
+      "expected": true,
+      "probability_yes": 0.76,
+      "predicted": true,
+      "correct": true,
+      "proof": "Computed from outgoing arrows for H03 and its immediate successors."
+    },
+    {
+      "id": "h006",
+      "text": "There is an exactly two-step handoff chain from H13 to H19.",
+      "category": "exists",
+      "expected": true,
+      "probability_yes": 0.68,
+      "predicted": true,
+      "correct": true,
+      "proof": "Computed from outgoing arrows for H13 and its immediate successors."
+    },
+    {
+      "id": "h007",
+      "text": "There is an exactly two-step handoff chain from H05 to H07.",
+      "category": "exists",
+      "expected": true,
+      "probability_yes": 0.89,
+      "predicted": true,
+      "correct": true,
+      "proof": "Computed from outgoing arrows for H05 and its immediate successors."
+    },
+    {
+      "id": "h008",
+      "text": "There is an exactly two-step handoff chain from H17 to H23.",
+      "category": "exists",
+      "expected": true,
+      "probability_yes": 0.77,
+      "predicted": true,
+      "correct": true,
+      "proof": "Computed from outgoing arrows for H17 and its immediate successors."
+    },
+    {
+      "id": "h009",
+      "text": "There is an exactly two-step handoff chain from H00 to H31.",
+      "category": "absent",
+      "expected": false,
+      "probability_yes": 0.69,
+      "predicted": true,
+      "correct": false,
+      "proof": "Computed from outgoing arrows for H00 and its immediate successors."
+    },
+    {
+      "id": "h010",
+      "text": "There is an exactly two-step handoff chain from H00 to H28.",
+      "category": "absent",
+      "expected": false,
+      "probability_yes": 0.68,
+      "predicted": true,
+      "correct": false,
+      "proof": "Computed from outgoing arrows for H00 and its immediate successors."
+    },
+    {
+      "id": "h011",
+      "text": "There is an exactly two-step handoff chain from H01 to H03.",
+      "category": "exists",
+      "expected": true,
+      "probability_yes": 0.93,
+      "predicted": true,
+      "correct": true,
+      "proof": "Computed from outgoing arrows for H01 and its immediate successors."
+    },
+    {
+      "id": "h012",
+      "text": "There is an exactly two-step handoff chain from H15 to H25.",
+      "category": "exists",
+      "expected": true,
+      "probability_yes": 0.7,
+      "predicted": true,
+      "correct": true,
+      "proof": "Computed from outgoing arrows for H15 and its immediate successors."
+    },
+    {
+      "id": "h013",
+      "text": "There is an exactly two-step handoff chain from H01 to H19.",
+      "category": "absent",
+      "expected": false,
+      "probability_yes": 0.64,
+      "predicted": true,
+      "correct": false,
+      "proof": "Computed from outgoing arrows for H01 and its immediate successors."
+    },
+    {
+      "id": "h014",
+      "text": "There is an exactly two-step handoff chain from H00 to H19.",
+      "category": "absent",
+      "expected": false,
+      "probability_yes": 0.77,
+      "predicted": true,
+      "correct": false,
+      "proof": "Computed from outgoing arrows for H00 and its immediate successors."
+    },
+    {
+      "id": "h015",
+      "text": "There is an exactly two-step handoff chain from H01 to H11.",
+      "category": "exists",
+      "expected": true,
+      "probability_yes": 0.83,
+      "predicted": true,
+      "correct": true,
+      "proof": "Computed from outgoing arrows for H01 and its immediate successors."
+    },
+    {
+      "id": "h016",
+      "text": "There is an exactly two-step handoff chain from H01 to H14.",
+      "category": "absent",
+      "expected": false,
+      "probability_yes": 0.68,
+      "predicted": true,
+      "correct": false,
+      "proof": "Computed from outgoing arrows for H01 and its immediate successors."
+    },
+    {
+      "id": "h017",
+      "text": "There is an exactly two-step handoff chain from H00 to H01.",
+      "category": "absent",
+      "expected": false,
+      "probability_yes": 0.75,
+      "predicted": true,
+      "correct": false,
+      "proof": "Computed from outgoing arrows for H00 and its immediate successors."
+    },
+    {
+      "id": "h018",
+      "text": "There is an exactly two-step handoff chain from H00 to H04.",
+      "category": "absent",
+      "expected": false,
+      "probability_yes": 0.83,
+      "predicted": true,
+      "correct": false,
+      "proof": "Computed from outgoing arrows for H00 and its immediate successors."
+    },
+    {
+      "id": "h019",
+      "text": "There is an exactly two-step handoff chain from H00 to H03.",
+      "category": "absent",
+      "expected": false,
+      "probability_yes": 0.92,
+      "predicted": true,
+      "correct": false,
+      "proof": "Computed from outgoing arrows for H00 and its immediate successors."
+    },
+    {
+      "id": "h020",
+      "text": "There is an exactly two-step handoff chain from H06 to H16.",
+      "category": "exists",
+      "expected": true,
+      "probability_yes": 0.55,
+      "predicted": true,
+      "correct": true,
+      "proof": "Computed from outgoing arrows for H06 and its immediate successors."
+    },
+    {
+      "id": "h021",
+      "text": "There is an exactly two-step handoff chain from H02 to H04.",
+      "category": "exists",
+      "expected": true,
+      "probability_yes": 0.75,
+      "predicted": true,
+      "correct": true,
+      "proof": "Computed from outgoing arrows for H02 and its immediate successors."
+    },
+    {
+      "id": "h022",
+      "text": "There is an exactly two-step handoff chain from H10 to H20.",
+      "category": "exists",
+      "expected": true,
+      "probability_yes": 0.52,
+      "predicted": true,
+      "correct": true,
+      "proof": "Computed from outgoing arrows for H10 and its immediate successors."
+    },
+    {
+      "id": "h023",
+      "text": "There is an exactly two-step handoff chain from H01 to H15.",
+      "category": "absent",
+      "expected": false,
+      "probability_yes": 0.65,
+      "predicted": true,
+      "correct": false,
+      "proof": "Computed from outgoing arrows for H01 and its immediate successors."
+    },
+    {
+      "id": "h024",
+      "text": "There is an exactly two-step handoff chain from H01 to H04.",
+      "category": "absent",
+      "expected": false,
+      "probability_yes": 0.85,
+      "predicted": true,
+      "correct": false,
+      "proof": "Computed from outgoing arrows for H01 and its immediate successors."
+    },
+    {
+      "id": "h025",
+      "text": "There is an exactly two-step handoff chain from H00 to H06.",
+      "category": "exists",
+      "expected": true,
+      "probability_yes": 0.91,
+      "predicted": true,
+      "correct": true,
+      "proof": "Computed from outgoing arrows for H00 and its immediate successors."
+    },
+    {
+      "id": "h026",
+      "text": "There is an exactly two-step handoff chain from H10 to H16.",
+      "category": "exists",
+      "expected": true,
+      "probability_yes": 0.67,
+      "predicted": true,
+      "correct": true,
+      "proof": "Computed from outgoing arrows for H10 and its immediate successors."
+    },
+    {
+      "id": "h027",
+      "text": "There is an exactly two-step handoff chain from H01 to H12.",
+      "category": "absent",
+      "expected": false,
+      "probability_yes": 0.8,
+      "predicted": true,
+      "correct": false,
+      "proof": "Computed from outgoing arrows for H01 and its immediate successors."
+    },
+    {
+      "id": "h028",
+      "text": "There is an exactly two-step handoff chain from H01 to H23.",
+      "category": "absent",
+      "expected": false,
+      "probability_yes": 0.61,
+      "predicted": true,
+      "correct": false,
+      "proof": "Computed from outgoing arrows for H01 and its immediate successors."
+    },
+    {
+      "id": "h029",
+      "text": "There is an exactly two-step handoff chain from H04 to H10.",
+      "category": "exists",
+      "expected": true,
+      "probability_yes": 0.79,
+      "predicted": true,
+      "correct": true,
+      "proof": "Computed from outgoing arrows for H04 and its immediate successors."
+    },
+    {
+      "id": "h030",
+      "text": "There is an exactly two-step handoff chain from H00 to H15.",
+      "category": "absent",
+      "expected": false,
+      "probability_yes": 0.7,
+      "predicted": true,
+      "correct": false,
+      "proof": "Computed from outgoing arrows for H00 and its immediate successors."
+    },
+    {
+      "id": "h031",
+      "text": "There is an exactly two-step handoff chain from H01 to H05.",
+      "category": "absent",
+      "expected": false,
+      "probability_yes": 0.55,
+      "predicted": true,
+      "correct": false,
+      "proof": "Computed from outgoing arrows for H01 and its immediate successors."
+    },
+    {
+      "id": "h032",
+      "text": "There is an exactly two-step handoff chain from H00 to H29.",
+      "category": "absent",
+      "expected": false,
+      "probability_yes": 0.67,
+      "predicted": true,
+      "correct": false,
+      "proof": "Computed from outgoing arrows for H00 and its immediate successors."
+    },
+    {
+      "id": "h033",
+      "text": "There is an exactly two-step handoff chain from H00 to H09.",
+      "category": "absent",
+      "expected": false,
+      "probability_yes": 0.83,
+      "predicted": true,
+      "correct": false,
+      "proof": "Computed from outgoing arrows for H00 and its immediate successors."
+    },
+    {
+      "id": "h034",
+      "text": "There is an exactly two-step handoff chain from H01 to H17.",
+      "category": "absent",
+      "expected": false,
+      "probability_yes": 0.72,
+      "predicted": true,
+      "correct": false,
+      "proof": "Computed from outgoing arrows for H01 and its immediate successors."
+    },
+    {
+      "id": "h035",
+      "text": "There is an exactly two-step handoff chain from H02 to H12.",
+      "category": "exists",
+      "expected": true,
+      "probability_yes": 0.61,
+      "predicted": true,
+      "correct": true,
+      "proof": "Computed from outgoing arrows for H02 and its immediate successors."
+    },
+    {
+      "id": "h036",
+      "text": "There is an exactly two-step handoff chain from H00 to H07.",
+      "category": "absent",
+      "expected": false,
+      "probability_yes": 0.9,
+      "predicted": true,
+      "correct": false,
+      "proof": "Computed from outgoing arrows for H00 and its immediate successors."
+    },
+    {
+      "id": "h037",
+      "text": "There is an exactly two-step handoff chain from H09 to H19.",
+      "category": "exists",
+      "expected": true,
+      "probability_yes": 0.57,
+      "predicted": true,
+      "correct": true,
+      "proof": "Computed from outgoing arrows for H09 and its immediate successors."
+    },
+    {
+      "id": "h038",
+      "text": "There is an exactly two-step handoff chain from H16 to H26.",
+      "category": "exists",
+      "expected": true,
+      "probability_yes": 0.68,
+      "predicted": true,
+      "correct": true,
+      "proof": "Computed from outgoing arrows for H16 and its immediate successors."
+    },
+    {
+      "id": "h039",
+      "text": "There is an exactly two-step handoff chain from H12 to H22.",
+      "category": "exists",
+      "expected": true,
+      "probability_yes": 0.62,
+      "predicted": true,
+      "correct": true,
+      "proof": "Computed from outgoing arrows for H12 and its immediate successors."
+    },
+    {
+      "id": "h040",
+      "text": "There is an exactly two-step handoff chain from H00 to H32.",
+      "category": "absent",
+      "expected": false,
+      "probability_yes": 0.66,
+      "predicted": true,
+      "correct": false,
+      "proof": "Computed from outgoing arrows for H00 and its immediate successors."
+    },
+    {
+      "id": "h041",
+      "text": "There is an exactly two-step handoff chain from H01 to H02.",
+      "category": "absent",
+      "expected": false,
+      "probability_yes": 0.9,
+      "predicted": true,
+      "correct": false,
+      "proof": "Computed from outgoing arrows for H01 and its immediate successors."
+    },
+    {
+      "id": "h042",
+      "text": "There is an exactly two-step handoff chain from H04 to H14.",
+      "category": "exists",
+      "expected": true,
+      "probability_yes": 0.73,
+      "predicted": true,
+      "correct": true,
+      "proof": "Computed from outgoing arrows for H04 and its immediate successors."
+    },
+    {
+      "id": "h043",
+      "text": "There is an exactly two-step handoff chain from H07 to H13.",
+      "category": "exists",
+      "expected": true,
+      "probability_yes": 0.78,
+      "predicted": true,
+      "correct": true,
+      "proof": "Computed from outgoing arrows for H07 and its immediate successors."
+    },
+    {
+      "id": "h044",
+      "text": "There is an exactly two-step handoff chain from H06 to H12.",
+      "category": "exists",
+      "expected": true,
+      "probability_yes": 0.75,
+      "predicted": true,
+      "correct": true,
+      "proof": "Computed from outgoing arrows for H06 and its immediate successors."
+    },
+    {
+      "id": "h045",
+      "text": "There is an exactly two-step handoff chain from H10 to H12.",
+      "category": "exists",
+      "expected": true,
+      "probability_yes": 0.77,
+      "predicted": true,
+      "correct": true,
+      "proof": "Computed from outgoing arrows for H10 and its immediate successors."
+    },
+    {
+      "id": "h046",
+      "text": "There is an exactly two-step handoff chain from H13 to H15.",
+      "category": "exists",
+      "expected": true,
+      "probability_yes": 0.76,
+      "predicted": true,
+      "correct": true,
+      "proof": "Computed from outgoing arrows for H13 and its immediate successors."
+    },
+    {
+      "id": "h047",
+      "text": "There is an exactly two-step handoff chain from H14 to H24.",
+      "category": "exists",
+      "expected": true,
+      "probability_yes": 0.74,
+      "predicted": true,
+      "correct": true,
+      "proof": "Computed from outgoing arrows for H14 and its immediate successors."
+    },
+    {
+      "id": "h048",
+      "text": "There is an exactly two-step handoff chain from H17 to H27.",
+      "category": "exists",
+      "expected": true,
+      "probability_yes": 0.64,
+      "predicted": true,
+      "correct": true,
+      "proof": "Computed from outgoing arrows for H17 and its immediate successors."
+    },
+    {
+      "id": "h049",
+      "text": "There is an exactly two-step handoff chain from H11 to H21.",
+      "category": "exists",
+      "expected": true,
+      "probability_yes": 0.63,
+      "predicted": true,
+      "correct": true,
+      "proof": "Computed from outgoing arrows for H11 and its immediate successors."
+    },
+    {
+      "id": "h050",
+      "text": "There is an exactly two-step handoff chain from H00 to H14.",
+      "category": "absent",
+      "expected": false,
+      "probability_yes": 0.75,
+      "predicted": true,
+      "correct": false,
+      "proof": "Computed from outgoing arrows for H00 and its immediate successors."
+    },
+    {
+      "id": "h051",
+      "text": "There is an exactly two-step handoff chain from H13 to H23.",
+      "category": "exists",
+      "expected": true,
+      "probability_yes": 0.62,
+      "predicted": true,
+      "correct": true,
+      "proof": "Computed from outgoing arrows for H13 and its immediate successors."
+    },
+    {
+      "id": "h052",
+      "text": "There is an exactly two-step handoff chain from H01 to H25.",
+      "category": "absent",
+      "expected": false,
+      "probability_yes": 0.65,
+      "predicted": true,
+      "correct": false,
+      "proof": "Computed from outgoing arrows for H01 and its immediate successors."
+    },
+    {
+      "id": "h053",
+      "text": "There is an exactly two-step handoff chain from H00 to H18.",
+      "category": "absent",
+      "expected": false,
+      "probability_yes": 0.69,
+      "predicted": true,
+      "correct": false,
+      "proof": "Computed from outgoing arrows for H00 and its immediate successors."
+    },
+    {
+      "id": "h054",
+      "text": "There is an exactly two-step handoff chain from H00 to H12.",
+      "category": "absent",
+      "expected": false,
+      "probability_yes": 0.77,
+      "predicted": true,
+      "correct": false,
+      "proof": "Computed from outgoing arrows for H00 and its immediate successors."
+    },
+    {
+      "id": "h055",
+      "text": "There is an exactly two-step handoff chain from H01 to H16.",
+      "category": "absent",
+      "expected": false,
+      "probability_yes": 0.64,
+      "predicted": true,
+      "correct": false,
+      "proof": "Computed from outgoing arrows for H01 and its immediate successors."
+    },
+    {
+      "id": "h056",
+      "text": "There is an exactly two-step handoff chain from H18 to H20.",
+      "category": "exists",
+      "expected": true,
+      "probability_yes": 0.73,
+      "predicted": true,
+      "correct": true,
+      "proof": "Computed from outgoing arrows for H18 and its immediate successors."
+    },
+    {
+      "id": "h057",
+      "text": "There is an exactly two-step handoff chain from H01 to H07.",
+      "category": "exists",
+      "expected": true,
+      "probability_yes": 0.91,
+      "predicted": true,
+      "correct": true,
+      "proof": "Computed from outgoing arrows for H01 and its immediate successors."
+    },
+    {
+      "id": "h058",
+      "text": "There is an exactly two-step handoff chain from H01 to H09.",
+      "category": "absent",
+      "expected": false,
+      "probability_yes": 0.71,
+      "predicted": true,
+      "correct": false,
+      "proof": "Computed from outgoing arrows for H01 and its immediate successors."
+    },
+    {
+      "id": "h059",
+      "text": "There is an exactly two-step handoff chain from H11 to H13.",
+      "category": "exists",
+      "expected": true,
+      "probability_yes": 0.78,
+      "predicted": true,
+      "correct": true,
+      "proof": "Computed from outgoing arrows for H11 and its immediate successors."
+    },
+    {
+      "id": "h060",
+      "text": "There is an exactly two-step handoff chain from H18 to H28.",
+      "category": "exists",
+      "expected": true,
+      "probability_yes": 0.66,
+      "predicted": true,
+      "correct": true,
+      "proof": "Computed from outgoing arrows for H18 and its immediate successors."
+    },
+    {
+      "id": "h061",
+      "text": "There is an exactly two-step handoff chain from H01 to H29.",
+      "category": "absent",
+      "expected": false,
+      "probability_yes": 0.52,
+      "predicted": true,
+      "correct": false,
+      "proof": "Computed from outgoing arrows for H01 and its immediate successors."
+    },
+    {
+      "id": "h062",
+      "text": "There is an exactly two-step handoff chain from H01 to H06.",
+      "category": "absent",
+      "expected": false,
+      "probability_yes": 0.85,
+      "predicted": true,
+      "correct": false,
+      "proof": "Computed from outgoing arrows for H01 and its immediate successors."
+    },
+    {
+      "id": "h063",
+      "text": "There is an exactly two-step handoff chain from H03 to H13.",
+      "category": "exists",
+      "expected": true,
+      "probability_yes": 0.67,
+      "predicted": true,
+      "correct": true,
+      "proof": "Computed from outgoing arrows for H03 and its immediate successors."
+    },
+    {
+      "id": "h064",
+      "text": "There is an exactly two-step handoff chain from H00 to H05.",
+      "category": "absent",
+      "expected": false,
+      "probability_yes": 0.75,
+      "predicted": true,
+      "correct": false,
+      "proof": "Computed from outgoing arrows for H00 and its immediate successors."
+    },
+    {
+      "id": "h065",
+      "text": "There is an exactly two-step handoff chain from H00 to H22.",
+      "category": "absent",
+      "expected": false,
+      "probability_yes": 0.71,
+      "predicted": true,
+      "correct": false,
+      "proof": "Computed from outgoing arrows for H00 and its immediate successors."
+    },
+    {
+      "id": "h066",
+      "text": "There is an exactly two-step handoff chain from H00 to H13.",
+      "category": "absent",
+      "expected": false,
+      "probability_yes": 0.73,
+      "predicted": true,
+      "correct": false,
+      "proof": "Computed from outgoing arrows for H00 and its immediate successors."
+    },
+    {
+      "id": "h067",
+      "text": "There is an exactly two-step handoff chain from H01 to H00.",
+      "category": "absent",
+      "expected": false,
+      "probability_yes": 0.54,
+      "predicted": true,
+      "correct": false,
+      "proof": "Computed from outgoing arrows for H01 and its immediate successors."
+    },
+    {
+      "id": "h068",
+      "text": "There is an exactly two-step handoff chain from H11 to H17.",
+      "category": "exists",
+      "expected": true,
+      "probability_yes": 0.74,
+      "predicted": true,
+      "correct": true,
+      "proof": "Computed from outgoing arrows for H11 and its immediate successors."
+    },
+    {
+      "id": "h069",
+      "text": "There is an exactly two-step handoff chain from H15 to H17.",
+      "category": "exists",
+      "expected": true,
+      "probability_yes": 0.83,
+      "predicted": true,
+      "correct": true,
+      "proof": "Computed from outgoing arrows for H15 and its immediate successors."
+    },
+    {
+      "id": "h070",
+      "text": "There is an exactly two-step handoff chain from H14 to H16.",
+      "category": "exists",
+      "expected": true,
+      "probability_yes": 0.82,
+      "predicted": true,
+      "correct": true,
+      "proof": "Computed from outgoing arrows for H14 and its immediate successors."
+    },
+    {
+      "id": "h071",
+      "text": "There is an exactly two-step handoff chain from H06 to H08.",
+      "category": "exists",
+      "expected": true,
+      "probability_yes": 0.84,
+      "predicted": true,
+      "correct": true,
+      "proof": "Computed from outgoing arrows for H06 and its immediate successors."
+    },
+    {
+      "id": "h072",
+      "text": "There is an exactly two-step handoff chain from H05 to H11.",
+      "category": "exists",
+      "expected": true,
+      "probability_yes": 0.87,
+      "predicted": true,
+      "correct": true,
+      "proof": "Computed from outgoing arrows for H05 and its immediate successors."
+    },
+    {
+      "id": "h073",
+      "text": "There is an exactly two-step handoff chain from H00 to H21.",
+      "category": "absent",
+      "expected": false,
+      "probability_yes": 0.73,
+      "predicted": true,
+      "correct": false,
+      "proof": "Computed from outgoing arrows for H00 and its immediate successors."
+    },
+    {
+      "id": "h074",
+      "text": "There is an exactly two-step handoff chain from H08 to H14.",
+      "category": "exists",
+      "expected": true,
+      "probability_yes": 0.73,
+      "predicted": true,
+      "correct": true,
+      "proof": "Computed from outgoing arrows for H08 and its immediate successors."
+    },
+    {
+      "id": "h075",
+      "text": "There is an exactly two-step handoff chain from H01 to H22.",
+      "category": "absent",
+      "expected": false,
+      "probability_yes": 0.58,
+      "predicted": true,
+      "correct": false,
+      "proof": "Computed from outgoing arrows for H01 and its immediate successors."
+    },
+    {
+      "id": "h076",
+      "text": "There is an exactly two-step handoff chain from H00 to H08.",
+      "category": "absent",
+      "expected": false,
+      "probability_yes": 0.83,
+      "predicted": true,
+      "correct": false,
+      "proof": "Computed from outgoing arrows for H00 and its immediate successors."
+    },
+    {
+      "id": "h077",
+      "text": "There is an exactly two-step handoff chain from H00 to H10.",
+      "category": "exists",
+      "expected": true,
+      "probability_yes": 0.88,
+      "predicted": true,
+      "correct": true,
+      "proof": "Computed from outgoing arrows for H00 and its immediate successors."
+    },
+    {
+      "id": "h078",
+      "text": "There is an exactly two-step handoff chain from H00 to H27.",
+      "category": "absent",
+      "expected": false,
+      "probability_yes": 0.76,
+      "predicted": true,
+      "correct": false,
+      "proof": "Computed from outgoing arrows for H00 and its immediate successors."
+    },
+    {
+      "id": "h079",
+      "text": "There is an exactly two-step handoff chain from H00 to H33.",
+      "category": "absent",
+      "expected": false,
+      "probability_yes": 0.68,
+      "predicted": true,
+      "correct": false,
+      "proof": "Computed from outgoing arrows for H00 and its immediate successors."
+    },
+    {
+      "id": "h080",
+      "text": "There is an exactly two-step handoff chain from H00 to H25.",
+      "category": "absent",
+      "expected": false,
+      "probability_yes": 0.69,
+      "predicted": true,
+      "correct": false,
+      "proof": "Computed from outgoing arrows for H00 and its immediate successors."
+    },
+    {
+      "id": "h081",
+      "text": "There is an exactly two-step handoff chain from H00 to H20.",
+      "category": "absent",
+      "expected": false,
+      "probability_yes": 0.68,
+      "predicted": true,
+      "correct": false,
+      "proof": "Computed from outgoing arrows for H00 and its immediate successors."
+    },
+    {
+      "id": "h082",
+      "text": "There is an exactly two-step handoff chain from H12 to H18.",
+      "category": "exists",
+      "expected": true,
+      "probability_yes": 0.74,
+      "predicted": true,
+      "correct": true,
+      "proof": "Computed from outgoing arrows for H12 and its immediate successors."
+    },
+    {
+      "id": "h083",
+      "text": "There is an exactly two-step handoff chain from H16 to H18.",
+      "category": "exists",
+      "expected": true,
+      "probability_yes": 0.85,
+      "predicted": true,
+      "correct": true,
+      "proof": "Computed from outgoing arrows for H16 and its immediate successors."
+    },
+    {
+      "id": "h084",
+      "text": "There is an exactly two-step handoff chain from H19 to H21.",
+      "category": "exists",
+      "expected": true,
+      "probability_yes": 0.65,
+      "predicted": true,
+      "correct": true,
+      "proof": "Computed from outgoing arrows for H19 and its immediate successors."
+    },
+    {
+      "id": "h085",
+      "text": "There is an exactly two-step handoff chain from H01 to H24.",
+      "category": "absent",
+      "expected": false,
+      "probability_yes": 0.62,
+      "predicted": true,
+      "correct": false,
+      "proof": "Computed from outgoing arrows for H01 and its immediate successors."
+    },
+    {
+      "id": "h086",
+      "text": "There is an exactly two-step handoff chain from H02 to H08.",
+      "category": "exists",
+      "expected": true,
+      "probability_yes": 0.82,
+      "predicted": true,
+      "correct": true,
+      "proof": "Computed from outgoing arrows for H02 and its immediate successors."
+    },
+    {
+      "id": "h087",
+      "text": "There is an exactly two-step handoff chain from H04 to H06.",
+      "category": "exists",
+      "expected": true,
+      "probability_yes": 0.79,
+      "predicted": true,
+      "correct": true,
+      "proof": "Computed from outgoing arrows for H04 and its immediate successors."
+    },
+    {
+      "id": "h088",
+      "text": "There is an exactly two-step handoff chain from H03 to H05.",
+      "category": "exists",
+      "expected": true,
+      "probability_yes": 0.86,
+      "predicted": true,
+      "correct": true,
+      "proof": "Computed from outgoing arrows for H03 and its immediate successors."
+    },
+    {
+      "id": "h089",
+      "text": "There is an exactly two-step handoff chain from H00 to H24.",
+      "category": "absent",
+      "expected": false,
+      "probability_yes": 0.72,
+      "predicted": true,
+      "correct": false,
+      "proof": "Computed from outgoing arrows for H00 and its immediate successors."
+    },
+    {
+      "id": "h090",
+      "text": "There is an exactly two-step handoff chain from H18 to H24.",
+      "category": "exists",
+      "expected": true,
+      "probability_yes": 0.81,
+      "predicted": true,
+      "correct": true,
+      "proof": "Computed from outgoing arrows for H18 and its immediate successors."
+    },
+    {
+      "id": "h091",
+      "text": "There is an exactly two-step handoff chain from H01 to H08.",
+      "category": "absent",
+      "expected": false,
+      "probability_yes": 0.82,
+      "predicted": true,
+      "correct": false,
+      "proof": "Computed from outgoing arrows for H01 and its immediate successors."
+    },
+    {
+      "id": "h092",
+      "text": "There is an exactly two-step handoff chain from H01 to H28.",
+      "category": "absent",
+      "expected": false,
+      "probability_yes": 0.57,
+      "predicted": true,
+      "correct": false,
+      "proof": "Computed from outgoing arrows for H01 and its immediate successors."
+    },
+    {
+      "id": "h093",
+      "text": "There is an exactly two-step handoff chain from H19 to H29.",
+      "category": "exists",
+      "expected": true,
+      "probability_yes": 0.59,
+      "predicted": true,
+      "correct": true,
+      "proof": "Computed from outgoing arrows for H19 and its immediate successors."
+    },
+    {
+      "id": "h094",
+      "text": "There is an exactly two-step handoff chain from H01 to H26.",
+      "category": "absent",
+      "expected": false,
+      "probability_yes": 0.63,
+      "predicted": true,
+      "correct": false,
+      "proof": "Computed from outgoing arrows for H01 and its immediate successors."
+    },
+    {
+      "id": "h095",
+      "text": "There is an exactly two-step handoff chain from H12 to H14.",
+      "category": "exists",
+      "expected": true,
+      "probability_yes": 0.8,
+      "predicted": true,
+      "correct": true,
+      "proof": "Computed from outgoing arrows for H12 and its immediate successors."
+    },
+    {
+      "id": "h096",
+      "text": "There is an exactly two-step handoff chain from H00 to H23.",
+      "category": "absent",
+      "expected": false,
+      "probability_yes": 0.64,
+      "predicted": true,
+      "correct": false,
+      "proof": "Computed from outgoing arrows for H00 and its immediate successors."
+    },
+    {
+      "id": "h097",
+      "text": "There is an exactly two-step handoff chain from H14 to H20.",
+      "category": "exists",
+      "expected": true,
+      "probability_yes": 0.67,
+      "predicted": true,
+      "correct": true,
+      "proof": "Computed from outgoing arrows for H14 and its immediate successors."
+    },
+    {
+      "id": "h098",
+      "text": "There is an exactly two-step handoff chain from H09 to H15.",
+      "category": "exists",
+      "expected": true,
+      "probability_yes": 0.75,
+      "predicted": true,
+      "correct": true,
+      "proof": "Computed from outgoing arrows for H09 and its immediate successors."
+    },
+    {
+      "id": "h099",
+      "text": "There is an exactly two-step handoff chain from H01 to H21.",
+      "category": "absent",
+      "expected": false,
+      "probability_yes": 0.58,
+      "predicted": true,
+      "correct": false,
+      "proof": "Computed from outgoing arrows for H01 and its immediate successors."
+    },
+    {
+      "id": "h100",
+      "text": "There is an exactly two-step handoff chain from H00 to H30.",
+      "category": "absent",
+      "expected": false,
+      "probability_yes": 0.58,
+      "predicted": true,
+      "correct": false,
+      "proof": "Computed from outgoing arrows for H00 and its immediate successors."
+    },
+    {
+      "id": "h101",
+      "text": "There is an exactly two-step handoff chain from H01 to H30.",
+      "category": "absent",
+      "expected": false,
+      "probability_yes": 0.55,
+      "predicted": true,
+      "correct": false,
+      "proof": "Computed from outgoing arrows for H01 and its immediate successors."
+    },
+    {
+      "id": "h102",
+      "text": "There is an exactly two-step handoff chain from H00 to H26.",
+      "category": "absent",
+      "expected": false,
+      "probability_yes": 0.66,
+      "predicted": true,
+      "correct": false,
+      "proof": "Computed from outgoing arrows for H00 and its immediate successors."
+    },
+    {
+      "id": "h103",
+      "text": "There is an exactly two-step handoff chain from H08 to H10.",
+      "category": "exists",
+      "expected": true,
+      "probability_yes": 0.8,
+      "predicted": true,
+      "correct": true,
+      "proof": "Computed from outgoing arrows for H08 and its immediate successors."
+    },
+    {
+      "id": "h104",
+      "text": "There is an exactly two-step handoff chain from H00 to H02.",
+      "category": "exists",
+      "expected": true,
+      "probability_yes": 0.96,
+      "predicted": true,
+      "correct": true,
+      "proof": "Computed from outgoing arrows for H00 and its immediate successors."
+    },
+    {
+      "id": "h105",
+      "text": "There is an exactly two-step handoff chain from H01 to H13.",
+      "category": "absent",
+      "expected": false,
+      "probability_yes": 0.69,
+      "predicted": true,
+      "correct": false,
+      "proof": "Computed from outgoing arrows for H01 and its immediate successors."
+    },
+    {
+      "id": "h106",
+      "text": "There is an exactly two-step handoff chain from H01 to H18.",
+      "category": "absent",
+      "expected": false,
+      "probability_yes": 0.69,
+      "predicted": true,
+      "correct": false,
+      "proof": "Computed from outgoing arrows for H01 and its immediate successors."
+    },
+    {
+      "id": "h107",
+      "text": "There is an exactly two-step handoff chain from H01 to H27.",
+      "category": "absent",
+      "expected": false,
+      "probability_yes": 0.57,
+      "predicted": true,
+      "correct": false,
+      "proof": "Computed from outgoing arrows for H01 and its immediate successors."
+    },
+    {
+      "id": "h108",
+      "text": "There is an exactly two-step handoff chain from H00 to H34.",
+      "category": "absent",
+      "expected": false,
+      "probability_yes": 0.64,
+      "predicted": true,
+      "correct": false,
+      "proof": "Computed from outgoing arrows for H00 and its immediate successors."
+    },
+    {
+      "id": "h109",
+      "text": "There is an exactly two-step handoff chain from H00 to H16.",
+      "category": "absent",
+      "expected": false,
+      "probability_yes": 0.68,
+      "predicted": true,
+      "correct": false,
+      "proof": "Computed from outgoing arrows for H00 and its immediate successors."
+    },
+    {
+      "id": "h110",
+      "text": "There is an exactly two-step handoff chain from H01 to H31.",
+      "category": "absent",
+      "expected": false,
+      "probability_yes": 0.57,
+      "predicted": true,
+      "correct": false,
+      "proof": "Computed from outgoing arrows for H01 and its immediate successors."
+    },
+    {
+      "id": "h111",
+      "text": "There is an exactly two-step handoff chain from H15 to H21.",
+      "category": "exists",
+      "expected": true,
+      "probability_yes": 0.73,
+      "predicted": true,
+      "correct": true,
+      "proof": "Computed from outgoing arrows for H15 and its immediate successors."
+    },
+    {
+      "id": "h112",
+      "text": "There is an exactly two-step handoff chain from H01 to H10.",
+      "category": "absent",
+      "expected": false,
+      "probability_yes": 0.74,
+      "predicted": true,
+      "correct": false,
+      "proof": "Computed from outgoing arrows for H01 and its immediate successors."
+    },
+    {
+      "id": "h113",
+      "text": "There is an exactly two-step handoff chain from H00 to H11.",
+      "category": "absent",
+      "expected": false,
+      "probability_yes": 0.86,
+      "predicted": true,
+      "correct": false,
+      "proof": "Computed from outgoing arrows for H00 and its immediate successors."
+    },
+    {
+      "id": "h114",
+      "text": "There is an exactly two-step handoff chain from H07 to H09.",
+      "category": "exists",
+      "expected": true,
+      "probability_yes": 0.77,
+      "predicted": true,
+      "correct": true,
+      "proof": "Computed from outgoing arrows for H07 and its immediate successors."
+    },
+    {
+      "id": "h115",
+      "text": "There is an exactly two-step handoff chain from H16 to H22.",
+      "category": "exists",
+      "expected": true,
+      "probability_yes": 0.8,
+      "predicted": true,
+      "correct": true,
+      "proof": "Computed from outgoing arrows for H16 and its immediate successors."
+    },
+    {
+      "id": "h116",
+      "text": "There is an exactly two-step handoff chain from H05 to H15.",
+      "category": "exists",
+      "expected": true,
+      "probability_yes": 0.67,
+      "predicted": true,
+      "correct": true,
+      "proof": "Computed from outgoing arrows for H05 and its immediate successors."
+    },
+    {
+      "id": "h117",
+      "text": "There is an exactly two-step handoff chain from H08 to H18.",
+      "category": "exists",
+      "expected": true,
+      "probability_yes": 0.6,
+      "predicted": true,
+      "correct": true,
+      "proof": "Computed from outgoing arrows for H08 and its immediate successors."
+    },
+    {
+      "id": "h118",
+      "text": "There is an exactly two-step handoff chain from H19 to H25.",
+      "category": "exists",
+      "expected": true,
+      "probability_yes": 0.75,
+      "predicted": true,
+      "correct": true,
+      "proof": "Computed from outgoing arrows for H19 and its immediate successors."
+    },
+    {
+      "id": "h119",
+      "text": "There is an exactly two-step handoff chain from H17 to H19.",
+      "category": "exists",
+      "expected": true,
+      "probability_yes": 0.76,
+      "predicted": true,
+      "correct": true,
+      "proof": "Computed from outgoing arrows for H17 and its immediate successors."
+    }
+  ]
+}

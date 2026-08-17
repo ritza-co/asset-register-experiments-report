@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Minimal final-state reproduction: TypeSafe and Luna</title>
+<style>
+body { max-width: 1000px; margin: 36px auto; padding: 0 20px; color: #202124;
+       font: 16px/1.5 system-ui, -apple-system, sans-serif; }
+h1 { font-size: 29px; margin-bottom: 6px; } h2 { margin-top: 32px; font-size: 21px; }
+.summary { background: #f2f4f6; border: 1px solid #d5dbe1; padding: 14px 18px; }
+table { border-collapse: collapse; width: 100%; margin: 14px 0; font-size: 14px; }
+th, td { border: 1px solid #cdd3da; padding: 8px 10px; text-align: left; }
+th { background: #f2f4f6; }
+pre { background: #f6f7f8; border: 1px solid #d5dbe1; padding: 14px; overflow-x: auto;
+       font: 13px/1.45 ui-monospace, SFMono-Regular, Menlo, monospace; }
+code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
+.small { color: #555; font-size: 14px; } details { margin: 10px 0; }
+</style>
+</head>
+<body>
+<h1>Minimal final-state reproduction</h1>
+<p class="small">80 comparison calls: two document formats × two prompts × two models × 10 runs.</p>
+
+<div class="summary"><strong>Result:</strong> Without a final newline, TypeSafe answered the
+baseline incorrectly 10/10 times with p(true)=0.40. Adding one final newline changed TypeSafe to
+10/10 correct with p(true)=0.56. Luna scored 10/10 without the newline and 9/10 with it. The
+evidence-assisted prompt made both models correct 10/10 in both formats, but it preselects the
+relevant rows and therefore is not a fair fix for the original reasoning benchmark.</div>
+
+<h2>Short example and gold answer</h2>
+<pre>ASSET LEDGER
+For each asset and field, the latest timestamp is final.
+An update changes only the fields that it names.
+Earlier values remain in the ledger but are not final.
+
+T10 NX-001: status=held, bay=C1, owner=Dorado.
+T10 NX-002: status=inspection, bay=D1, owner=Aster.
+T22 NX-002: bay=C1.
+T23 NX-001: status=inspection.
+T32 NX-001: bay=C2.
+T32 NX-002: owner=Cygnus.
+T44 NX-001: owner=Cygnus.
+T44 NX-002: status=ready.</pre>
+<p><strong>Question:</strong> <code>The final status for NX-001 is inspection.</code></p>
+<p><strong>Gold answer:</strong> true. NX-001 changes status from <code>held</code> at T10 to
+<code>inspection</code> at T23. Its later rows change only bay and owner. The ledger rules state
+that an update changes only named fields, so its final status remains <code>inspection</code>.</p>
+
+<h2>Two document formats</h2>
+<p>The text is identical except for its final byte:</p>
+<pre>No final newline (422 characters): ...T44 NX-002: status=ready.
+Final newline    (423 characters): ...T44 NX-002: status=ready.
+</pre>
+<p>The experiment treats these as separate input conditions. Each condition has all four model and
+prompt arms, with 10 calls per arm.</p>
+
+<h2>Baseline reproduction script</h2>
+<pre>#!/usr/bin/env python3
+&quot;&quot;&quot;Minimal observed reproduction of the NX-001 final-status error.&quot;&quot;&quot;
+
+import os
+
+from typesafe_client import TypeSafeClient
+from typesafe_client.api.models import NoulQuestion
+
+DOCUMENT = &quot;&quot;&quot;ASSET LEDGER
+For each asset and field, the latest timestamp is final.
+An update changes only the fields that it names.
+Earlier values remain in the ledger but are not final.
+
+T10 NX-001: status=held, bay=C1, owner=Dorado.
+T10 NX-002: status=inspection, bay=D1, owner=Aster.
+T22 NX-002: bay=C1.
+T23 NX-001: status=inspection.
+T32 NX-001: bay=C2.
+T32 NX-002: owner=Cygnus.
+T44 NX-001: owner=Cygnus.
+T44 NX-002: status=ready.&quot;&quot;&quot;
+
+QUESTION = &quot;The final status for NX-001 is inspection.&quot;
+
+
+def main() -&gt; None:
+    client = TypeSafeClient(api_key=os.environ[&quot;TYPESAFE_API_KEY&quot;])
+    response = client.system_one(
+        model=&quot;speed_latest&quot;,
+        document=DOCUMENT,
+        questions={&quot;target&quot;: NoulQuestion(instructions=QUESTION)},
+    )
+
+    probability_true = response.answers[&quot;target&quot;].noul
+    print(f&quot;Expected: true; p(true)={probability_true:.2f}&quot;)
+
+
+if __name__ == &quot;__main__&quot;:
+    main()
+</pre>
+
+<h2>Evidence-assisted prompt</h2>
+<pre>Relevant NX-001 rows are: T10 status=held, bay=C1, owner=Dorado; T23 status=inspection; T32 bay=C2; T44 owner=Cygnus. Apply the ledger rules. The final status for NX-001 is inspection.</pre>
+<p>This wording copies all NX-001 rows into the question. It leaves the final comparison to the
+model, but it has already completed the entity-selection part of the task. It is useful as a
+production workaround, not as evidence that the model solved the original document search.</p>
+
+<h2>Evidence-assisted script</h2>
+<pre>#!/usr/bin/env python3
+&quot;&quot;&quot;Observed reliable prompt for the NX-001 final-status question.&quot;&quot;&quot;
+
+import os
+
+from typesafe_client import TypeSafeClient
+from typesafe_client.api.models import NoulQuestion
+
+from minimal_typesafe_repro import DOCUMENT
+
+QUESTION = (
+    &quot;Relevant NX-001 rows are: T10 status=held, bay=C1, owner=Dorado; &quot;
+    &quot;T23 status=inspection; T32 bay=C2; T44 owner=Cygnus. Apply the ledger rules. &quot;
+    &quot;The final status for NX-001 is inspection.&quot;
+)
+
+
+def main() -&gt; None:
+    client = TypeSafeClient(api_key=os.environ[&quot;TYPESAFE_API_KEY&quot;])
+    response = client.system_one(
+        model=&quot;speed_latest&quot;,
+        document=DOCUMENT,
+        questions={&quot;target&quot;: NoulQuestion(instructions=QUESTION)},
+    )
+
+    probability_true = response.answers[&quot;target&quot;].noul
+    print(f&quot;Expected: true; p(true)={probability_true:.2f}&quot;)
+
+
+if __name__ == &quot;__main__&quot;:
+    main()
+</pre>
+
+<h2>Method</h2>
+<ul>
+<li>Each arm ran in a fresh US-west VM.</li>
+<li>Each request contained either the 422-character document or the same document plus one final newline.</li>
+<li>Each request contained one true-or-false question.</li>
+<li>Each arm made 10 sequential requests. No failed arm was rerun.</li>
+<li>TypeSafe used its native Python client. Luna used the TypeSafe client adapter.</li>
+</ul>
+
+<h2>Results</h2>
+<table>
+<thead><tr><th>Document</th><th>Model</th><th>Prompt</th><th>Correct</th><th>p(true) range</th>
+<th>Mean latency</th><th>Median latency</th><th>Total estimated cost</th></tr></thead>
+<tbody><tr><td>No final newline</td><td>TypeSafe</td><td>Baseline</td><td>0/10</td><td>0.40–0.40</td><td>0.136 s</td><td>0.083 s</td><td>$0.0004890</td></tr><tr><td>No final newline</td><td>TypeSafe</td><td>Evidence-assisted</td><td>10/10</td><td>0.92–0.92</td><td>0.110 s</td><td>0.095 s</td><td>$0.0005350</td></tr><tr><td>No final newline</td><td>Luna</td><td>Baseline</td><td>10/10</td><td>1.00–1.00</td><td>1.612 s</td><td>1.350 s</td><td>$0.0014384</td></tr><tr><td>No final newline</td><td>Luna</td><td>Evidence-assisted</td><td>10/10</td><td>1.00–1.00</td><td>1.718 s</td><td>1.512 s</td><td>$0.0016216</td></tr><tr><td>Final newline</td><td>TypeSafe</td><td>Baseline</td><td>10/10</td><td>0.56–0.56</td><td>0.111 s</td><td>0.106 s</td><td>$0.0004910</td></tr><tr><td>Final newline</td><td>TypeSafe</td><td>Evidence-assisted</td><td>10/10</td><td>0.87–0.87</td><td>0.171 s</td><td>0.113 s</td><td>$0.0005370</td></tr><tr><td>Final newline</td><td>Luna</td><td>Baseline</td><td>9/10</td><td>0.00–1.00</td><td>1.745 s</td><td>1.394 s</td><td>$0.0013620</td></tr><tr><td>Final newline</td><td>Luna</td><td>Evidence-assisted</td><td>10/10</td><td>1.00–1.00</td><td>1.778 s</td><td>1.668 s</td><td>$0.0017072</td></tr></tbody>
+</table>
+<details><summary>No final newline — TypeSafe — Baseline: all 10 runs</summary><table><thead><tr><th>Run</th><th>p(true)</th><th>Answer</th><th>Wall latency</th><th>Estimated cost</th></tr></thead><tbody><tr><td>1</td><td>0.40</td><td>false</td><td>0.520 s</td><td>$0.0000489</td></tr><tr><td>2</td><td>0.40</td><td>false</td><td>0.078 s</td><td>$0.0000489</td></tr><tr><td>3</td><td>0.40</td><td>false</td><td>0.137 s</td><td>$0.0000489</td></tr><tr><td>4</td><td>0.40</td><td>false</td><td>0.080 s</td><td>$0.0000489</td></tr><tr><td>5</td><td>0.40</td><td>false</td><td>0.136 s</td><td>$0.0000489</td></tr><tr><td>6</td><td>0.40</td><td>false</td><td>0.081 s</td><td>$0.0000489</td></tr><tr><td>7</td><td>0.40</td><td>false</td><td>0.084 s</td><td>$0.0000489</td></tr><tr><td>8</td><td>0.40</td><td>false</td><td>0.085 s</td><td>$0.0000489</td></tr><tr><td>9</td><td>0.40</td><td>false</td><td>0.082 s</td><td>$0.0000489</td></tr><tr><td>10</td><td>0.40</td><td>false</td><td>0.078 s</td><td>$0.0000489</td></tr></tbody></table></details><details><summary>No final newline — TypeSafe — Evidence-assisted: all 10 runs</summary><table><thead><tr><th>Run</th><th>p(true)</th><th>Answer</th><th>Wall latency</th><th>Estimated cost</th></tr></thead><tbody><tr><td>1</td><td>0.92</td><td>true</td><td>0.227 s</td><td>$0.0000535</td></tr><tr><td>2</td><td>0.92</td><td>true</td><td>0.133 s</td><td>$0.0000535</td></tr><tr><td>3</td><td>0.92</td><td>true</td><td>0.130 s</td><td>$0.0000535</td></tr><tr><td>4</td><td>0.92</td><td>true</td><td>0.080 s</td><td>$0.0000535</td></tr><tr><td>5</td><td>0.92</td><td>true</td><td>0.111 s</td><td>$0.0000535</td></tr><tr><td>6</td><td>0.92</td><td>true</td><td>0.077 s</td><td>$0.0000535</td></tr><tr><td>7</td><td>0.92</td><td>true</td><td>0.083 s</td><td>$0.0000535</td></tr><tr><td>8</td><td>0.92</td><td>true</td><td>0.108 s</td><td>$0.0000535</td></tr><tr><td>9</td><td>0.92</td><td>true</td><td>0.079 s</td><td>$0.0000535</td></tr><tr><td>10</td><td>0.92</td><td>true</td><td>0.079 s</td><td>$0.0000535</td></tr></tbody></table></details><details><summary>No final newline — Luna — Baseline: all 10 runs</summary><table><thead><tr><th>Run</th><th>p(true)</th><th>Answer</th><th>Wall latency</th><th>Estimated cost</th></tr></thead><tbody><tr><td>1</td><td>1.00</td><td>true</td><td>2.732 s</td><td>$0.0001412</td></tr><tr><td>2</td><td>1.00</td><td>true</td><td>1.275 s</td><td>$0.0001508</td></tr><tr><td>3</td><td>1.00</td><td>true</td><td>2.678 s</td><td>$0.0001472</td></tr><tr><td>4</td><td>1.00</td><td>true</td><td>1.381 s</td><td>$0.0001376</td></tr><tr><td>5</td><td>1.00</td><td>true</td><td>1.368 s</td><td>$0.0001436</td></tr><tr><td>6</td><td>1.00</td><td>true</td><td>1.159 s</td><td>$0.0001412</td></tr><tr><td>7</td><td>1.00</td><td>true</td><td>1.653 s</td><td>$0.0001484</td></tr><tr><td>8</td><td>1.00</td><td>true</td><td>1.263 s</td><td>$0.0001436</td></tr><tr><td>9</td><td>1.00</td><td>true</td><td>1.281 s</td><td>$0.0001436</td></tr><tr><td>10</td><td>1.00</td><td>true</td><td>1.333 s</td><td>$0.0001412</td></tr></tbody></table></details><details><summary>No final newline — Luna — Evidence-assisted: all 10 runs</summary><table><thead><tr><th>Run</th><th>p(true)</th><th>Answer</th><th>Wall latency</th><th>Estimated cost</th></tr></thead><tbody><tr><td>1</td><td>1.00</td><td>true</td><td>3.087 s</td><td>$0.0001720</td></tr><tr><td>2</td><td>1.00</td><td>true</td><td>2.265 s</td><td>$0.0001588</td></tr><tr><td>3</td><td>1.00</td><td>true</td><td>1.393 s</td><td>$0.0001540</td></tr><tr><td>4</td><td>1.00</td><td>true</td><td>1.815 s</td><td>$0.0001636</td></tr><tr><td>5</td><td>1.00</td><td>true</td><td>1.489 s</td><td>$0.0001540</td></tr><tr><td>6</td><td>1.00</td><td>true</td><td>1.535 s</td><td>$0.0001756</td></tr><tr><td>7</td><td>1.00</td><td>true</td><td>1.318 s</td><td>$0.0001696</td></tr><tr><td>8</td><td>1.00</td><td>true</td><td>1.569 s</td><td>$0.0001552</td></tr><tr><td>9</td><td>1.00</td><td>true</td><td>1.399 s</td><td>$0.0001696</td></tr><tr><td>10</td><td>1.00</td><td>true</td><td>1.308 s</td><td>$0.0001492</td></tr></tbody></table></details><details><summary>Final newline — TypeSafe — Baseline: all 10 runs</summary><table><thead><tr><th>Run</th><th>p(true)</th><th>Answer</th><th>Wall latency</th><th>Estimated cost</th></tr></thead><tbody><tr><td>1</td><td>0.56</td><td>true</td><td>0.182 s</td><td>$0.0000491</td></tr><tr><td>2</td><td>0.56</td><td>true</td><td>0.135 s</td><td>$0.0000491</td></tr><tr><td>3</td><td>0.56</td><td>true</td><td>0.126 s</td><td>$0.0000491</td></tr><tr><td>4</td><td>0.56</td><td>true</td><td>0.086 s</td><td>$0.0000491</td></tr><tr><td>5</td><td>0.56</td><td>true</td><td>0.081 s</td><td>$0.0000491</td></tr><tr><td>6</td><td>0.56</td><td>true</td><td>0.133 s</td><td>$0.0000491</td></tr><tr><td>7</td><td>0.56</td><td>true</td><td>0.080 s</td><td>$0.0000491</td></tr><tr><td>8</td><td>0.56</td><td>true</td><td>0.077 s</td><td>$0.0000491</td></tr><tr><td>9</td><td>0.56</td><td>true</td><td>0.082 s</td><td>$0.0000491</td></tr><tr><td>10</td><td>0.56</td><td>true</td><td>0.129 s</td><td>$0.0000491</td></tr></tbody></table></details><details><summary>Final newline — TypeSafe — Evidence-assisted: all 10 runs</summary><table><thead><tr><th>Run</th><th>p(true)</th><th>Answer</th><th>Wall latency</th><th>Estimated cost</th></tr></thead><tbody><tr><td>1</td><td>0.87</td><td>true</td><td>0.249 s</td><td>$0.0000537</td></tr><tr><td>2</td><td>0.87</td><td>true</td><td>0.381 s</td><td>$0.0000537</td></tr><tr><td>3</td><td>0.87</td><td>true</td><td>0.091 s</td><td>$0.0000537</td></tr><tr><td>4</td><td>0.87</td><td>true</td><td>0.096 s</td><td>$0.0000537</td></tr><tr><td>5</td><td>0.87</td><td>true</td><td>0.077 s</td><td>$0.0000537</td></tr><tr><td>6</td><td>0.87</td><td>true</td><td>0.372 s</td><td>$0.0000537</td></tr><tr><td>7</td><td>0.87</td><td>true</td><td>0.096 s</td><td>$0.0000537</td></tr><tr><td>8</td><td>0.87</td><td>true</td><td>0.087 s</td><td>$0.0000537</td></tr><tr><td>9</td><td>0.87</td><td>true</td><td>0.130 s</td><td>$0.0000537</td></tr><tr><td>10</td><td>0.87</td><td>true</td><td>0.132 s</td><td>$0.0000537</td></tr></tbody></table></details><details><summary>Final newline — Luna — Baseline: all 10 runs</summary><table><thead><tr><th>Run</th><th>p(true)</th><th>Answer</th><th>Wall latency</th><th>Estimated cost</th></tr></thead><tbody><tr><td>1</td><td>1.00</td><td>true</td><td>3.079 s</td><td>$0.0001524</td></tr><tr><td>2</td><td>0.00</td><td>false</td><td>1.344 s</td><td>$0.0001056</td></tr><tr><td>3</td><td>1.00</td><td>true</td><td>1.295 s</td><td>$0.0001416</td></tr><tr><td>4</td><td>1.00</td><td>true</td><td>0.964 s</td><td>$0.0001032</td></tr><tr><td>5</td><td>1.00</td><td>true</td><td>1.444 s</td><td>$0.0001368</td></tr><tr><td>6</td><td>1.00</td><td>true</td><td>1.361 s</td><td>$0.0001428</td></tr><tr><td>7</td><td>1.00</td><td>true</td><td>1.473 s</td><td>$0.0001428</td></tr><tr><td>8</td><td>1.00</td><td>true</td><td>3.699 s</td><td>$0.0001428</td></tr><tr><td>9</td><td>1.00</td><td>true</td><td>1.403 s</td><td>$0.0001476</td></tr><tr><td>10</td><td>1.00</td><td>true</td><td>1.385 s</td><td>$0.0001464</td></tr></tbody></table></details><details><summary>Final newline — Luna — Evidence-assisted: all 10 runs</summary><table><thead><tr><th>Run</th><th>p(true)</th><th>Answer</th><th>Wall latency</th><th>Estimated cost</th></tr></thead><tbody><tr><td>1</td><td>1.00</td><td>true</td><td>3.344 s</td><td>$0.0001592</td></tr><tr><td>2</td><td>1.00</td><td>true</td><td>1.702 s</td><td>$0.0001844</td></tr><tr><td>3</td><td>1.00</td><td>true</td><td>1.400 s</td><td>$0.0001616</td></tr><tr><td>4</td><td>1.00</td><td>true</td><td>1.981 s</td><td>$0.0001712</td></tr><tr><td>5</td><td>1.00</td><td>true</td><td>1.552 s</td><td>$0.0001712</td></tr><tr><td>6</td><td>1.00</td><td>true</td><td>1.702 s</td><td>$0.0001652</td></tr><tr><td>7</td><td>1.00</td><td>true</td><td>1.696 s</td><td>$0.0001748</td></tr><tr><td>8</td><td>1.00</td><td>true</td><td>1.640 s</td><td>$0.0001736</td></tr><tr><td>9</td><td>1.00</td><td>true</td><td>1.428 s</td><td>$0.0001724</td></tr><tr><td>10</td><td>1.00</td><td>true</td><td>1.331 s</td><td>$0.0001736</td></tr></tbody></table></details>
+
+<h2>Interpretation</h2>
+<ul>
+<li>The no-newline TypeSafe baseline failure was stable across 10 calls.</li>
+<li>One final newline changed TypeSafe baseline accuracy from 0/10 to 10/10 and p(true) from 0.40 to 0.56.</li>
+<li>Luna changed from 10/10 without the newline to 9/10 with it; one newline run returned p(true)=0.00.</li>
+<li>The evidence-assisted TypeSafe prompt raised p(true) from 0.40 to 0.92 and scored 10/10.</li>
+<li>The evidence-assisted prompt scored 10/10 for both models in both document formats.</li>
+<li>TypeSafe was 11.9× faster on the baseline and 15.5× faster on the assisted prompt.</li>
+<li>Total estimated cost for all 80 calls was $0.0081812.</li>
+<li>Ten repeats establish consistency for these exact bytes. They do not establish general model accuracy.</li>
+</ul>
+
+<h2>Direct formatting comparison</h2>
+<table>
+<thead><tr><th>Model</th><th>No newline baseline</th><th>Final newline baseline</th><th>Change</th></tr></thead>
+<tbody>
+<tr><td>TypeSafe</td><td>0/10, p=0.40</td>
+<td>10/10, p=0.56</td><td>Incorrect to correct</td></tr>
+<tr><td>Luna</td><td>10/10, p range 1.00–1.00</td>
+<td>9/10, p range 0.00–1.00</td><td>One incorrect run</td></tr>
+</tbody>
+</table>
+<p>This is strong evidence of input-format sensitivity. A newline does not change the stated facts or
+gold answer, but it materially changed both models' observed outputs.</p>
+
+<h2>Conclusion</h2>
+<p>The 422-character input is a valid exact reproduction: TypeSafe consistently fails it while Luna
+consistently passes it. The semantically equivalent 423-character input does not reproduce the
+TypeSafe failure and produced one Luna failure. The evidence-assisted wording makes both formats
+pass, but it does so by preselecting the relevant rows. The strongest finding is severe context and
+formatting sensitivity, not a general inability to apply the latest-update rule.</p>
+</body>
+</html>

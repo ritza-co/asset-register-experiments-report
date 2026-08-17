@@ -1,0 +1,744 @@
+{
+  "schema_version": 2,
+  "created_at": "2026-08-16T21:02:00.126480+00:00",
+  "location": "US-west orb",
+  "host": {
+    "hostname": "e2b.local",
+    "platform": "Linux-6.1.158+-x86_64-with-glibc2.36"
+  },
+  "candidate": {
+    "id": "tail48entitydoc",
+    "title": "Tail queries in superseding ledger",
+    "document": "ASSET LEDGER\nFor each asset and field, the latest timestamp is final.\nAn update changes only the fields that it names.\nEarlier values remain in the ledger but are not final.\n\nT10 ZX-001: status=held, bay=C1, owner=Dorado.\nT21 ZX-001: status=inspection.\nT31 ZX-001: bay=C2.\nT41 ZX-001: owner=Cygnus.\nT10 ZX-002: status=inspection, bay=D1, owner=Aster.\nT23 ZX-002: bay=C1.\nT31 ZX-002: owner=Cygnus.\nT43 ZX-002: status=ready.\nT10 ZX-003: status=released, bay=B1, owner=Dorado.\nT24 ZX-003: owner=Cygnus.\nT30 ZX-003: status=ready.\nT41 ZX-003: bay=B2.\nT10 ZX-004: status=ready, bay=C1, owner=Aster.\nT20 ZX-004: status=ready.\nT31 ZX-004: bay=B1.\nT40 ZX-004: owner=Cygnus.\nT10 ZX-005: status=held, bay=D1, owner=Dorado.\nT24 ZX-005: bay=D2.\nT33 ZX-005: owner=Cygnus.\nT42 ZX-005: status=inspection.\nT10 ZX-006: status=inspection, bay=B1, owner=Aster.\nT23 ZX-006: owner=Cygnus.\nT33 ZX-006: status=inspection.\nT40 ZX-006: bay=D1.\nT10 ZX-007: status=released, bay=C1, owner=Dorado.\nT20 ZX-007: status=inspection.\nT32 ZX-007: bay=C2.\nT40 ZX-007: owner=Cygnus.\nT10 ZX-008: status=ready, bay=D1, owner=Aster.\nT24 ZX-008: bay=C1.\nT30 ZX-008: owner=Cygnus.\nT41 ZX-008: status=ready.\nT10 ZX-009: status=held, bay=B1, owner=Dorado.\nT23 ZX-009: owner=Cygnus.\nT32 ZX-009: status=ready.\nT41 ZX-009: bay=B2.\nT10 ZX-010: status=inspection, bay=C1, owner=Aster.\nT22 ZX-010: status=ready.\nT30 ZX-010: bay=B1.\nT44 ZX-010: owner=Cygnus.\nT10 ZX-011: status=released, bay=D1, owner=Dorado.\nT23 ZX-011: bay=D2.\nT34 ZX-011: owner=Cygnus.\nT43 ZX-011: status=inspection.\nT10 ZX-012: status=ready, bay=B1, owner=Aster.\nT23 ZX-012: owner=Cygnus.\nT31 ZX-012: status=inspection.\nT44 ZX-012: bay=D1.\nT10 ZX-013: status=held, bay=C1, owner=Dorado.\nT24 ZX-013: status=inspection.\nT32 ZX-013: bay=C2.\nT40 ZX-013: owner=Cygnus.\nT10 ZX-014: status=inspection, bay=D1, owner=Aster.\nT23 ZX-014: bay=C1.\nT31 ZX-014: owner=Cygnus.\nT42 ZX-014: status=ready.\nT10 ZX-015: status=released, bay=B1, owner=Dorado.\nT22 ZX-015: owner=Cygnus.\nT32 ZX-015: status=ready.\nT43 ZX-015: bay=B2.\nT10 ZX-016: status=ready, bay=C1, owner=Aster.\nT21 ZX-016: status=ready.\nT31 ZX-016: bay=B1.\nT41 ZX-016: owner=Cygnus.\nT10 ZX-017: status=held, bay=D1, owner=Dorado.\nT21 ZX-017: bay=D2.\nT33 ZX-017: owner=Cygnus.\nT44 ZX-017: status=inspection.\nT10 ZX-018: status=inspection, bay=B1, owner=Aster.\nT20 ZX-018: owner=Cygnus.\nT31 ZX-018: status=inspection.\nT43 ZX-018: bay=D1.\nT10 ZX-019: status=released, bay=C1, owner=Dorado.\nT24 ZX-019: status=inspection.\nT30 ZX-019: bay=C2.\nT43 ZX-019: owner=Cygnus.\nT10 ZX-020: status=ready, bay=D1, owner=Aster.\nT22 ZX-020: bay=C1.\nT30 ZX-020: owner=Cygnus.\nT41 ZX-020: status=ready.\nT10 ZX-021: status=held, bay=B1, owner=Dorado.\nT20 ZX-021: owner=Cygnus.\nT34 ZX-021: status=ready.\nT42 ZX-021: bay=B2.\nT10 ZX-022: status=inspection, bay=C1, owner=Aster.\nT24 ZX-022: status=ready.\nT32 ZX-022: bay=B1.\nT43 ZX-022: owner=Cygnus.\nT10 ZX-023: status=released, bay=D1, owner=Dorado.\nT21 ZX-023: bay=D2.\nT30 ZX-023: owner=Cygnus.\nT41 ZX-023: status=inspection.\nT10 ZX-024: status=ready, bay=B1, owner=Aster.\nT23 ZX-024: owner=Cygnus.\nT33 ZX-024: status=inspection.\nT44 ZX-024: bay=D1.\nT10 ZX-025: status=held, bay=C1, owner=Dorado.\nT23 ZX-025: status=inspection.\nT30 ZX-025: bay=C2.\nT40 ZX-025: owner=Cygnus.\nT10 ZX-026: status=inspection, bay=D1, owner=Aster.\nT23 ZX-026: bay=C1.\nT34 ZX-026: owner=Cygnus.\nT44 ZX-026: status=ready.\nT10 ZX-027: status=released, bay=B1, owner=Dorado.\nT21 ZX-027: owner=Cygnus.\nT32 ZX-027: status=ready.\nT40 ZX-027: bay=B2.\nT10 ZX-028: status=ready, bay=C1, owner=Aster.\nT21 ZX-028: status=ready.\nT34 ZX-028: bay=B1.\nT44 ZX-028: owner=Cygnus.\nT10 ZX-029: status=held, bay=D1, owner=Dorado.\nT22 ZX-029: bay=D2.\nT32 ZX-029: owner=Cygnus.\nT42 ZX-029: status=inspection.\nT10 ZX-030: status=inspection, bay=B1, owner=Aster.\nT23 ZX-030: owner=Cygnus.\nT34 ZX-030: status=inspection.\nT44 ZX-030: bay=D1.\nT10 ZX-031: status=released, bay=C1, owner=Dorado.\nT23 ZX-031: status=inspection.\nT34 ZX-031: bay=C2.\nT44 ZX-031: owner=Cygnus.\nT10 ZX-032: status=ready, bay=D1, owner=Aster.\nT20 ZX-032: bay=C1.\nT33 ZX-032: owner=Cygnus.\nT44 ZX-032: status=ready.\nT10 ZX-033: status=held, bay=B1, owner=Dorado.\nT21 ZX-033: owner=Cygnus.\nT33 ZX-033: status=ready.\nT42 ZX-033: bay=B2.\nT10 ZX-034: status=inspection, bay=C1, owner=Aster.\nT20 ZX-034: status=ready.\nT30 ZX-034: bay=B1.\nT42 ZX-034: owner=Cygnus.\nT10 ZX-035: status=released, bay=D1, owner=Dorado.\nT23 ZX-035: bay=D2.\nT33 ZX-035: owner=Cygnus.\nT42 ZX-035: status=inspection.\nT10 ZX-036: status=ready, bay=B1, owner=Aster.\nT24 ZX-036: owner=Cygnus.\nT34 ZX-036: status=inspection.\nT44 ZX-036: bay=D1.\nT10 ZX-037: status=held, bay=C1, owner=Dorado.\nT21 ZX-037: status=inspection.\nT33 ZX-037: bay=C2.\nT40 ZX-037: owner=Cygnus.\nT10 ZX-038: status=inspection, bay=D1, owner=Aster.\nT20 ZX-038: bay=C1.\nT32 ZX-038: owner=Cygnus.\nT44 ZX-038: status=ready.\nT10 ZX-039: status=released, bay=B1, owner=Dorado.\nT21 ZX-039: owner=Cygnus.\nT30 ZX-039: status=ready.\nT42 ZX-039: bay=B2.\nT10 ZX-040: status=ready, bay=C1, owner=Aster.\nT24 ZX-040: status=ready.\nT32 ZX-040: bay=B1.\nT44 ZX-040: owner=Cygnus.\nT10 ZX-041: status=held, bay=D1, owner=Dorado.\nT24 ZX-041: bay=D2.\nT32 ZX-041: owner=Cygnus.\nT41 ZX-041: status=inspection.\nT10 ZX-042: status=inspection, bay=B1, owner=Aster.\nT23 ZX-042: owner=Cygnus.\nT32 ZX-042: status=inspection.\nT40 ZX-042: bay=D1.\nT10 ZX-043: status=released, bay=C1, owner=Dorado.\nT21 ZX-043: status=inspection.\nT33 ZX-043: bay=C2.\nT40 ZX-043: owner=Cygnus.\nT10 ZX-044: status=ready, bay=D1, owner=Aster.\nT21 ZX-044: bay=C1.\nT31 ZX-044: owner=Cygnus.\nT41 ZX-044: status=ready.\nT10 ZX-045: status=held, bay=B1, owner=Dorado.\nT22 ZX-045: owner=Cygnus.\nT30 ZX-045: status=ready.\nT41 ZX-045: bay=B2.\nT10 ZX-046: status=inspection, bay=C1, owner=Aster.\nT24 ZX-046: status=ready.\nT30 ZX-046: bay=B1.\nT43 ZX-046: owner=Cygnus.\nT10 ZX-047: status=released, bay=D1, owner=Dorado.\nT22 ZX-047: bay=D2.\nT32 ZX-047: owner=Cygnus.\nT42 ZX-047: status=inspection.\nT10 ZX-048: status=ready, bay=B1, owner=Aster.\nT20 ZX-048: owner=Cygnus.\nT32 ZX-048: status=inspection.\nT43 ZX-048: bay=D1.",
+    "question_count": 72
+  },
+  "model": "speed_latest",
+  "elapsed_s": 0.29328237100000365,
+  "input_tokens": 4898,
+  "output_tokens": 1156,
+  "estimated_cost_usd": 0.0008366000000000001,
+  "correct_count": 68,
+  "accuracy": 0.9444444444444444,
+  "answers": [
+    {
+      "id": "l24s",
+      "text": "The final status for ZX-025 is inspection.",
+      "category": "status",
+      "expected": true,
+      "probability_yes": 0.89,
+      "predicted": true,
+      "correct": true,
+      "proof": "Latest status value for ZX-025 is inspection; claim says inspection."
+    },
+    {
+      "id": "l24b",
+      "text": "The final bay for ZX-025 is D1.",
+      "category": "bay",
+      "expected": false,
+      "probability_yes": 0.09,
+      "predicted": false,
+      "correct": true,
+      "proof": "Latest bay value for ZX-025 is C2; claim says D1."
+    },
+    {
+      "id": "l24o",
+      "text": "The final owner for ZX-025 is Dorado.",
+      "category": "owner",
+      "expected": false,
+      "probability_yes": 0.01,
+      "predicted": false,
+      "correct": true,
+      "proof": "Latest owner value for ZX-025 is Cygnus; claim says Dorado."
+    },
+    {
+      "id": "l25s",
+      "text": "The final status for ZX-026 is held.",
+      "category": "status",
+      "expected": false,
+      "probability_yes": 0.01,
+      "predicted": false,
+      "correct": true,
+      "proof": "Latest status value for ZX-026 is ready; claim says held."
+    },
+    {
+      "id": "l25b",
+      "text": "The final bay for ZX-026 is C1.",
+      "category": "bay",
+      "expected": true,
+      "probability_yes": 0.9,
+      "predicted": true,
+      "correct": true,
+      "proof": "Latest bay value for ZX-026 is C1; claim says C1."
+    },
+    {
+      "id": "l25o",
+      "text": "The final owner for ZX-026 is Cygnus.",
+      "category": "owner",
+      "expected": true,
+      "probability_yes": 0.98,
+      "predicted": true,
+      "correct": true,
+      "proof": "Latest owner value for ZX-026 is Cygnus; claim says Cygnus."
+    },
+    {
+      "id": "l26s",
+      "text": "The final status for ZX-027 is ready.",
+      "category": "status",
+      "expected": true,
+      "probability_yes": 0.97,
+      "predicted": true,
+      "correct": true,
+      "proof": "Latest status value for ZX-027 is ready; claim says ready."
+    },
+    {
+      "id": "l26b",
+      "text": "The final bay for ZX-027 is C1.",
+      "category": "bay",
+      "expected": false,
+      "probability_yes": 0.07,
+      "predicted": false,
+      "correct": true,
+      "proof": "Latest bay value for ZX-027 is B2; claim says C1."
+    },
+    {
+      "id": "l26o",
+      "text": "The final owner for ZX-027 is Dorado.",
+      "category": "owner",
+      "expected": false,
+      "probability_yes": 0.08,
+      "predicted": false,
+      "correct": true,
+      "proof": "Latest owner value for ZX-027 is Cygnus; claim says Dorado."
+    },
+    {
+      "id": "l27s",
+      "text": "The final status for ZX-028 is held.",
+      "category": "status",
+      "expected": false,
+      "probability_yes": 0.01,
+      "predicted": false,
+      "correct": true,
+      "proof": "Latest status value for ZX-028 is ready; claim says held."
+    },
+    {
+      "id": "l27b",
+      "text": "The final bay for ZX-028 is B1.",
+      "category": "bay",
+      "expected": true,
+      "probability_yes": 0.97,
+      "predicted": true,
+      "correct": true,
+      "proof": "Latest bay value for ZX-028 is B1; claim says B1."
+    },
+    {
+      "id": "l27o",
+      "text": "The final owner for ZX-028 is Cygnus.",
+      "category": "owner",
+      "expected": true,
+      "probability_yes": 0.98,
+      "predicted": true,
+      "correct": true,
+      "proof": "Latest owner value for ZX-028 is Cygnus; claim says Cygnus."
+    },
+    {
+      "id": "l28s",
+      "text": "The final status for ZX-029 is inspection.",
+      "category": "status",
+      "expected": true,
+      "probability_yes": 0.91,
+      "predicted": true,
+      "correct": true,
+      "proof": "Latest status value for ZX-029 is inspection; claim says inspection."
+    },
+    {
+      "id": "l28b",
+      "text": "The final bay for ZX-029 is B1.",
+      "category": "bay",
+      "expected": false,
+      "probability_yes": 0.42,
+      "predicted": false,
+      "correct": true,
+      "proof": "Latest bay value for ZX-029 is D2; claim says B1."
+    },
+    {
+      "id": "l28o",
+      "text": "The final owner for ZX-029 is Dorado.",
+      "category": "owner",
+      "expected": false,
+      "probability_yes": 0.03,
+      "predicted": false,
+      "correct": true,
+      "proof": "Latest owner value for ZX-029 is Cygnus; claim says Dorado."
+    },
+    {
+      "id": "l29s",
+      "text": "The final status for ZX-030 is released.",
+      "category": "status",
+      "expected": false,
+      "probability_yes": 0.05,
+      "predicted": false,
+      "correct": true,
+      "proof": "Latest status value for ZX-030 is inspection; claim says released."
+    },
+    {
+      "id": "l29b",
+      "text": "The final bay for ZX-030 is D1.",
+      "category": "bay",
+      "expected": true,
+      "probability_yes": 0.88,
+      "predicted": true,
+      "correct": true,
+      "proof": "Latest bay value for ZX-030 is D1; claim says D1."
+    },
+    {
+      "id": "l29o",
+      "text": "The final owner for ZX-030 is Cygnus.",
+      "category": "owner",
+      "expected": true,
+      "probability_yes": 0.87,
+      "predicted": true,
+      "correct": true,
+      "proof": "Latest owner value for ZX-030 is Cygnus; claim says Cygnus."
+    },
+    {
+      "id": "l30s",
+      "text": "The final status for ZX-031 is inspection.",
+      "category": "status",
+      "expected": true,
+      "probability_yes": 0.77,
+      "predicted": true,
+      "correct": true,
+      "proof": "Latest status value for ZX-031 is inspection; claim says inspection."
+    },
+    {
+      "id": "l30b",
+      "text": "The final bay for ZX-031 is D1.",
+      "category": "bay",
+      "expected": false,
+      "probability_yes": 0.05,
+      "predicted": false,
+      "correct": true,
+      "proof": "Latest bay value for ZX-031 is C2; claim says D1."
+    },
+    {
+      "id": "l30o",
+      "text": "The final owner for ZX-031 is Dorado.",
+      "category": "owner",
+      "expected": false,
+      "probability_yes": 0.04,
+      "predicted": false,
+      "correct": true,
+      "proof": "Latest owner value for ZX-031 is Cygnus; claim says Dorado."
+    },
+    {
+      "id": "l31s",
+      "text": "The final status for ZX-032 is held.",
+      "category": "status",
+      "expected": false,
+      "probability_yes": 0.01,
+      "predicted": false,
+      "correct": true,
+      "proof": "Latest status value for ZX-032 is ready; claim says held."
+    },
+    {
+      "id": "l31b",
+      "text": "The final bay for ZX-032 is C1.",
+      "category": "bay",
+      "expected": true,
+      "probability_yes": 0.55,
+      "predicted": true,
+      "correct": true,
+      "proof": "Latest bay value for ZX-032 is C1; claim says C1."
+    },
+    {
+      "id": "l31o",
+      "text": "The final owner for ZX-032 is Cygnus.",
+      "category": "owner",
+      "expected": true,
+      "probability_yes": 0.9,
+      "predicted": true,
+      "correct": true,
+      "proof": "Latest owner value for ZX-032 is Cygnus; claim says Cygnus."
+    },
+    {
+      "id": "l32s",
+      "text": "The final status for ZX-033 is ready.",
+      "category": "status",
+      "expected": true,
+      "probability_yes": 0.65,
+      "predicted": true,
+      "correct": true,
+      "proof": "Latest status value for ZX-033 is ready; claim says ready."
+    },
+    {
+      "id": "l32b",
+      "text": "The final bay for ZX-033 is C1.",
+      "category": "bay",
+      "expected": false,
+      "probability_yes": 0.03,
+      "predicted": false,
+      "correct": true,
+      "proof": "Latest bay value for ZX-033 is B2; claim says C1."
+    },
+    {
+      "id": "l32o",
+      "text": "The final owner for ZX-033 is Dorado.",
+      "category": "owner",
+      "expected": false,
+      "probability_yes": 0.59,
+      "predicted": true,
+      "correct": false,
+      "proof": "Latest owner value for ZX-033 is Cygnus; claim says Dorado."
+    },
+    {
+      "id": "l33s",
+      "text": "The final status for ZX-034 is held.",
+      "category": "status",
+      "expected": false,
+      "probability_yes": 0.01,
+      "predicted": false,
+      "correct": true,
+      "proof": "Latest status value for ZX-034 is ready; claim says held."
+    },
+    {
+      "id": "l33b",
+      "text": "The final bay for ZX-034 is B1.",
+      "category": "bay",
+      "expected": true,
+      "probability_yes": 0.96,
+      "predicted": true,
+      "correct": true,
+      "proof": "Latest bay value for ZX-034 is B1; claim says B1."
+    },
+    {
+      "id": "l33o",
+      "text": "The final owner for ZX-034 is Cygnus.",
+      "category": "owner",
+      "expected": true,
+      "probability_yes": 0.96,
+      "predicted": true,
+      "correct": true,
+      "proof": "Latest owner value for ZX-034 is Cygnus; claim says Cygnus."
+    },
+    {
+      "id": "l34s",
+      "text": "The final status for ZX-035 is inspection.",
+      "category": "status",
+      "expected": true,
+      "probability_yes": 0.96,
+      "predicted": true,
+      "correct": true,
+      "proof": "Latest status value for ZX-035 is inspection; claim says inspection."
+    },
+    {
+      "id": "l34b",
+      "text": "The final bay for ZX-035 is B1.",
+      "category": "bay",
+      "expected": false,
+      "probability_yes": 0.33,
+      "predicted": false,
+      "correct": true,
+      "proof": "Latest bay value for ZX-035 is D2; claim says B1."
+    },
+    {
+      "id": "l34o",
+      "text": "The final owner for ZX-035 is Dorado.",
+      "category": "owner",
+      "expected": false,
+      "probability_yes": 0.02,
+      "predicted": false,
+      "correct": true,
+      "proof": "Latest owner value for ZX-035 is Cygnus; claim says Dorado."
+    },
+    {
+      "id": "l35s",
+      "text": "The final status for ZX-036 is released.",
+      "category": "status",
+      "expected": false,
+      "probability_yes": 0.03,
+      "predicted": false,
+      "correct": true,
+      "proof": "Latest status value for ZX-036 is inspection; claim says released."
+    },
+    {
+      "id": "l35b",
+      "text": "The final bay for ZX-036 is D1.",
+      "category": "bay",
+      "expected": true,
+      "probability_yes": 0.84,
+      "predicted": true,
+      "correct": true,
+      "proof": "Latest bay value for ZX-036 is D1; claim says D1."
+    },
+    {
+      "id": "l35o",
+      "text": "The final owner for ZX-036 is Cygnus.",
+      "category": "owner",
+      "expected": true,
+      "probability_yes": 0.98,
+      "predicted": true,
+      "correct": true,
+      "proof": "Latest owner value for ZX-036 is Cygnus; claim says Cygnus."
+    },
+    {
+      "id": "l36s",
+      "text": "The final status for ZX-037 is inspection.",
+      "category": "status",
+      "expected": true,
+      "probability_yes": 0.29,
+      "predicted": false,
+      "correct": false,
+      "proof": "Latest status value for ZX-037 is inspection; claim says inspection."
+    },
+    {
+      "id": "l36b",
+      "text": "The final bay for ZX-037 is D1.",
+      "category": "bay",
+      "expected": false,
+      "probability_yes": 0.08,
+      "predicted": false,
+      "correct": true,
+      "proof": "Latest bay value for ZX-037 is C2; claim says D1."
+    },
+    {
+      "id": "l36o",
+      "text": "The final owner for ZX-037 is Dorado.",
+      "category": "owner",
+      "expected": false,
+      "probability_yes": 0.02,
+      "predicted": false,
+      "correct": true,
+      "proof": "Latest owner value for ZX-037 is Cygnus; claim says Dorado."
+    },
+    {
+      "id": "l37s",
+      "text": "The final status for ZX-038 is held.",
+      "category": "status",
+      "expected": false,
+      "probability_yes": 0.01,
+      "predicted": false,
+      "correct": true,
+      "proof": "Latest status value for ZX-038 is ready; claim says held."
+    },
+    {
+      "id": "l37b",
+      "text": "The final bay for ZX-038 is C1.",
+      "category": "bay",
+      "expected": true,
+      "probability_yes": 0.86,
+      "predicted": true,
+      "correct": true,
+      "proof": "Latest bay value for ZX-038 is C1; claim says C1."
+    },
+    {
+      "id": "l37o",
+      "text": "The final owner for ZX-038 is Cygnus.",
+      "category": "owner",
+      "expected": true,
+      "probability_yes": 0.95,
+      "predicted": true,
+      "correct": true,
+      "proof": "Latest owner value for ZX-038 is Cygnus; claim says Cygnus."
+    },
+    {
+      "id": "l38s",
+      "text": "The final status for ZX-039 is ready.",
+      "category": "status",
+      "expected": true,
+      "probability_yes": 0.94,
+      "predicted": true,
+      "correct": true,
+      "proof": "Latest status value for ZX-039 is ready; claim says ready."
+    },
+    {
+      "id": "l38b",
+      "text": "The final bay for ZX-039 is C1.",
+      "category": "bay",
+      "expected": false,
+      "probability_yes": 0.04,
+      "predicted": false,
+      "correct": true,
+      "proof": "Latest bay value for ZX-039 is B2; claim says C1."
+    },
+    {
+      "id": "l38o",
+      "text": "The final owner for ZX-039 is Dorado.",
+      "category": "owner",
+      "expected": false,
+      "probability_yes": 0.08,
+      "predicted": false,
+      "correct": true,
+      "proof": "Latest owner value for ZX-039 is Cygnus; claim says Dorado."
+    },
+    {
+      "id": "l39s",
+      "text": "The final status for ZX-040 is held.",
+      "category": "status",
+      "expected": false,
+      "probability_yes": 0.01,
+      "predicted": false,
+      "correct": true,
+      "proof": "Latest status value for ZX-040 is ready; claim says held."
+    },
+    {
+      "id": "l39b",
+      "text": "The final bay for ZX-040 is B1.",
+      "category": "bay",
+      "expected": true,
+      "probability_yes": 0.98,
+      "predicted": true,
+      "correct": true,
+      "proof": "Latest bay value for ZX-040 is B1; claim says B1."
+    },
+    {
+      "id": "l39o",
+      "text": "The final owner for ZX-040 is Cygnus.",
+      "category": "owner",
+      "expected": true,
+      "probability_yes": 0.99,
+      "predicted": true,
+      "correct": true,
+      "proof": "Latest owner value for ZX-040 is Cygnus; claim says Cygnus."
+    },
+    {
+      "id": "l40s",
+      "text": "The final status for ZX-041 is inspection.",
+      "category": "status",
+      "expected": true,
+      "probability_yes": 0.98,
+      "predicted": true,
+      "correct": true,
+      "proof": "Latest status value for ZX-041 is inspection; claim says inspection."
+    },
+    {
+      "id": "l40b",
+      "text": "The final bay for ZX-041 is B1.",
+      "category": "bay",
+      "expected": false,
+      "probability_yes": 0.07,
+      "predicted": false,
+      "correct": true,
+      "proof": "Latest bay value for ZX-041 is D2; claim says B1."
+    },
+    {
+      "id": "l40o",
+      "text": "The final owner for ZX-041 is Dorado.",
+      "category": "owner",
+      "expected": false,
+      "probability_yes": 0.02,
+      "predicted": false,
+      "correct": true,
+      "proof": "Latest owner value for ZX-041 is Cygnus; claim says Dorado."
+    },
+    {
+      "id": "l41s",
+      "text": "The final status for ZX-042 is released.",
+      "category": "status",
+      "expected": false,
+      "probability_yes": 0.01,
+      "predicted": false,
+      "correct": true,
+      "proof": "Latest status value for ZX-042 is inspection; claim says released."
+    },
+    {
+      "id": "l41b",
+      "text": "The final bay for ZX-042 is D1.",
+      "category": "bay",
+      "expected": true,
+      "probability_yes": 0.96,
+      "predicted": true,
+      "correct": true,
+      "proof": "Latest bay value for ZX-042 is D1; claim says D1."
+    },
+    {
+      "id": "l41o",
+      "text": "The final owner for ZX-042 is Cygnus.",
+      "category": "owner",
+      "expected": true,
+      "probability_yes": 0.95,
+      "predicted": true,
+      "correct": true,
+      "proof": "Latest owner value for ZX-042 is Cygnus; claim says Cygnus."
+    },
+    {
+      "id": "l42s",
+      "text": "The final status for ZX-043 is inspection.",
+      "category": "status",
+      "expected": true,
+      "probability_yes": 0.73,
+      "predicted": true,
+      "correct": true,
+      "proof": "Latest status value for ZX-043 is inspection; claim says inspection."
+    },
+    {
+      "id": "l42b",
+      "text": "The final bay for ZX-043 is D1.",
+      "category": "bay",
+      "expected": false,
+      "probability_yes": 0.1,
+      "predicted": false,
+      "correct": true,
+      "proof": "Latest bay value for ZX-043 is C2; claim says D1."
+    },
+    {
+      "id": "l42o",
+      "text": "The final owner for ZX-043 is Dorado.",
+      "category": "owner",
+      "expected": false,
+      "probability_yes": 0.03,
+      "predicted": false,
+      "correct": true,
+      "proof": "Latest owner value for ZX-043 is Cygnus; claim says Dorado."
+    },
+    {
+      "id": "l43s",
+      "text": "The final status for ZX-044 is held.",
+      "category": "status",
+      "expected": false,
+      "probability_yes": 0.01,
+      "predicted": false,
+      "correct": true,
+      "proof": "Latest status value for ZX-044 is ready; claim says held."
+    },
+    {
+      "id": "l43b",
+      "text": "The final bay for ZX-044 is C1.",
+      "category": "bay",
+      "expected": true,
+      "probability_yes": 0.14,
+      "predicted": false,
+      "correct": false,
+      "proof": "Latest bay value for ZX-044 is C1; claim says C1."
+    },
+    {
+      "id": "l43o",
+      "text": "The final owner for ZX-044 is Cygnus.",
+      "category": "owner",
+      "expected": true,
+      "probability_yes": 0.97,
+      "predicted": true,
+      "correct": true,
+      "proof": "Latest owner value for ZX-044 is Cygnus; claim says Cygnus."
+    },
+    {
+      "id": "l44s",
+      "text": "The final status for ZX-045 is ready.",
+      "category": "status",
+      "expected": true,
+      "probability_yes": 0.88,
+      "predicted": true,
+      "correct": true,
+      "proof": "Latest status value for ZX-045 is ready; claim says ready."
+    },
+    {
+      "id": "l44b",
+      "text": "The final bay for ZX-045 is C1.",
+      "category": "bay",
+      "expected": false,
+      "probability_yes": 0.04,
+      "predicted": false,
+      "correct": true,
+      "proof": "Latest bay value for ZX-045 is B2; claim says C1."
+    },
+    {
+      "id": "l44o",
+      "text": "The final owner for ZX-045 is Dorado.",
+      "category": "owner",
+      "expected": false,
+      "probability_yes": 0.51,
+      "predicted": true,
+      "correct": false,
+      "proof": "Latest owner value for ZX-045 is Cygnus; claim says Dorado."
+    },
+    {
+      "id": "l45s",
+      "text": "The final status for ZX-046 is held.",
+      "category": "status",
+      "expected": false,
+      "probability_yes": 0.01,
+      "predicted": false,
+      "correct": true,
+      "proof": "Latest status value for ZX-046 is ready; claim says held."
+    },
+    {
+      "id": "l45b",
+      "text": "The final bay for ZX-046 is B1.",
+      "category": "bay",
+      "expected": true,
+      "probability_yes": 0.97,
+      "predicted": true,
+      "correct": true,
+      "proof": "Latest bay value for ZX-046 is B1; claim says B1."
+    },
+    {
+      "id": "l45o",
+      "text": "The final owner for ZX-046 is Cygnus.",
+      "category": "owner",
+      "expected": true,
+      "probability_yes": 0.98,
+      "predicted": true,
+      "correct": true,
+      "proof": "Latest owner value for ZX-046 is Cygnus; claim says Cygnus."
+    },
+    {
+      "id": "l46s",
+      "text": "The final status for ZX-047 is inspection.",
+      "category": "status",
+      "expected": true,
+      "probability_yes": 0.97,
+      "predicted": true,
+      "correct": true,
+      "proof": "Latest status value for ZX-047 is inspection; claim says inspection."
+    },
+    {
+      "id": "l46b",
+      "text": "The final bay for ZX-047 is B1.",
+      "category": "bay",
+      "expected": false,
+      "probability_yes": 0.2,
+      "predicted": false,
+      "correct": true,
+      "proof": "Latest bay value for ZX-047 is D2; claim says B1."
+    },
+    {
+      "id": "l46o",
+      "text": "The final owner for ZX-047 is Dorado.",
+      "category": "owner",
+      "expected": false,
+      "probability_yes": 0.02,
+      "predicted": false,
+      "correct": true,
+      "proof": "Latest owner value for ZX-047 is Cygnus; claim says Dorado."
+    },
+    {
+      "id": "l47s",
+      "text": "The final status for ZX-048 is released.",
+      "category": "status",
+      "expected": false,
+      "probability_yes": 0.02,
+      "predicted": false,
+      "correct": true,
+      "proof": "Latest status value for ZX-048 is inspection; claim says released."
+    },
+    {
+      "id": "l47b",
+      "text": "The final bay for ZX-048 is D1.",
+      "category": "bay",
+      "expected": true,
+      "probability_yes": 0.96,
+      "predicted": true,
+      "correct": true,
+      "proof": "Latest bay value for ZX-048 is D1; claim says D1."
+    },
+    {
+      "id": "l47o",
+      "text": "The final owner for ZX-048 is Cygnus.",
+      "category": "owner",
+      "expected": true,
+      "probability_yes": 0.98,
+      "predicted": true,
+      "correct": true,
+      "proof": "Latest owner value for ZX-048 is Cygnus; claim says Cygnus."
+    }
+  ]
+}

@@ -1,0 +1,824 @@
+{
+  "schema_version": 2,
+  "created_at": "2026-08-16T20:56:00.981463+00:00",
+  "location": "US-west orb",
+  "host": {
+    "hostname": "e2b.local",
+    "platform": "Linux-6.1.158+-x86_64-with-glibc2.36"
+  },
+  "candidate": {
+    "id": "tail60twofield",
+    "title": "Tail queries in superseding ledger",
+    "document": "ASSET LEDGER\nFor each asset and field, the latest timestamp is final.\nAn update changes only the fields that it names.\nEarlier values remain in the ledger but are not final.\n\nT10 ZX-001: status=held, bay=C1, owner=Dorado.\nT10 ZX-002: status=inspection, bay=D1, owner=Aster.\nT10 ZX-003: status=released, bay=B1, owner=Dorado.\nT10 ZX-004: status=ready, bay=C1, owner=Aster.\nT10 ZX-005: status=held, bay=D1, owner=Dorado.\nT10 ZX-006: status=inspection, bay=B1, owner=Aster.\nT10 ZX-007: status=released, bay=C1, owner=Dorado.\nT10 ZX-008: status=ready, bay=D1, owner=Aster.\nT10 ZX-009: status=held, bay=B1, owner=Dorado.\nT10 ZX-010: status=inspection, bay=C1, owner=Aster.\nT10 ZX-011: status=released, bay=D1, owner=Dorado.\nT10 ZX-012: status=ready, bay=B1, owner=Aster.\nT10 ZX-013: status=held, bay=C1, owner=Dorado.\nT10 ZX-014: status=inspection, bay=D1, owner=Aster.\nT10 ZX-015: status=released, bay=B1, owner=Dorado.\nT10 ZX-016: status=ready, bay=C1, owner=Aster.\nT10 ZX-017: status=held, bay=D1, owner=Dorado.\nT10 ZX-018: status=inspection, bay=B1, owner=Aster.\nT10 ZX-019: status=released, bay=C1, owner=Dorado.\nT10 ZX-020: status=ready, bay=D1, owner=Aster.\nT10 ZX-021: status=held, bay=B1, owner=Dorado.\nT10 ZX-022: status=inspection, bay=C1, owner=Aster.\nT10 ZX-023: status=released, bay=D1, owner=Dorado.\nT10 ZX-024: status=ready, bay=B1, owner=Aster.\nT10 ZX-025: status=held, bay=C1, owner=Dorado.\nT10 ZX-026: status=inspection, bay=D1, owner=Aster.\nT10 ZX-027: status=released, bay=B1, owner=Dorado.\nT10 ZX-028: status=ready, bay=C1, owner=Aster.\nT10 ZX-029: status=held, bay=D1, owner=Dorado.\nT10 ZX-030: status=inspection, bay=B1, owner=Aster.\nT10 ZX-031: status=released, bay=C1, owner=Dorado.\nT10 ZX-032: status=ready, bay=D1, owner=Aster.\nT10 ZX-033: status=held, bay=B1, owner=Dorado.\nT10 ZX-034: status=inspection, bay=C1, owner=Aster.\nT10 ZX-035: status=released, bay=D1, owner=Dorado.\nT10 ZX-036: status=ready, bay=B1, owner=Aster.\nT10 ZX-037: status=held, bay=C1, owner=Dorado.\nT10 ZX-038: status=inspection, bay=D1, owner=Aster.\nT10 ZX-039: status=released, bay=B1, owner=Dorado.\nT10 ZX-040: status=ready, bay=C1, owner=Aster.\nT10 ZX-041: status=held, bay=D1, owner=Dorado.\nT10 ZX-042: status=inspection, bay=B1, owner=Aster.\nT10 ZX-043: status=released, bay=C1, owner=Dorado.\nT10 ZX-044: status=ready, bay=D1, owner=Aster.\nT10 ZX-045: status=held, bay=B1, owner=Dorado.\nT10 ZX-046: status=inspection, bay=C1, owner=Aster.\nT10 ZX-047: status=released, bay=D1, owner=Dorado.\nT10 ZX-048: status=ready, bay=B1, owner=Aster.\nT10 ZX-049: status=held, bay=C1, owner=Dorado.\nT10 ZX-050: status=inspection, bay=D1, owner=Aster.\nT10 ZX-051: status=released, bay=B1, owner=Dorado.\nT10 ZX-052: status=ready, bay=C1, owner=Aster.\nT10 ZX-053: status=held, bay=D1, owner=Dorado.\nT10 ZX-054: status=inspection, bay=B1, owner=Aster.\nT10 ZX-055: status=released, bay=C1, owner=Dorado.\nT10 ZX-056: status=ready, bay=D1, owner=Aster.\nT10 ZX-057: status=held, bay=B1, owner=Dorado.\nT10 ZX-058: status=inspection, bay=C1, owner=Aster.\nT10 ZX-059: status=released, bay=D1, owner=Dorado.\nT10 ZX-060: status=ready, bay=B1, owner=Aster.\nT20 ZX-018: owner=Cygnus.\nT20 ZX-019: status=inspection.\nT20 ZX-020: bay=C1.\nT20 ZX-021: owner=Cygnus.\nT20 ZX-028: status=ready.\nT20 ZX-033: owner=Cygnus.\nT20 ZX-035: bay=D2.\nT20 ZX-038: bay=C1.\nT20 ZX-042: owner=Cygnus.\nT20 ZX-046: status=ready.\nT20 ZX-052: status=ready.\nT20 ZX-057: owner=Cygnus.\nT21 ZX-004: status=ready.\nT21 ZX-005: bay=D2.\nT21 ZX-012: owner=Cygnus.\nT21 ZX-027: owner=Cygnus.\nT21 ZX-034: status=ready.\nT21 ZX-041: bay=D2.\nT21 ZX-047: bay=D2.\nT21 ZX-054: owner=Cygnus.\nT21 ZX-058: status=ready.\nT21 ZX-060: owner=Cygnus.\nT22 ZX-003: owner=Cygnus.\nT22 ZX-006: owner=Cygnus.\nT22 ZX-007: status=inspection.\nT22 ZX-008: bay=C1.\nT22 ZX-009: owner=Cygnus.\nT22 ZX-010: status=ready.\nT22 ZX-013: status=inspection.\nT22 ZX-014: bay=C1.\nT22 ZX-016: status=ready.\nT22 ZX-017: bay=D2.\nT22 ZX-022: status=ready.\nT22 ZX-026: bay=C1.\nT22 ZX-029: bay=D2.\nT22 ZX-031: status=inspection.\nT22 ZX-049: status=inspection.\nT22 ZX-051: owner=Cygnus.\nT22 ZX-055: status=inspection.\nT22 ZX-056: bay=C1.\nT22 ZX-059: bay=D2.\nT23 ZX-001: status=inspection.\nT23 ZX-002: bay=C1.\nT23 ZX-015: owner=Cygnus.\nT23 ZX-024: owner=Cygnus.\nT23 ZX-030: owner=Cygnus.\nT23 ZX-037: status=inspection.\nT23 ZX-040: status=ready.\nT23 ZX-044: bay=C1.\nT23 ZX-045: owner=Cygnus.\nT23 ZX-050: bay=C1.\nT23 ZX-053: bay=D2.\nT24 ZX-011: bay=D2.\nT24 ZX-023: bay=D2.\nT24 ZX-025: status=inspection.\nT24 ZX-032: bay=C1.\nT24 ZX-036: owner=Cygnus.\nT24 ZX-039: owner=Cygnus.\nT24 ZX-043: status=inspection.\nT24 ZX-048: owner=Cygnus.\nT30 ZX-008: owner=Cygnus.\nT30 ZX-010: bay=B1.\nT30 ZX-013: bay=C2.\nT30 ZX-021: status=ready.\nT30 ZX-022: bay=B1.\nT30 ZX-026: owner=Cygnus.\nT30 ZX-029: owner=Cygnus.\nT30 ZX-031: bay=C2.\nT30 ZX-039: status=ready.\nT30 ZX-051: status=ready.\nT30 ZX-053: owner=Cygnus.\nT30 ZX-055: bay=C2.\nT30 ZX-057: status=ready.\nT30 ZX-059: owner=Cygnus.\nT31 ZX-009: status=ready.\nT31 ZX-014: owner=Cygnus.\nT31 ZX-015: status=ready.\nT31 ZX-017: owner=Cygnus.\nT31 ZX-018: status=inspection.\nT31 ZX-020: owner=Cygnus.\nT31 ZX-028: bay=B1.\nT31 ZX-041: owner=Cygnus.\nT31 ZX-042: status=inspection.\nT31 ZX-045: status=ready.\nT31 ZX-047: owner=Cygnus.\nT31 ZX-049: bay=C2.\nT31 ZX-054: status=inspection.\nT31 ZX-056: owner=Cygnus.\nT32 ZX-002: owner=Cygnus.\nT32 ZX-005: owner=Cygnus.\nT32 ZX-011: owner=Cygnus.\nT32 ZX-025: bay=C2.\nT32 ZX-027: status=ready.\nT32 ZX-035: owner=Cygnus.\nT32 ZX-040: bay=B1.\nT32 ZX-046: bay=B1.\nT32 ZX-048: status=inspection.\nT32 ZX-050: owner=Cygnus.\nT33 ZX-001: bay=C2.\nT33 ZX-003: status=ready.\nT33 ZX-004: bay=B1.\nT33 ZX-006: status=inspection.\nT33 ZX-016: bay=B1.\nT33 ZX-024: status=inspection.\nT33 ZX-032: owner=Cygnus.\nT33 ZX-037: bay=C2.\nT33 ZX-038: owner=Cygnus.\nT33 ZX-044: owner=Cygnus.\nT33 ZX-052: bay=B1.\nT33 ZX-060: status=inspection.\nT34 ZX-007: bay=C2.\nT34 ZX-012: status=inspection.\nT34 ZX-019: bay=C2.\nT34 ZX-023: owner=Cygnus.\nT34 ZX-030: status=inspection.\nT34 ZX-033: status=ready.\nT34 ZX-034: bay=B1.\nT34 ZX-036: status=inspection.\nT34 ZX-043: bay=C2.\nT34 ZX-058: bay=B1.\nT40 ZX-015: bay=B2.\nT40 ZX-016: owner=Cygnus.\nT40 ZX-025: owner=Cygnus.\nT40 ZX-027: bay=B2.\nT40 ZX-036: bay=D1.\nT40 ZX-037: owner=Cygnus.\nT41 ZX-013: owner=Cygnus.\nT41 ZX-019: owner=Cygnus.\nT41 ZX-026: status=ready.\nT41 ZX-028: owner=Cygnus.\nT41 ZX-030: bay=D1.\nT41 ZX-034: owner=Cygnus.\nT41 ZX-039: bay=B2.\nT41 ZX-047: status=inspection.\nT41 ZX-049: owner=Cygnus.\nT41 ZX-054: bay=D1.\nT41 ZX-058: owner=Cygnus.\nT42 ZX-001: owner=Cygnus.\nT42 ZX-003: bay=B2.\nT42 ZX-004: owner=Cygnus.\nT42 ZX-005: status=inspection.\nT42 ZX-008: status=ready.\nT42 ZX-011: status=inspection.\nT42 ZX-018: bay=D1.\nT42 ZX-023: status=inspection.\nT42 ZX-024: bay=D1.\nT42 ZX-029: status=inspection.\nT42 ZX-031: owner=Cygnus.\nT42 ZX-040: owner=Cygnus.\nT42 ZX-041: status=inspection.\nT42 ZX-044: status=ready.\nT42 ZX-055: owner=Cygnus.\nT42 ZX-056: status=ready.\nT42 ZX-059: status=inspection.\nT42 ZX-060: bay=D1.\nT43 ZX-006: bay=D1.\nT43 ZX-007: owner=Cygnus.\nT43 ZX-009: bay=B2.\nT43 ZX-010: owner=Cygnus.\nT43 ZX-012: bay=D1.\nT43 ZX-014: status=ready.\nT43 ZX-020: status=ready.\nT43 ZX-021: bay=B2.\nT43 ZX-022: owner=Cygnus.\nT43 ZX-038: status=ready.\nT43 ZX-042: bay=D1.\nT43 ZX-045: bay=B2.\nT43 ZX-052: owner=Cygnus.\nT43 ZX-053: status=inspection.\nT43 ZX-057: bay=B2.\nT44 ZX-002: status=ready.\nT44 ZX-017: status=inspection.\nT44 ZX-032: status=ready.\nT44 ZX-033: bay=B2.\nT44 ZX-035: status=inspection.\nT44 ZX-043: owner=Cygnus.\nT44 ZX-046: owner=Cygnus.\nT44 ZX-048: bay=D1.\nT44 ZX-050: status=ready.\nT44 ZX-051: bay=B2.",
+    "question_count": 80
+  },
+  "model": "gpt-5.6-luna",
+  "elapsed_s": 14.294985530000076,
+  "input_tokens": 8174,
+  "output_tokens": 2387,
+  "estimated_cost_usd": 0.004499200000000001,
+  "correct_count": 80,
+  "accuracy": 1.0,
+  "answers": [
+    {
+      "id": "l20s",
+      "text": "The final status for ZX-021 is ready.",
+      "category": "status",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "Latest status value for ZX-021 is ready; claim says ready."
+    },
+    {
+      "id": "l20b",
+      "text": "The final bay for ZX-021 is C1.",
+      "category": "bay",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "Latest bay value for ZX-021 is B2; claim says C1."
+    },
+    {
+      "id": "l21s",
+      "text": "The final status for ZX-022 is held.",
+      "category": "status",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "Latest status value for ZX-022 is ready; claim says held."
+    },
+    {
+      "id": "l21b",
+      "text": "The final bay for ZX-022 is B1.",
+      "category": "bay",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "Latest bay value for ZX-022 is B1; claim says B1."
+    },
+    {
+      "id": "l22s",
+      "text": "The final status for ZX-023 is inspection.",
+      "category": "status",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "Latest status value for ZX-023 is inspection; claim says inspection."
+    },
+    {
+      "id": "l22b",
+      "text": "The final bay for ZX-023 is B1.",
+      "category": "bay",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "Latest bay value for ZX-023 is D2; claim says B1."
+    },
+    {
+      "id": "l23s",
+      "text": "The final status for ZX-024 is released.",
+      "category": "status",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "Latest status value for ZX-024 is inspection; claim says released."
+    },
+    {
+      "id": "l23b",
+      "text": "The final bay for ZX-024 is D1.",
+      "category": "bay",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "Latest bay value for ZX-024 is D1; claim says D1."
+    },
+    {
+      "id": "l24s",
+      "text": "The final status for ZX-025 is inspection.",
+      "category": "status",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "Latest status value for ZX-025 is inspection; claim says inspection."
+    },
+    {
+      "id": "l24b",
+      "text": "The final bay for ZX-025 is D1.",
+      "category": "bay",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "Latest bay value for ZX-025 is C2; claim says D1."
+    },
+    {
+      "id": "l25s",
+      "text": "The final status for ZX-026 is held.",
+      "category": "status",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "Latest status value for ZX-026 is ready; claim says held."
+    },
+    {
+      "id": "l25b",
+      "text": "The final bay for ZX-026 is C1.",
+      "category": "bay",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "Latest bay value for ZX-026 is C1; claim says C1."
+    },
+    {
+      "id": "l26s",
+      "text": "The final status for ZX-027 is ready.",
+      "category": "status",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "Latest status value for ZX-027 is ready; claim says ready."
+    },
+    {
+      "id": "l26b",
+      "text": "The final bay for ZX-027 is C1.",
+      "category": "bay",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "Latest bay value for ZX-027 is B2; claim says C1."
+    },
+    {
+      "id": "l27s",
+      "text": "The final status for ZX-028 is held.",
+      "category": "status",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "Latest status value for ZX-028 is ready; claim says held."
+    },
+    {
+      "id": "l27b",
+      "text": "The final bay for ZX-028 is B1.",
+      "category": "bay",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "Latest bay value for ZX-028 is B1; claim says B1."
+    },
+    {
+      "id": "l28s",
+      "text": "The final status for ZX-029 is inspection.",
+      "category": "status",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "Latest status value for ZX-029 is inspection; claim says inspection."
+    },
+    {
+      "id": "l28b",
+      "text": "The final bay for ZX-029 is B1.",
+      "category": "bay",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "Latest bay value for ZX-029 is D2; claim says B1."
+    },
+    {
+      "id": "l29s",
+      "text": "The final status for ZX-030 is released.",
+      "category": "status",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "Latest status value for ZX-030 is inspection; claim says released."
+    },
+    {
+      "id": "l29b",
+      "text": "The final bay for ZX-030 is D1.",
+      "category": "bay",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "Latest bay value for ZX-030 is D1; claim says D1."
+    },
+    {
+      "id": "l30s",
+      "text": "The final status for ZX-031 is inspection.",
+      "category": "status",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "Latest status value for ZX-031 is inspection; claim says inspection."
+    },
+    {
+      "id": "l30b",
+      "text": "The final bay for ZX-031 is D1.",
+      "category": "bay",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "Latest bay value for ZX-031 is C2; claim says D1."
+    },
+    {
+      "id": "l31s",
+      "text": "The final status for ZX-032 is held.",
+      "category": "status",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "Latest status value for ZX-032 is ready; claim says held."
+    },
+    {
+      "id": "l31b",
+      "text": "The final bay for ZX-032 is C1.",
+      "category": "bay",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "Latest bay value for ZX-032 is C1; claim says C1."
+    },
+    {
+      "id": "l32s",
+      "text": "The final status for ZX-033 is ready.",
+      "category": "status",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "Latest status value for ZX-033 is ready; claim says ready."
+    },
+    {
+      "id": "l32b",
+      "text": "The final bay for ZX-033 is C1.",
+      "category": "bay",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "Latest bay value for ZX-033 is B2; claim says C1."
+    },
+    {
+      "id": "l33s",
+      "text": "The final status for ZX-034 is held.",
+      "category": "status",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "Latest status value for ZX-034 is ready; claim says held."
+    },
+    {
+      "id": "l33b",
+      "text": "The final bay for ZX-034 is B1.",
+      "category": "bay",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "Latest bay value for ZX-034 is B1; claim says B1."
+    },
+    {
+      "id": "l34s",
+      "text": "The final status for ZX-035 is inspection.",
+      "category": "status",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "Latest status value for ZX-035 is inspection; claim says inspection."
+    },
+    {
+      "id": "l34b",
+      "text": "The final bay for ZX-035 is B1.",
+      "category": "bay",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "Latest bay value for ZX-035 is D2; claim says B1."
+    },
+    {
+      "id": "l35s",
+      "text": "The final status for ZX-036 is released.",
+      "category": "status",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "Latest status value for ZX-036 is inspection; claim says released."
+    },
+    {
+      "id": "l35b",
+      "text": "The final bay for ZX-036 is D1.",
+      "category": "bay",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "Latest bay value for ZX-036 is D1; claim says D1."
+    },
+    {
+      "id": "l36s",
+      "text": "The final status for ZX-037 is inspection.",
+      "category": "status",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "Latest status value for ZX-037 is inspection; claim says inspection."
+    },
+    {
+      "id": "l36b",
+      "text": "The final bay for ZX-037 is D1.",
+      "category": "bay",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "Latest bay value for ZX-037 is C2; claim says D1."
+    },
+    {
+      "id": "l37s",
+      "text": "The final status for ZX-038 is held.",
+      "category": "status",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "Latest status value for ZX-038 is ready; claim says held."
+    },
+    {
+      "id": "l37b",
+      "text": "The final bay for ZX-038 is C1.",
+      "category": "bay",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "Latest bay value for ZX-038 is C1; claim says C1."
+    },
+    {
+      "id": "l38s",
+      "text": "The final status for ZX-039 is ready.",
+      "category": "status",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "Latest status value for ZX-039 is ready; claim says ready."
+    },
+    {
+      "id": "l38b",
+      "text": "The final bay for ZX-039 is C1.",
+      "category": "bay",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "Latest bay value for ZX-039 is B2; claim says C1."
+    },
+    {
+      "id": "l39s",
+      "text": "The final status for ZX-040 is held.",
+      "category": "status",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "Latest status value for ZX-040 is ready; claim says held."
+    },
+    {
+      "id": "l39b",
+      "text": "The final bay for ZX-040 is B1.",
+      "category": "bay",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "Latest bay value for ZX-040 is B1; claim says B1."
+    },
+    {
+      "id": "l40s",
+      "text": "The final status for ZX-041 is inspection.",
+      "category": "status",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "Latest status value for ZX-041 is inspection; claim says inspection."
+    },
+    {
+      "id": "l40b",
+      "text": "The final bay for ZX-041 is B1.",
+      "category": "bay",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "Latest bay value for ZX-041 is D2; claim says B1."
+    },
+    {
+      "id": "l41s",
+      "text": "The final status for ZX-042 is released.",
+      "category": "status",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "Latest status value for ZX-042 is inspection; claim says released."
+    },
+    {
+      "id": "l41b",
+      "text": "The final bay for ZX-042 is D1.",
+      "category": "bay",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "Latest bay value for ZX-042 is D1; claim says D1."
+    },
+    {
+      "id": "l42s",
+      "text": "The final status for ZX-043 is inspection.",
+      "category": "status",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "Latest status value for ZX-043 is inspection; claim says inspection."
+    },
+    {
+      "id": "l42b",
+      "text": "The final bay for ZX-043 is D1.",
+      "category": "bay",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "Latest bay value for ZX-043 is C2; claim says D1."
+    },
+    {
+      "id": "l43s",
+      "text": "The final status for ZX-044 is held.",
+      "category": "status",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "Latest status value for ZX-044 is ready; claim says held."
+    },
+    {
+      "id": "l43b",
+      "text": "The final bay for ZX-044 is C1.",
+      "category": "bay",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "Latest bay value for ZX-044 is C1; claim says C1."
+    },
+    {
+      "id": "l44s",
+      "text": "The final status for ZX-045 is ready.",
+      "category": "status",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "Latest status value for ZX-045 is ready; claim says ready."
+    },
+    {
+      "id": "l44b",
+      "text": "The final bay for ZX-045 is C1.",
+      "category": "bay",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "Latest bay value for ZX-045 is B2; claim says C1."
+    },
+    {
+      "id": "l45s",
+      "text": "The final status for ZX-046 is held.",
+      "category": "status",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "Latest status value for ZX-046 is ready; claim says held."
+    },
+    {
+      "id": "l45b",
+      "text": "The final bay for ZX-046 is B1.",
+      "category": "bay",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "Latest bay value for ZX-046 is B1; claim says B1."
+    },
+    {
+      "id": "l46s",
+      "text": "The final status for ZX-047 is inspection.",
+      "category": "status",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "Latest status value for ZX-047 is inspection; claim says inspection."
+    },
+    {
+      "id": "l46b",
+      "text": "The final bay for ZX-047 is B1.",
+      "category": "bay",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "Latest bay value for ZX-047 is D2; claim says B1."
+    },
+    {
+      "id": "l47s",
+      "text": "The final status for ZX-048 is released.",
+      "category": "status",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "Latest status value for ZX-048 is inspection; claim says released."
+    },
+    {
+      "id": "l47b",
+      "text": "The final bay for ZX-048 is D1.",
+      "category": "bay",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "Latest bay value for ZX-048 is D1; claim says D1."
+    },
+    {
+      "id": "l48s",
+      "text": "The final status for ZX-049 is inspection.",
+      "category": "status",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "Latest status value for ZX-049 is inspection; claim says inspection."
+    },
+    {
+      "id": "l48b",
+      "text": "The final bay for ZX-049 is D1.",
+      "category": "bay",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "Latest bay value for ZX-049 is C2; claim says D1."
+    },
+    {
+      "id": "l49s",
+      "text": "The final status for ZX-050 is held.",
+      "category": "status",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "Latest status value for ZX-050 is ready; claim says held."
+    },
+    {
+      "id": "l49b",
+      "text": "The final bay for ZX-050 is C1.",
+      "category": "bay",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "Latest bay value for ZX-050 is C1; claim says C1."
+    },
+    {
+      "id": "l50s",
+      "text": "The final status for ZX-051 is ready.",
+      "category": "status",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "Latest status value for ZX-051 is ready; claim says ready."
+    },
+    {
+      "id": "l50b",
+      "text": "The final bay for ZX-051 is C1.",
+      "category": "bay",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "Latest bay value for ZX-051 is B2; claim says C1."
+    },
+    {
+      "id": "l51s",
+      "text": "The final status for ZX-052 is held.",
+      "category": "status",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "Latest status value for ZX-052 is ready; claim says held."
+    },
+    {
+      "id": "l51b",
+      "text": "The final bay for ZX-052 is B1.",
+      "category": "bay",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "Latest bay value for ZX-052 is B1; claim says B1."
+    },
+    {
+      "id": "l52s",
+      "text": "The final status for ZX-053 is inspection.",
+      "category": "status",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "Latest status value for ZX-053 is inspection; claim says inspection."
+    },
+    {
+      "id": "l52b",
+      "text": "The final bay for ZX-053 is B1.",
+      "category": "bay",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "Latest bay value for ZX-053 is D2; claim says B1."
+    },
+    {
+      "id": "l53s",
+      "text": "The final status for ZX-054 is released.",
+      "category": "status",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "Latest status value for ZX-054 is inspection; claim says released."
+    },
+    {
+      "id": "l53b",
+      "text": "The final bay for ZX-054 is D1.",
+      "category": "bay",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "Latest bay value for ZX-054 is D1; claim says D1."
+    },
+    {
+      "id": "l54s",
+      "text": "The final status for ZX-055 is inspection.",
+      "category": "status",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "Latest status value for ZX-055 is inspection; claim says inspection."
+    },
+    {
+      "id": "l54b",
+      "text": "The final bay for ZX-055 is D1.",
+      "category": "bay",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "Latest bay value for ZX-055 is C2; claim says D1."
+    },
+    {
+      "id": "l55s",
+      "text": "The final status for ZX-056 is held.",
+      "category": "status",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "Latest status value for ZX-056 is ready; claim says held."
+    },
+    {
+      "id": "l55b",
+      "text": "The final bay for ZX-056 is C1.",
+      "category": "bay",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "Latest bay value for ZX-056 is C1; claim says C1."
+    },
+    {
+      "id": "l56s",
+      "text": "The final status for ZX-057 is ready.",
+      "category": "status",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "Latest status value for ZX-057 is ready; claim says ready."
+    },
+    {
+      "id": "l56b",
+      "text": "The final bay for ZX-057 is C1.",
+      "category": "bay",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "Latest bay value for ZX-057 is B2; claim says C1."
+    },
+    {
+      "id": "l57s",
+      "text": "The final status for ZX-058 is held.",
+      "category": "status",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "Latest status value for ZX-058 is ready; claim says held."
+    },
+    {
+      "id": "l57b",
+      "text": "The final bay for ZX-058 is B1.",
+      "category": "bay",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "Latest bay value for ZX-058 is B1; claim says B1."
+    },
+    {
+      "id": "l58s",
+      "text": "The final status for ZX-059 is inspection.",
+      "category": "status",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "Latest status value for ZX-059 is inspection; claim says inspection."
+    },
+    {
+      "id": "l58b",
+      "text": "The final bay for ZX-059 is B1.",
+      "category": "bay",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "Latest bay value for ZX-059 is D2; claim says B1."
+    },
+    {
+      "id": "l59s",
+      "text": "The final status for ZX-060 is released.",
+      "category": "status",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "Latest status value for ZX-060 is inspection; claim says released."
+    },
+    {
+      "id": "l59b",
+      "text": "The final bay for ZX-060 is D1.",
+      "category": "bay",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "Latest bay value for ZX-060 is D1; claim says D1."
+    }
+  ]
+}

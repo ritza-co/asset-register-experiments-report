@@ -1,0 +1,1824 @@
+{
+  "schema_version": 2,
+  "created_at": "2026-08-16T20:48:48.492347+00:00",
+  "location": "US-west orb",
+  "host": {
+    "hostname": "e2b.local",
+    "platform": "Linux-6.1.158+-x86_64-with-glibc2.36"
+  },
+  "candidate": {
+    "id": "exact180",
+    "title": "High-volume exact catalog lookup",
+    "document": "PARTS CATALOG\nEach row is final. Match the complete part ID exactly.\n\nPX-00-00 | color=blue | zone=B1 | mass=11\nPX-00-01 | color=amber | zone=B2 | mass=24\nPX-00-02 | color=violet | zone=C1 | mass=37\nPX-00-03 | color=ivory | zone=C2 | mass=50\nPX-00-04 | color=green | zone=A1 | mass=63\nPX-00-05 | color=coral | zone=A2 | mass=76\nPX-00-06 | color=blue | zone=B1 | mass=89\nPX-00-07 | color=amber | zone=B2 | mass=13\nPX-00-08 | color=violet | zone=C1 | mass=26\nPX-00-09 | color=ivory | zone=C2 | mass=39\nPX-01-00 | color=green | zone=A1 | mass=52\nPX-01-01 | color=coral | zone=A2 | mass=65\nPX-01-02 | color=blue | zone=B1 | mass=78\nPX-01-03 | color=amber | zone=B2 | mass=91\nPX-01-04 | color=violet | zone=C1 | mass=15\nPX-01-05 | color=ivory | zone=C2 | mass=28\nPX-01-06 | color=green | zone=A1 | mass=41\nPX-01-07 | color=coral | zone=A2 | mass=54\nPX-01-08 | color=blue | zone=B1 | mass=67\nPX-01-09 | color=amber | zone=B2 | mass=80\nPX-02-00 | color=violet | zone=C1 | mass=93\nPX-02-01 | color=ivory | zone=C2 | mass=17\nPX-02-02 | color=green | zone=A1 | mass=30\nPX-02-03 | color=coral | zone=A2 | mass=43\nPX-02-04 | color=blue | zone=B1 | mass=56\nPX-02-05 | color=amber | zone=B2 | mass=69\nPX-02-06 | color=violet | zone=C1 | mass=82\nPX-02-07 | color=ivory | zone=C2 | mass=95\nPX-02-08 | color=green | zone=A1 | mass=19\nPX-02-09 | color=coral | zone=A2 | mass=32\nPX-03-00 | color=blue | zone=B1 | mass=45\nPX-03-01 | color=amber | zone=B2 | mass=58\nPX-03-02 | color=violet | zone=C1 | mass=71\nPX-03-03 | color=ivory | zone=C2 | mass=84\nPX-03-04 | color=green | zone=A1 | mass=97\nPX-03-05 | color=coral | zone=A2 | mass=21\nPX-03-06 | color=blue | zone=B1 | mass=34\nPX-03-07 | color=amber | zone=B2 | mass=47\nPX-03-08 | color=violet | zone=C1 | mass=60\nPX-03-09 | color=ivory | zone=C2 | mass=73\nPX-04-00 | color=green | zone=A1 | mass=86\nPX-04-01 | color=coral | zone=A2 | mass=99\nPX-04-02 | color=blue | zone=B1 | mass=23\nPX-04-03 | color=amber | zone=B2 | mass=36\nPX-04-04 | color=violet | zone=C1 | mass=49\nPX-04-05 | color=ivory | zone=C2 | mass=62\nPX-04-06 | color=green | zone=A1 | mass=75\nPX-04-07 | color=coral | zone=A2 | mass=88\nPX-04-08 | color=blue | zone=B1 | mass=12\nPX-04-09 | color=amber | zone=B2 | mass=25\nPX-05-00 | color=violet | zone=C1 | mass=38\nPX-05-01 | color=ivory | zone=C2 | mass=51\nPX-05-02 | color=green | zone=A1 | mass=64\nPX-05-03 | color=coral | zone=A2 | mass=77\nPX-05-04 | color=blue | zone=B1 | mass=90\nPX-05-05 | color=amber | zone=B2 | mass=14\nPX-05-06 | color=violet | zone=C1 | mass=27\nPX-05-07 | color=ivory | zone=C2 | mass=40\nPX-05-08 | color=green | zone=A1 | mass=53\nPX-05-09 | color=coral | zone=A2 | mass=66\nPX-06-00 | color=blue | zone=B1 | mass=79\nPX-06-01 | color=amber | zone=B2 | mass=92\nPX-06-02 | color=violet | zone=C1 | mass=16\nPX-06-03 | color=ivory | zone=C2 | mass=29\nPX-06-04 | color=green | zone=A1 | mass=42\nPX-06-05 | color=coral | zone=A2 | mass=55\nPX-06-06 | color=blue | zone=B1 | mass=68\nPX-06-07 | color=amber | zone=B2 | mass=81\nPX-06-08 | color=violet | zone=C1 | mass=94\nPX-06-09 | color=ivory | zone=C2 | mass=18\nPX-07-00 | color=green | zone=A1 | mass=31\nPX-07-01 | color=coral | zone=A2 | mass=44\nPX-07-02 | color=blue | zone=B1 | mass=57\nPX-07-03 | color=amber | zone=B2 | mass=70\nPX-07-04 | color=violet | zone=C1 | mass=83\nPX-07-05 | color=ivory | zone=C2 | mass=96\nPX-07-06 | color=green | zone=A1 | mass=20\nPX-07-07 | color=coral | zone=A2 | mass=33\nPX-07-08 | color=blue | zone=B1 | mass=46\nPX-07-09 | color=amber | zone=B2 | mass=59\nPX-08-00 | color=violet | zone=C1 | mass=72\nPX-08-01 | color=ivory | zone=C2 | mass=85\nPX-08-02 | color=green | zone=A1 | mass=98\nPX-08-03 | color=coral | zone=A2 | mass=22\nPX-08-04 | color=blue | zone=B1 | mass=35\nPX-08-05 | color=amber | zone=B2 | mass=48\nPX-08-06 | color=violet | zone=C1 | mass=61\nPX-08-07 | color=ivory | zone=C2 | mass=74\nPX-08-08 | color=green | zone=A1 | mass=87\nPX-08-09 | color=coral | zone=A2 | mass=11\nPX-09-00 | color=blue | zone=B1 | mass=24\nPX-09-01 | color=amber | zone=B2 | mass=37\nPX-09-02 | color=violet | zone=C1 | mass=50\nPX-09-03 | color=ivory | zone=C2 | mass=63\nPX-09-04 | color=green | zone=A1 | mass=76\nPX-09-05 | color=coral | zone=A2 | mass=89\nPX-09-06 | color=blue | zone=B1 | mass=13\nPX-09-07 | color=amber | zone=B2 | mass=26\nPX-09-08 | color=violet | zone=C1 | mass=39\nPX-09-09 | color=ivory | zone=C2 | mass=52\nPX-10-00 | color=green | zone=A1 | mass=65\nPX-10-01 | color=coral | zone=A2 | mass=78\nPX-10-02 | color=blue | zone=B1 | mass=91\nPX-10-03 | color=amber | zone=B2 | mass=15\nPX-10-04 | color=violet | zone=C1 | mass=28\nPX-10-05 | color=ivory | zone=C2 | mass=41\nPX-10-06 | color=green | zone=A1 | mass=54\nPX-10-07 | color=coral | zone=A2 | mass=67\nPX-10-08 | color=blue | zone=B1 | mass=80\nPX-10-09 | color=amber | zone=B2 | mass=93\nPX-11-00 | color=violet | zone=C1 | mass=17\nPX-11-01 | color=ivory | zone=C2 | mass=30\nPX-11-02 | color=green | zone=A1 | mass=43\nPX-11-03 | color=coral | zone=A2 | mass=56\nPX-11-04 | color=blue | zone=B1 | mass=69\nPX-11-05 | color=amber | zone=B2 | mass=82\nPX-11-06 | color=violet | zone=C1 | mass=95\nPX-11-07 | color=ivory | zone=C2 | mass=19\nPX-11-08 | color=green | zone=A1 | mass=32\nPX-11-09 | color=coral | zone=A2 | mass=45\nPX-12-00 | color=blue | zone=B1 | mass=58\nPX-12-01 | color=amber | zone=B2 | mass=71\nPX-12-02 | color=violet | zone=C1 | mass=84\nPX-12-03 | color=ivory | zone=C2 | mass=97\nPX-12-04 | color=green | zone=A1 | mass=21\nPX-12-05 | color=coral | zone=A2 | mass=34\nPX-12-06 | color=blue | zone=B1 | mass=47\nPX-12-07 | color=amber | zone=B2 | mass=60\nPX-12-08 | color=violet | zone=C1 | mass=73\nPX-12-09 | color=ivory | zone=C2 | mass=86\nPX-13-00 | color=green | zone=A1 | mass=99\nPX-13-01 | color=coral | zone=A2 | mass=23\nPX-13-02 | color=blue | zone=B1 | mass=36\nPX-13-03 | color=amber | zone=B2 | mass=49\nPX-13-04 | color=violet | zone=C1 | mass=62\nPX-13-05 | color=ivory | zone=C2 | mass=75\nPX-13-06 | color=green | zone=A1 | mass=88\nPX-13-07 | color=coral | zone=A2 | mass=12\nPX-13-08 | color=blue | zone=B1 | mass=25\nPX-13-09 | color=amber | zone=B2 | mass=38\nPX-14-00 | color=violet | zone=C1 | mass=51\nPX-14-01 | color=ivory | zone=C2 | mass=64\nPX-14-02 | color=green | zone=A1 | mass=77\nPX-14-03 | color=coral | zone=A2 | mass=90\nPX-14-04 | color=blue | zone=B1 | mass=14\nPX-14-05 | color=amber | zone=B2 | mass=27\nPX-14-06 | color=violet | zone=C1 | mass=40\nPX-14-07 | color=ivory | zone=C2 | mass=53\nPX-14-08 | color=green | zone=A1 | mass=66\nPX-14-09 | color=coral | zone=A2 | mass=79\nPX-15-00 | color=blue | zone=B1 | mass=92\nPX-15-01 | color=amber | zone=B2 | mass=16\nPX-15-02 | color=violet | zone=C1 | mass=29\nPX-15-03 | color=ivory | zone=C2 | mass=42\nPX-15-04 | color=green | zone=A1 | mass=55\nPX-15-05 | color=coral | zone=A2 | mass=68\nPX-15-06 | color=blue | zone=B1 | mass=81\nPX-15-07 | color=amber | zone=B2 | mass=94\nPX-15-08 | color=violet | zone=C1 | mass=18\nPX-15-09 | color=ivory | zone=C2 | mass=31\nPX-16-00 | color=green | zone=A1 | mass=44\nPX-16-01 | color=coral | zone=A2 | mass=57\nPX-16-02 | color=blue | zone=B1 | mass=70\nPX-16-03 | color=amber | zone=B2 | mass=83\nPX-16-04 | color=violet | zone=C1 | mass=96\nPX-16-05 | color=ivory | zone=C2 | mass=20\nPX-16-06 | color=green | zone=A1 | mass=33\nPX-16-07 | color=coral | zone=A2 | mass=46\nPX-16-08 | color=blue | zone=B1 | mass=59\nPX-16-09 | color=amber | zone=B2 | mass=72\nPX-17-00 | color=violet | zone=C1 | mass=85\nPX-17-01 | color=ivory | zone=C2 | mass=98\nPX-17-02 | color=green | zone=A1 | mass=22\nPX-17-03 | color=coral | zone=A2 | mass=35\nPX-17-04 | color=blue | zone=B1 | mass=48\nPX-17-05 | color=amber | zone=B2 | mass=61\nPX-17-06 | color=violet | zone=C1 | mass=74\nPX-17-07 | color=ivory | zone=C2 | mass=87\nPX-17-08 | color=green | zone=A1 | mass=11\nPX-17-09 | color=coral | zone=A2 | mass=24",
+    "question_count": 180
+  },
+  "model": "speed_latest",
+  "elapsed_s": 0.4906320810000011,
+  "input_tokens": 8410,
+  "output_tokens": 2704,
+  "estimated_cost_usd": 0.0016521999999999997,
+  "correct_count": 174,
+  "accuracy": 0.9666666666666667,
+  "answers": [
+    {
+      "id": "x000",
+      "text": "Part PX-00-00 has color blue.",
+      "category": "color",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "Catalog says color=blue."
+    },
+    {
+      "id": "x001",
+      "text": "Part PX-00-01 has zone C1.",
+      "category": "zone",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "Catalog says zone=B2."
+    },
+    {
+      "id": "x002",
+      "text": "Part PX-00-02 has mass 37.",
+      "category": "mass",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "Catalog says mass=37."
+    },
+    {
+      "id": "x003",
+      "text": "Part PX-00-03 has color violet.",
+      "category": "color",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "Catalog says color=ivory."
+    },
+    {
+      "id": "x004",
+      "text": "Part PX-00-04 has zone A1.",
+      "category": "zone",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "Catalog says zone=A1."
+    },
+    {
+      "id": "x005",
+      "text": "Part PX-00-05 has mass 77.",
+      "category": "mass",
+      "expected": false,
+      "probability_yes": 0.06,
+      "predicted": false,
+      "correct": true,
+      "proof": "Catalog says mass=76."
+    },
+    {
+      "id": "x006",
+      "text": "Part PX-00-06 has color blue.",
+      "category": "color",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "Catalog says color=blue."
+    },
+    {
+      "id": "x007",
+      "text": "Part PX-00-07 has zone C1.",
+      "category": "zone",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "Catalog says zone=B2."
+    },
+    {
+      "id": "x008",
+      "text": "Part PX-00-08 has mass 26.",
+      "category": "mass",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "Catalog says mass=26."
+    },
+    {
+      "id": "x009",
+      "text": "Part PX-00-09 has color violet.",
+      "category": "color",
+      "expected": false,
+      "probability_yes": 0.01,
+      "predicted": false,
+      "correct": true,
+      "proof": "Catalog says color=ivory."
+    },
+    {
+      "id": "x010",
+      "text": "Part PX-01-00 has zone A1.",
+      "category": "zone",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "Catalog says zone=A1."
+    },
+    {
+      "id": "x011",
+      "text": "Part PX-01-01 has mass 66.",
+      "category": "mass",
+      "expected": false,
+      "probability_yes": 0.01,
+      "predicted": false,
+      "correct": true,
+      "proof": "Catalog says mass=65."
+    },
+    {
+      "id": "x012",
+      "text": "Part PX-01-02 has color blue.",
+      "category": "color",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "Catalog says color=blue."
+    },
+    {
+      "id": "x013",
+      "text": "Part PX-01-03 has zone C1.",
+      "category": "zone",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "Catalog says zone=B2."
+    },
+    {
+      "id": "x014",
+      "text": "Part PX-01-04 has mass 15.",
+      "category": "mass",
+      "expected": true,
+      "probability_yes": 0.99,
+      "predicted": true,
+      "correct": true,
+      "proof": "Catalog says mass=15."
+    },
+    {
+      "id": "x015",
+      "text": "Part PX-01-05 has color violet.",
+      "category": "color",
+      "expected": false,
+      "probability_yes": 0.24,
+      "predicted": false,
+      "correct": true,
+      "proof": "Catalog says color=ivory."
+    },
+    {
+      "id": "x016",
+      "text": "Part PX-01-06 has zone A1.",
+      "category": "zone",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "Catalog says zone=A1."
+    },
+    {
+      "id": "x017",
+      "text": "Part PX-01-07 has mass 55.",
+      "category": "mass",
+      "expected": false,
+      "probability_yes": 0.01,
+      "predicted": false,
+      "correct": true,
+      "proof": "Catalog says mass=54."
+    },
+    {
+      "id": "x018",
+      "text": "Part PX-01-08 has color blue.",
+      "category": "color",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "Catalog says color=blue."
+    },
+    {
+      "id": "x019",
+      "text": "Part PX-01-09 has zone C1.",
+      "category": "zone",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "Catalog says zone=B2."
+    },
+    {
+      "id": "x020",
+      "text": "Part PX-02-00 has mass 93.",
+      "category": "mass",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "Catalog says mass=93."
+    },
+    {
+      "id": "x021",
+      "text": "Part PX-02-01 has color violet.",
+      "category": "color",
+      "expected": false,
+      "probability_yes": 0.01,
+      "predicted": false,
+      "correct": true,
+      "proof": "Catalog says color=ivory."
+    },
+    {
+      "id": "x022",
+      "text": "Part PX-02-02 has zone A1.",
+      "category": "zone",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "Catalog says zone=A1."
+    },
+    {
+      "id": "x023",
+      "text": "Part PX-02-03 has mass 44.",
+      "category": "mass",
+      "expected": false,
+      "probability_yes": 0.02,
+      "predicted": false,
+      "correct": true,
+      "proof": "Catalog says mass=43."
+    },
+    {
+      "id": "x024",
+      "text": "Part PX-02-04 has color blue.",
+      "category": "color",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "Catalog says color=blue."
+    },
+    {
+      "id": "x025",
+      "text": "Part PX-02-05 has zone C1.",
+      "category": "zone",
+      "expected": false,
+      "probability_yes": 0.1,
+      "predicted": false,
+      "correct": true,
+      "proof": "Catalog says zone=B2."
+    },
+    {
+      "id": "x026",
+      "text": "Part PX-02-06 has mass 82.",
+      "category": "mass",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "Catalog says mass=82."
+    },
+    {
+      "id": "x027",
+      "text": "Part PX-02-07 has color violet.",
+      "category": "color",
+      "expected": false,
+      "probability_yes": 0.04,
+      "predicted": false,
+      "correct": true,
+      "proof": "Catalog says color=ivory."
+    },
+    {
+      "id": "x028",
+      "text": "Part PX-02-08 has zone A1.",
+      "category": "zone",
+      "expected": true,
+      "probability_yes": 0.97,
+      "predicted": true,
+      "correct": true,
+      "proof": "Catalog says zone=A1."
+    },
+    {
+      "id": "x029",
+      "text": "Part PX-02-09 has mass 33.",
+      "category": "mass",
+      "expected": false,
+      "probability_yes": 0.05,
+      "predicted": false,
+      "correct": true,
+      "proof": "Catalog says mass=32."
+    },
+    {
+      "id": "x030",
+      "text": "Part PX-03-00 has color blue.",
+      "category": "color",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "Catalog says color=blue."
+    },
+    {
+      "id": "x031",
+      "text": "Part PX-03-01 has zone C1.",
+      "category": "zone",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "Catalog says zone=B2."
+    },
+    {
+      "id": "x032",
+      "text": "Part PX-03-02 has mass 71.",
+      "category": "mass",
+      "expected": true,
+      "probability_yes": 0.91,
+      "predicted": true,
+      "correct": true,
+      "proof": "Catalog says mass=71."
+    },
+    {
+      "id": "x033",
+      "text": "Part PX-03-03 has color violet.",
+      "category": "color",
+      "expected": false,
+      "probability_yes": 0.03,
+      "predicted": false,
+      "correct": true,
+      "proof": "Catalog says color=ivory."
+    },
+    {
+      "id": "x034",
+      "text": "Part PX-03-04 has zone A1.",
+      "category": "zone",
+      "expected": true,
+      "probability_yes": 0.98,
+      "predicted": true,
+      "correct": true,
+      "proof": "Catalog says zone=A1."
+    },
+    {
+      "id": "x035",
+      "text": "Part PX-03-05 has mass 22.",
+      "category": "mass",
+      "expected": false,
+      "probability_yes": 0.02,
+      "predicted": false,
+      "correct": true,
+      "proof": "Catalog says mass=21."
+    },
+    {
+      "id": "x036",
+      "text": "Part PX-03-06 has color blue.",
+      "category": "color",
+      "expected": true,
+      "probability_yes": 0.99,
+      "predicted": true,
+      "correct": true,
+      "proof": "Catalog says color=blue."
+    },
+    {
+      "id": "x037",
+      "text": "Part PX-03-07 has zone C1.",
+      "category": "zone",
+      "expected": false,
+      "probability_yes": 0.01,
+      "predicted": false,
+      "correct": true,
+      "proof": "Catalog says zone=B2."
+    },
+    {
+      "id": "x038",
+      "text": "Part PX-03-08 has mass 60.",
+      "category": "mass",
+      "expected": true,
+      "probability_yes": 0.99,
+      "predicted": true,
+      "correct": true,
+      "proof": "Catalog says mass=60."
+    },
+    {
+      "id": "x039",
+      "text": "Part PX-03-09 has color violet.",
+      "category": "color",
+      "expected": false,
+      "probability_yes": 0.58,
+      "predicted": true,
+      "correct": false,
+      "proof": "Catalog says color=ivory."
+    },
+    {
+      "id": "x040",
+      "text": "Part PX-04-00 has zone A1.",
+      "category": "zone",
+      "expected": true,
+      "probability_yes": 0.99,
+      "predicted": true,
+      "correct": true,
+      "proof": "Catalog says zone=A1."
+    },
+    {
+      "id": "x041",
+      "text": "Part PX-04-01 has mass 100.",
+      "category": "mass",
+      "expected": false,
+      "probability_yes": 0.01,
+      "predicted": false,
+      "correct": true,
+      "proof": "Catalog says mass=99."
+    },
+    {
+      "id": "x042",
+      "text": "Part PX-04-02 has color blue.",
+      "category": "color",
+      "expected": true,
+      "probability_yes": 0.99,
+      "predicted": true,
+      "correct": true,
+      "proof": "Catalog says color=blue."
+    },
+    {
+      "id": "x043",
+      "text": "Part PX-04-03 has zone C1.",
+      "category": "zone",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "Catalog says zone=B2."
+    },
+    {
+      "id": "x044",
+      "text": "Part PX-04-04 has mass 49.",
+      "category": "mass",
+      "expected": true,
+      "probability_yes": 0.99,
+      "predicted": true,
+      "correct": true,
+      "proof": "Catalog says mass=49."
+    },
+    {
+      "id": "x045",
+      "text": "Part PX-04-05 has color violet.",
+      "category": "color",
+      "expected": false,
+      "probability_yes": 0.69,
+      "predicted": true,
+      "correct": false,
+      "proof": "Catalog says color=ivory."
+    },
+    {
+      "id": "x046",
+      "text": "Part PX-04-06 has zone A1.",
+      "category": "zone",
+      "expected": true,
+      "probability_yes": 0.93,
+      "predicted": true,
+      "correct": true,
+      "proof": "Catalog says zone=A1."
+    },
+    {
+      "id": "x047",
+      "text": "Part PX-04-07 has mass 89.",
+      "category": "mass",
+      "expected": false,
+      "probability_yes": 0.14,
+      "predicted": false,
+      "correct": true,
+      "proof": "Catalog says mass=88."
+    },
+    {
+      "id": "x048",
+      "text": "Part PX-04-08 has color blue.",
+      "category": "color",
+      "expected": true,
+      "probability_yes": 0.98,
+      "predicted": true,
+      "correct": true,
+      "proof": "Catalog says color=blue."
+    },
+    {
+      "id": "x049",
+      "text": "Part PX-04-09 has zone C1.",
+      "category": "zone",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "Catalog says zone=B2."
+    },
+    {
+      "id": "x050",
+      "text": "Part PX-05-00 has mass 38.",
+      "category": "mass",
+      "expected": true,
+      "probability_yes": 0.99,
+      "predicted": true,
+      "correct": true,
+      "proof": "Catalog says mass=38."
+    },
+    {
+      "id": "x051",
+      "text": "Part PX-05-01 has color violet.",
+      "category": "color",
+      "expected": false,
+      "probability_yes": 0.01,
+      "predicted": false,
+      "correct": true,
+      "proof": "Catalog says color=ivory."
+    },
+    {
+      "id": "x052",
+      "text": "Part PX-05-02 has zone A1.",
+      "category": "zone",
+      "expected": true,
+      "probability_yes": 0.99,
+      "predicted": true,
+      "correct": true,
+      "proof": "Catalog says zone=A1."
+    },
+    {
+      "id": "x053",
+      "text": "Part PX-05-03 has mass 78.",
+      "category": "mass",
+      "expected": false,
+      "probability_yes": 0.08,
+      "predicted": false,
+      "correct": true,
+      "proof": "Catalog says mass=77."
+    },
+    {
+      "id": "x054",
+      "text": "Part PX-05-04 has color blue.",
+      "category": "color",
+      "expected": true,
+      "probability_yes": 0.99,
+      "predicted": true,
+      "correct": true,
+      "proof": "Catalog says color=blue."
+    },
+    {
+      "id": "x055",
+      "text": "Part PX-05-05 has zone C1.",
+      "category": "zone",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "Catalog says zone=B2."
+    },
+    {
+      "id": "x056",
+      "text": "Part PX-05-06 has mass 27.",
+      "category": "mass",
+      "expected": true,
+      "probability_yes": 0.99,
+      "predicted": true,
+      "correct": true,
+      "proof": "Catalog says mass=27."
+    },
+    {
+      "id": "x057",
+      "text": "Part PX-05-07 has color violet.",
+      "category": "color",
+      "expected": false,
+      "probability_yes": 0.01,
+      "predicted": false,
+      "correct": true,
+      "proof": "Catalog says color=ivory."
+    },
+    {
+      "id": "x058",
+      "text": "Part PX-05-08 has zone A1.",
+      "category": "zone",
+      "expected": true,
+      "probability_yes": 0.98,
+      "predicted": true,
+      "correct": true,
+      "proof": "Catalog says zone=A1."
+    },
+    {
+      "id": "x059",
+      "text": "Part PX-05-09 has mass 67.",
+      "category": "mass",
+      "expected": false,
+      "probability_yes": 0.16,
+      "predicted": false,
+      "correct": true,
+      "proof": "Catalog says mass=66."
+    },
+    {
+      "id": "x060",
+      "text": "Part PX-06-00 has color blue.",
+      "category": "color",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "Catalog says color=blue."
+    },
+    {
+      "id": "x061",
+      "text": "Part PX-06-01 has zone C1.",
+      "category": "zone",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "Catalog says zone=B2."
+    },
+    {
+      "id": "x062",
+      "text": "Part PX-06-02 has mass 16.",
+      "category": "mass",
+      "expected": true,
+      "probability_yes": 0.99,
+      "predicted": true,
+      "correct": true,
+      "proof": "Catalog says mass=16."
+    },
+    {
+      "id": "x063",
+      "text": "Part PX-06-03 has color violet.",
+      "category": "color",
+      "expected": false,
+      "probability_yes": 0.31,
+      "predicted": false,
+      "correct": true,
+      "proof": "Catalog says color=ivory."
+    },
+    {
+      "id": "x064",
+      "text": "Part PX-06-04 has zone A1.",
+      "category": "zone",
+      "expected": true,
+      "probability_yes": 0.93,
+      "predicted": true,
+      "correct": true,
+      "proof": "Catalog says zone=A1."
+    },
+    {
+      "id": "x065",
+      "text": "Part PX-06-05 has mass 56.",
+      "category": "mass",
+      "expected": false,
+      "probability_yes": 0.26,
+      "predicted": false,
+      "correct": true,
+      "proof": "Catalog says mass=55."
+    },
+    {
+      "id": "x066",
+      "text": "Part PX-06-06 has color blue.",
+      "category": "color",
+      "expected": true,
+      "probability_yes": 0.99,
+      "predicted": true,
+      "correct": true,
+      "proof": "Catalog says color=blue."
+    },
+    {
+      "id": "x067",
+      "text": "Part PX-06-07 has zone C1.",
+      "category": "zone",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "Catalog says zone=B2."
+    },
+    {
+      "id": "x068",
+      "text": "Part PX-06-08 has mass 94.",
+      "category": "mass",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "Catalog says mass=94."
+    },
+    {
+      "id": "x069",
+      "text": "Part PX-06-09 has color violet.",
+      "category": "color",
+      "expected": false,
+      "probability_yes": 0.03,
+      "predicted": false,
+      "correct": true,
+      "proof": "Catalog says color=ivory."
+    },
+    {
+      "id": "x070",
+      "text": "Part PX-07-00 has zone A1.",
+      "category": "zone",
+      "expected": true,
+      "probability_yes": 0.99,
+      "predicted": true,
+      "correct": true,
+      "proof": "Catalog says zone=A1."
+    },
+    {
+      "id": "x071",
+      "text": "Part PX-07-01 has mass 45.",
+      "category": "mass",
+      "expected": false,
+      "probability_yes": 0.01,
+      "predicted": false,
+      "correct": true,
+      "proof": "Catalog says mass=44."
+    },
+    {
+      "id": "x072",
+      "text": "Part PX-07-02 has color blue.",
+      "category": "color",
+      "expected": true,
+      "probability_yes": 0.99,
+      "predicted": true,
+      "correct": true,
+      "proof": "Catalog says color=blue."
+    },
+    {
+      "id": "x073",
+      "text": "Part PX-07-03 has zone C1.",
+      "category": "zone",
+      "expected": false,
+      "probability_yes": 0.01,
+      "predicted": false,
+      "correct": true,
+      "proof": "Catalog says zone=B2."
+    },
+    {
+      "id": "x074",
+      "text": "Part PX-07-04 has mass 83.",
+      "category": "mass",
+      "expected": true,
+      "probability_yes": 0.99,
+      "predicted": true,
+      "correct": true,
+      "proof": "Catalog says mass=83."
+    },
+    {
+      "id": "x075",
+      "text": "Part PX-07-05 has color violet.",
+      "category": "color",
+      "expected": false,
+      "probability_yes": 0.04,
+      "predicted": false,
+      "correct": true,
+      "proof": "Catalog says color=ivory."
+    },
+    {
+      "id": "x076",
+      "text": "Part PX-07-06 has zone A1.",
+      "category": "zone",
+      "expected": true,
+      "probability_yes": 0.98,
+      "predicted": true,
+      "correct": true,
+      "proof": "Catalog says zone=A1."
+    },
+    {
+      "id": "x077",
+      "text": "Part PX-07-07 has mass 34.",
+      "category": "mass",
+      "expected": false,
+      "probability_yes": 0.03,
+      "predicted": false,
+      "correct": true,
+      "proof": "Catalog says mass=33."
+    },
+    {
+      "id": "x078",
+      "text": "Part PX-07-08 has color blue.",
+      "category": "color",
+      "expected": true,
+      "probability_yes": 0.99,
+      "predicted": true,
+      "correct": true,
+      "proof": "Catalog says color=blue."
+    },
+    {
+      "id": "x079",
+      "text": "Part PX-07-09 has zone C1.",
+      "category": "zone",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "Catalog says zone=B2."
+    },
+    {
+      "id": "x080",
+      "text": "Part PX-08-00 has mass 72.",
+      "category": "mass",
+      "expected": true,
+      "probability_yes": 0.99,
+      "predicted": true,
+      "correct": true,
+      "proof": "Catalog says mass=72."
+    },
+    {
+      "id": "x081",
+      "text": "Part PX-08-01 has color violet.",
+      "category": "color",
+      "expected": false,
+      "probability_yes": 0.01,
+      "predicted": false,
+      "correct": true,
+      "proof": "Catalog says color=ivory."
+    },
+    {
+      "id": "x082",
+      "text": "Part PX-08-02 has zone A1.",
+      "category": "zone",
+      "expected": true,
+      "probability_yes": 0.98,
+      "predicted": true,
+      "correct": true,
+      "proof": "Catalog says zone=A1."
+    },
+    {
+      "id": "x083",
+      "text": "Part PX-08-03 has mass 23.",
+      "category": "mass",
+      "expected": false,
+      "probability_yes": 0.45,
+      "predicted": false,
+      "correct": true,
+      "proof": "Catalog says mass=22."
+    },
+    {
+      "id": "x084",
+      "text": "Part PX-08-04 has color blue.",
+      "category": "color",
+      "expected": true,
+      "probability_yes": 0.98,
+      "predicted": true,
+      "correct": true,
+      "proof": "Catalog says color=blue."
+    },
+    {
+      "id": "x085",
+      "text": "Part PX-08-05 has zone C1.",
+      "category": "zone",
+      "expected": false,
+      "probability_yes": 0.01,
+      "predicted": false,
+      "correct": true,
+      "proof": "Catalog says zone=B2."
+    },
+    {
+      "id": "x086",
+      "text": "Part PX-08-06 has mass 61.",
+      "category": "mass",
+      "expected": true,
+      "probability_yes": 0.99,
+      "predicted": true,
+      "correct": true,
+      "proof": "Catalog says mass=61."
+    },
+    {
+      "id": "x087",
+      "text": "Part PX-08-07 has color violet.",
+      "category": "color",
+      "expected": false,
+      "probability_yes": 0.11,
+      "predicted": false,
+      "correct": true,
+      "proof": "Catalog says color=ivory."
+    },
+    {
+      "id": "x088",
+      "text": "Part PX-08-08 has zone A1.",
+      "category": "zone",
+      "expected": true,
+      "probability_yes": 0.96,
+      "predicted": true,
+      "correct": true,
+      "proof": "Catalog says zone=A1."
+    },
+    {
+      "id": "x089",
+      "text": "Part PX-08-09 has mass 12.",
+      "category": "mass",
+      "expected": false,
+      "probability_yes": 0.18,
+      "predicted": false,
+      "correct": true,
+      "proof": "Catalog says mass=11."
+    },
+    {
+      "id": "x090",
+      "text": "Part PX-09-00 has color blue.",
+      "category": "color",
+      "expected": true,
+      "probability_yes": 0.97,
+      "predicted": true,
+      "correct": true,
+      "proof": "Catalog says color=blue."
+    },
+    {
+      "id": "x091",
+      "text": "Part PX-09-01 has zone C1.",
+      "category": "zone",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "Catalog says zone=B2."
+    },
+    {
+      "id": "x092",
+      "text": "Part PX-09-02 has mass 50.",
+      "category": "mass",
+      "expected": true,
+      "probability_yes": 0.99,
+      "predicted": true,
+      "correct": true,
+      "proof": "Catalog says mass=50."
+    },
+    {
+      "id": "x093",
+      "text": "Part PX-09-03 has color violet.",
+      "category": "color",
+      "expected": false,
+      "probability_yes": 0.02,
+      "predicted": false,
+      "correct": true,
+      "proof": "Catalog says color=ivory."
+    },
+    {
+      "id": "x094",
+      "text": "Part PX-09-04 has zone A1.",
+      "category": "zone",
+      "expected": true,
+      "probability_yes": 0.95,
+      "predicted": true,
+      "correct": true,
+      "proof": "Catalog says zone=A1."
+    },
+    {
+      "id": "x095",
+      "text": "Part PX-09-05 has mass 90.",
+      "category": "mass",
+      "expected": false,
+      "probability_yes": 0.57,
+      "predicted": true,
+      "correct": false,
+      "proof": "Catalog says mass=89."
+    },
+    {
+      "id": "x096",
+      "text": "Part PX-09-06 has color blue.",
+      "category": "color",
+      "expected": true,
+      "probability_yes": 0.9,
+      "predicted": true,
+      "correct": true,
+      "proof": "Catalog says color=blue."
+    },
+    {
+      "id": "x097",
+      "text": "Part PX-09-07 has zone C1.",
+      "category": "zone",
+      "expected": false,
+      "probability_yes": 0.01,
+      "predicted": false,
+      "correct": true,
+      "proof": "Catalog says zone=B2."
+    },
+    {
+      "id": "x098",
+      "text": "Part PX-09-08 has mass 39.",
+      "category": "mass",
+      "expected": true,
+      "probability_yes": 0.99,
+      "predicted": true,
+      "correct": true,
+      "proof": "Catalog says mass=39."
+    },
+    {
+      "id": "x099",
+      "text": "Part PX-09-09 has color violet.",
+      "category": "color",
+      "expected": false,
+      "probability_yes": 0.01,
+      "predicted": false,
+      "correct": true,
+      "proof": "Catalog says color=ivory."
+    },
+    {
+      "id": "x100",
+      "text": "Part PX-10-00 has zone A1.",
+      "category": "zone",
+      "expected": true,
+      "probability_yes": 0.95,
+      "predicted": true,
+      "correct": true,
+      "proof": "Catalog says zone=A1."
+    },
+    {
+      "id": "x101",
+      "text": "Part PX-10-01 has mass 79.",
+      "category": "mass",
+      "expected": false,
+      "probability_yes": 0.02,
+      "predicted": false,
+      "correct": true,
+      "proof": "Catalog says mass=78."
+    },
+    {
+      "id": "x102",
+      "text": "Part PX-10-02 has color blue.",
+      "category": "color",
+      "expected": true,
+      "probability_yes": 0.98,
+      "predicted": true,
+      "correct": true,
+      "proof": "Catalog says color=blue."
+    },
+    {
+      "id": "x103",
+      "text": "Part PX-10-03 has zone C1.",
+      "category": "zone",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "Catalog says zone=B2."
+    },
+    {
+      "id": "x104",
+      "text": "Part PX-10-04 has mass 28.",
+      "category": "mass",
+      "expected": true,
+      "probability_yes": 0.99,
+      "predicted": true,
+      "correct": true,
+      "proof": "Catalog says mass=28."
+    },
+    {
+      "id": "x105",
+      "text": "Part PX-10-05 has color violet.",
+      "category": "color",
+      "expected": false,
+      "probability_yes": 0.01,
+      "predicted": false,
+      "correct": true,
+      "proof": "Catalog says color=ivory."
+    },
+    {
+      "id": "x106",
+      "text": "Part PX-10-06 has zone A1.",
+      "category": "zone",
+      "expected": true,
+      "probability_yes": 0.96,
+      "predicted": true,
+      "correct": true,
+      "proof": "Catalog says zone=A1."
+    },
+    {
+      "id": "x107",
+      "text": "Part PX-10-07 has mass 68.",
+      "category": "mass",
+      "expected": false,
+      "probability_yes": 0.63,
+      "predicted": true,
+      "correct": false,
+      "proof": "Catalog says mass=67."
+    },
+    {
+      "id": "x108",
+      "text": "Part PX-10-08 has color blue.",
+      "category": "color",
+      "expected": true,
+      "probability_yes": 0.96,
+      "predicted": true,
+      "correct": true,
+      "proof": "Catalog says color=blue."
+    },
+    {
+      "id": "x109",
+      "text": "Part PX-10-09 has zone C1.",
+      "category": "zone",
+      "expected": false,
+      "probability_yes": 0.01,
+      "predicted": false,
+      "correct": true,
+      "proof": "Catalog says zone=B2."
+    },
+    {
+      "id": "x110",
+      "text": "Part PX-11-00 has mass 17.",
+      "category": "mass",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "Catalog says mass=17."
+    },
+    {
+      "id": "x111",
+      "text": "Part PX-11-01 has color violet.",
+      "category": "color",
+      "expected": false,
+      "probability_yes": 0.01,
+      "predicted": false,
+      "correct": true,
+      "proof": "Catalog says color=ivory."
+    },
+    {
+      "id": "x112",
+      "text": "Part PX-11-02 has zone A1.",
+      "category": "zone",
+      "expected": true,
+      "probability_yes": 0.98,
+      "predicted": true,
+      "correct": true,
+      "proof": "Catalog says zone=A1."
+    },
+    {
+      "id": "x113",
+      "text": "Part PX-11-03 has mass 57.",
+      "category": "mass",
+      "expected": false,
+      "probability_yes": 0.18,
+      "predicted": false,
+      "correct": true,
+      "proof": "Catalog says mass=56."
+    },
+    {
+      "id": "x114",
+      "text": "Part PX-11-04 has color blue.",
+      "category": "color",
+      "expected": true,
+      "probability_yes": 0.95,
+      "predicted": true,
+      "correct": true,
+      "proof": "Catalog says color=blue."
+    },
+    {
+      "id": "x115",
+      "text": "Part PX-11-05 has zone C1.",
+      "category": "zone",
+      "expected": false,
+      "probability_yes": 0.15,
+      "predicted": false,
+      "correct": true,
+      "proof": "Catalog says zone=B2."
+    },
+    {
+      "id": "x116",
+      "text": "Part PX-11-06 has mass 95.",
+      "category": "mass",
+      "expected": true,
+      "probability_yes": 0.99,
+      "predicted": true,
+      "correct": true,
+      "proof": "Catalog says mass=95."
+    },
+    {
+      "id": "x117",
+      "text": "Part PX-11-07 has color violet.",
+      "category": "color",
+      "expected": false,
+      "probability_yes": 0.04,
+      "predicted": false,
+      "correct": true,
+      "proof": "Catalog says color=ivory."
+    },
+    {
+      "id": "x118",
+      "text": "Part PX-11-08 has zone A1.",
+      "category": "zone",
+      "expected": true,
+      "probability_yes": 0.84,
+      "predicted": true,
+      "correct": true,
+      "proof": "Catalog says zone=A1."
+    },
+    {
+      "id": "x119",
+      "text": "Part PX-11-09 has mass 46.",
+      "category": "mass",
+      "expected": false,
+      "probability_yes": 0.04,
+      "predicted": false,
+      "correct": true,
+      "proof": "Catalog says mass=45."
+    },
+    {
+      "id": "x120",
+      "text": "Part PX-12-00 has color blue.",
+      "category": "color",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "Catalog says color=blue."
+    },
+    {
+      "id": "x121",
+      "text": "Part PX-12-01 has zone C1.",
+      "category": "zone",
+      "expected": false,
+      "probability_yes": 0.01,
+      "predicted": false,
+      "correct": true,
+      "proof": "Catalog says zone=B2."
+    },
+    {
+      "id": "x122",
+      "text": "Part PX-12-02 has mass 84.",
+      "category": "mass",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "Catalog says mass=84."
+    },
+    {
+      "id": "x123",
+      "text": "Part PX-12-03 has color violet.",
+      "category": "color",
+      "expected": false,
+      "probability_yes": 0.95,
+      "predicted": true,
+      "correct": false,
+      "proof": "Catalog says color=ivory."
+    },
+    {
+      "id": "x124",
+      "text": "Part PX-12-04 has zone A1.",
+      "category": "zone",
+      "expected": true,
+      "probability_yes": 0.89,
+      "predicted": true,
+      "correct": true,
+      "proof": "Catalog says zone=A1."
+    },
+    {
+      "id": "x125",
+      "text": "Part PX-12-05 has mass 35.",
+      "category": "mass",
+      "expected": false,
+      "probability_yes": 0.03,
+      "predicted": false,
+      "correct": true,
+      "proof": "Catalog says mass=34."
+    },
+    {
+      "id": "x126",
+      "text": "Part PX-12-06 has color blue.",
+      "category": "color",
+      "expected": true,
+      "probability_yes": 0.99,
+      "predicted": true,
+      "correct": true,
+      "proof": "Catalog says color=blue."
+    },
+    {
+      "id": "x127",
+      "text": "Part PX-12-07 has zone C1.",
+      "category": "zone",
+      "expected": false,
+      "probability_yes": 0.01,
+      "predicted": false,
+      "correct": true,
+      "proof": "Catalog says zone=B2."
+    },
+    {
+      "id": "x128",
+      "text": "Part PX-12-08 has mass 73.",
+      "category": "mass",
+      "expected": true,
+      "probability_yes": 0.99,
+      "predicted": true,
+      "correct": true,
+      "proof": "Catalog says mass=73."
+    },
+    {
+      "id": "x129",
+      "text": "Part PX-12-09 has color violet.",
+      "category": "color",
+      "expected": false,
+      "probability_yes": 0.04,
+      "predicted": false,
+      "correct": true,
+      "proof": "Catalog says color=ivory."
+    },
+    {
+      "id": "x130",
+      "text": "Part PX-13-00 has zone A1.",
+      "category": "zone",
+      "expected": true,
+      "probability_yes": 0.96,
+      "predicted": true,
+      "correct": true,
+      "proof": "Catalog says zone=A1."
+    },
+    {
+      "id": "x131",
+      "text": "Part PX-13-01 has mass 24.",
+      "category": "mass",
+      "expected": false,
+      "probability_yes": 0.03,
+      "predicted": false,
+      "correct": true,
+      "proof": "Catalog says mass=23."
+    },
+    {
+      "id": "x132",
+      "text": "Part PX-13-02 has color blue.",
+      "category": "color",
+      "expected": true,
+      "probability_yes": 0.98,
+      "predicted": true,
+      "correct": true,
+      "proof": "Catalog says color=blue."
+    },
+    {
+      "id": "x133",
+      "text": "Part PX-13-03 has zone C1.",
+      "category": "zone",
+      "expected": false,
+      "probability_yes": 0.02,
+      "predicted": false,
+      "correct": true,
+      "proof": "Catalog says zone=B2."
+    },
+    {
+      "id": "x134",
+      "text": "Part PX-13-04 has mass 62.",
+      "category": "mass",
+      "expected": true,
+      "probability_yes": 0.99,
+      "predicted": true,
+      "correct": true,
+      "proof": "Catalog says mass=62."
+    },
+    {
+      "id": "x135",
+      "text": "Part PX-13-05 has color violet.",
+      "category": "color",
+      "expected": false,
+      "probability_yes": 0.53,
+      "predicted": true,
+      "correct": false,
+      "proof": "Catalog says color=ivory."
+    },
+    {
+      "id": "x136",
+      "text": "Part PX-13-06 has zone A1.",
+      "category": "zone",
+      "expected": true,
+      "probability_yes": 0.96,
+      "predicted": true,
+      "correct": true,
+      "proof": "Catalog says zone=A1."
+    },
+    {
+      "id": "x137",
+      "text": "Part PX-13-07 has mass 13.",
+      "category": "mass",
+      "expected": false,
+      "probability_yes": 0.03,
+      "predicted": false,
+      "correct": true,
+      "proof": "Catalog says mass=12."
+    },
+    {
+      "id": "x138",
+      "text": "Part PX-13-08 has color blue.",
+      "category": "color",
+      "expected": true,
+      "probability_yes": 0.99,
+      "predicted": true,
+      "correct": true,
+      "proof": "Catalog says color=blue."
+    },
+    {
+      "id": "x139",
+      "text": "Part PX-13-09 has zone C1.",
+      "category": "zone",
+      "expected": false,
+      "probability_yes": 0.02,
+      "predicted": false,
+      "correct": true,
+      "proof": "Catalog says zone=B2."
+    },
+    {
+      "id": "x140",
+      "text": "Part PX-14-00 has mass 51.",
+      "category": "mass",
+      "expected": true,
+      "probability_yes": 0.99,
+      "predicted": true,
+      "correct": true,
+      "proof": "Catalog says mass=51."
+    },
+    {
+      "id": "x141",
+      "text": "Part PX-14-01 has color violet.",
+      "category": "color",
+      "expected": false,
+      "probability_yes": 0.03,
+      "predicted": false,
+      "correct": true,
+      "proof": "Catalog says color=ivory."
+    },
+    {
+      "id": "x142",
+      "text": "Part PX-14-02 has zone A1.",
+      "category": "zone",
+      "expected": true,
+      "probability_yes": 0.95,
+      "predicted": true,
+      "correct": true,
+      "proof": "Catalog says zone=A1."
+    },
+    {
+      "id": "x143",
+      "text": "Part PX-14-03 has mass 91.",
+      "category": "mass",
+      "expected": false,
+      "probability_yes": 0.06,
+      "predicted": false,
+      "correct": true,
+      "proof": "Catalog says mass=90."
+    },
+    {
+      "id": "x144",
+      "text": "Part PX-14-04 has color blue.",
+      "category": "color",
+      "expected": true,
+      "probability_yes": 0.97,
+      "predicted": true,
+      "correct": true,
+      "proof": "Catalog says color=blue."
+    },
+    {
+      "id": "x145",
+      "text": "Part PX-14-05 has zone C1.",
+      "category": "zone",
+      "expected": false,
+      "probability_yes": 0.01,
+      "predicted": false,
+      "correct": true,
+      "proof": "Catalog says zone=B2."
+    },
+    {
+      "id": "x146",
+      "text": "Part PX-14-06 has mass 40.",
+      "category": "mass",
+      "expected": true,
+      "probability_yes": 0.99,
+      "predicted": true,
+      "correct": true,
+      "proof": "Catalog says mass=40."
+    },
+    {
+      "id": "x147",
+      "text": "Part PX-14-07 has color violet.",
+      "category": "color",
+      "expected": false,
+      "probability_yes": 0.03,
+      "predicted": false,
+      "correct": true,
+      "proof": "Catalog says color=ivory."
+    },
+    {
+      "id": "x148",
+      "text": "Part PX-14-08 has zone A1.",
+      "category": "zone",
+      "expected": true,
+      "probability_yes": 0.87,
+      "predicted": true,
+      "correct": true,
+      "proof": "Catalog says zone=A1."
+    },
+    {
+      "id": "x149",
+      "text": "Part PX-14-09 has mass 80.",
+      "category": "mass",
+      "expected": false,
+      "probability_yes": 0.02,
+      "predicted": false,
+      "correct": true,
+      "proof": "Catalog says mass=79."
+    },
+    {
+      "id": "x150",
+      "text": "Part PX-15-00 has color blue.",
+      "category": "color",
+      "expected": true,
+      "probability_yes": 0.99,
+      "predicted": true,
+      "correct": true,
+      "proof": "Catalog says color=blue."
+    },
+    {
+      "id": "x151",
+      "text": "Part PX-15-01 has zone C1.",
+      "category": "zone",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "Catalog says zone=B2."
+    },
+    {
+      "id": "x152",
+      "text": "Part PX-15-02 has mass 29.",
+      "category": "mass",
+      "expected": true,
+      "probability_yes": 0.99,
+      "predicted": true,
+      "correct": true,
+      "proof": "Catalog says mass=29."
+    },
+    {
+      "id": "x153",
+      "text": "Part PX-15-03 has color violet.",
+      "category": "color",
+      "expected": false,
+      "probability_yes": 0.04,
+      "predicted": false,
+      "correct": true,
+      "proof": "Catalog says color=ivory."
+    },
+    {
+      "id": "x154",
+      "text": "Part PX-15-04 has zone A1.",
+      "category": "zone",
+      "expected": true,
+      "probability_yes": 0.97,
+      "predicted": true,
+      "correct": true,
+      "proof": "Catalog says zone=A1."
+    },
+    {
+      "id": "x155",
+      "text": "Part PX-15-05 has mass 69.",
+      "category": "mass",
+      "expected": false,
+      "probability_yes": 0.02,
+      "predicted": false,
+      "correct": true,
+      "proof": "Catalog says mass=68."
+    },
+    {
+      "id": "x156",
+      "text": "Part PX-15-06 has color blue.",
+      "category": "color",
+      "expected": true,
+      "probability_yes": 0.99,
+      "predicted": true,
+      "correct": true,
+      "proof": "Catalog says color=blue."
+    },
+    {
+      "id": "x157",
+      "text": "Part PX-15-07 has zone C1.",
+      "category": "zone",
+      "expected": false,
+      "probability_yes": 0.01,
+      "predicted": false,
+      "correct": true,
+      "proof": "Catalog says zone=B2."
+    },
+    {
+      "id": "x158",
+      "text": "Part PX-15-08 has mass 18.",
+      "category": "mass",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "Catalog says mass=18."
+    },
+    {
+      "id": "x159",
+      "text": "Part PX-15-09 has color violet.",
+      "category": "color",
+      "expected": false,
+      "probability_yes": 0.03,
+      "predicted": false,
+      "correct": true,
+      "proof": "Catalog says color=ivory."
+    },
+    {
+      "id": "x160",
+      "text": "Part PX-16-00 has zone A1.",
+      "category": "zone",
+      "expected": true,
+      "probability_yes": 0.99,
+      "predicted": true,
+      "correct": true,
+      "proof": "Catalog says zone=A1."
+    },
+    {
+      "id": "x161",
+      "text": "Part PX-16-01 has mass 58.",
+      "category": "mass",
+      "expected": false,
+      "probability_yes": 0.05,
+      "predicted": false,
+      "correct": true,
+      "proof": "Catalog says mass=57."
+    },
+    {
+      "id": "x162",
+      "text": "Part PX-16-02 has color blue.",
+      "category": "color",
+      "expected": true,
+      "probability_yes": 0.99,
+      "predicted": true,
+      "correct": true,
+      "proof": "Catalog says color=blue."
+    },
+    {
+      "id": "x163",
+      "text": "Part PX-16-03 has zone C1.",
+      "category": "zone",
+      "expected": false,
+      "probability_yes": 0.01,
+      "predicted": false,
+      "correct": true,
+      "proof": "Catalog says zone=B2."
+    },
+    {
+      "id": "x164",
+      "text": "Part PX-16-04 has mass 96.",
+      "category": "mass",
+      "expected": true,
+      "probability_yes": 0.99,
+      "predicted": true,
+      "correct": true,
+      "proof": "Catalog says mass=96."
+    },
+    {
+      "id": "x165",
+      "text": "Part PX-16-05 has color violet.",
+      "category": "color",
+      "expected": false,
+      "probability_yes": 0.02,
+      "predicted": false,
+      "correct": true,
+      "proof": "Catalog says color=ivory."
+    },
+    {
+      "id": "x166",
+      "text": "Part PX-16-06 has zone A1.",
+      "category": "zone",
+      "expected": true,
+      "probability_yes": 0.97,
+      "predicted": true,
+      "correct": true,
+      "proof": "Catalog says zone=A1."
+    },
+    {
+      "id": "x167",
+      "text": "Part PX-16-07 has mass 47.",
+      "category": "mass",
+      "expected": false,
+      "probability_yes": 0.09,
+      "predicted": false,
+      "correct": true,
+      "proof": "Catalog says mass=46."
+    },
+    {
+      "id": "x168",
+      "text": "Part PX-16-08 has color blue.",
+      "category": "color",
+      "expected": true,
+      "probability_yes": 0.99,
+      "predicted": true,
+      "correct": true,
+      "proof": "Catalog says color=blue."
+    },
+    {
+      "id": "x169",
+      "text": "Part PX-16-09 has zone C1.",
+      "category": "zone",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "Catalog says zone=B2."
+    },
+    {
+      "id": "x170",
+      "text": "Part PX-17-00 has mass 85.",
+      "category": "mass",
+      "expected": true,
+      "probability_yes": 0.99,
+      "predicted": true,
+      "correct": true,
+      "proof": "Catalog says mass=85."
+    },
+    {
+      "id": "x171",
+      "text": "Part PX-17-01 has color violet.",
+      "category": "color",
+      "expected": false,
+      "probability_yes": 0.01,
+      "predicted": false,
+      "correct": true,
+      "proof": "Catalog says color=ivory."
+    },
+    {
+      "id": "x172",
+      "text": "Part PX-17-02 has zone A1.",
+      "category": "zone",
+      "expected": true,
+      "probability_yes": 0.98,
+      "predicted": true,
+      "correct": true,
+      "proof": "Catalog says zone=A1."
+    },
+    {
+      "id": "x173",
+      "text": "Part PX-17-03 has mass 36.",
+      "category": "mass",
+      "expected": false,
+      "probability_yes": 0.01,
+      "predicted": false,
+      "correct": true,
+      "proof": "Catalog says mass=35."
+    },
+    {
+      "id": "x174",
+      "text": "Part PX-17-04 has color blue.",
+      "category": "color",
+      "expected": true,
+      "probability_yes": 0.99,
+      "predicted": true,
+      "correct": true,
+      "proof": "Catalog says color=blue."
+    },
+    {
+      "id": "x175",
+      "text": "Part PX-17-05 has zone C1.",
+      "category": "zone",
+      "expected": false,
+      "probability_yes": 0.01,
+      "predicted": false,
+      "correct": true,
+      "proof": "Catalog says zone=B2."
+    },
+    {
+      "id": "x176",
+      "text": "Part PX-17-06 has mass 74.",
+      "category": "mass",
+      "expected": true,
+      "probability_yes": 0.99,
+      "predicted": true,
+      "correct": true,
+      "proof": "Catalog says mass=74."
+    },
+    {
+      "id": "x177",
+      "text": "Part PX-17-07 has color violet.",
+      "category": "color",
+      "expected": false,
+      "probability_yes": 0.02,
+      "predicted": false,
+      "correct": true,
+      "proof": "Catalog says color=ivory."
+    },
+    {
+      "id": "x178",
+      "text": "Part PX-17-08 has zone A1.",
+      "category": "zone",
+      "expected": true,
+      "probability_yes": 0.75,
+      "predicted": true,
+      "correct": true,
+      "proof": "Catalog says zone=A1."
+    },
+    {
+      "id": "x179",
+      "text": "Part PX-17-09 has mass 25.",
+      "category": "mass",
+      "expected": false,
+      "probability_yes": 0.02,
+      "predicted": false,
+      "correct": true,
+      "proof": "Catalog says mass=24."
+    }
+  ]
+}

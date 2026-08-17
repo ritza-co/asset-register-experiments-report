@@ -1,0 +1,1224 @@
+{
+  "schema_version": 2,
+  "created_at": "2026-08-16T20:48:49.999616+00:00",
+  "location": "US-west orb",
+  "host": {
+    "hostname": "e2b.local",
+    "platform": "Linux-6.1.158+-x86_64-with-glibc2.36"
+  },
+  "candidate": {
+    "id": "arithmetic120",
+    "title": "Per-row charge arithmetic",
+    "document": "SHIPMENT CHARGES\nTotal charge equals units times unit price plus the fixed fee. There are no other charges.\n\nCH-000: units=2; unit price=3; fixed fee=0.\nCH-001: units=9; unit price=14; fixed fee=5.\nCH-002: units=16; unit price=25; fixed fee=1.\nCH-003: units=5; unit price=13; fixed fee=6.\nCH-004: units=12; unit price=24; fixed fee=2.\nCH-005: units=19; unit price=12; fixed fee=7.\nCH-006: units=8; unit price=23; fixed fee=3.\nCH-007: units=15; unit price=11; fixed fee=8.\nCH-008: units=4; unit price=22; fixed fee=4.\nCH-009: units=11; unit price=10; fixed fee=0.\nCH-010: units=18; unit price=21; fixed fee=5.\nCH-011: units=7; unit price=9; fixed fee=1.\nCH-012: units=14; unit price=20; fixed fee=6.\nCH-013: units=3; unit price=8; fixed fee=2.\nCH-014: units=10; unit price=19; fixed fee=7.\nCH-015: units=17; unit price=7; fixed fee=3.\nCH-016: units=6; unit price=18; fixed fee=8.\nCH-017: units=13; unit price=6; fixed fee=4.\nCH-018: units=2; unit price=17; fixed fee=0.\nCH-019: units=9; unit price=5; fixed fee=5.\nCH-020: units=16; unit price=16; fixed fee=1.\nCH-021: units=5; unit price=4; fixed fee=6.\nCH-022: units=12; unit price=15; fixed fee=2.\nCH-023: units=19; unit price=3; fixed fee=7.\nCH-024: units=8; unit price=14; fixed fee=3.\nCH-025: units=15; unit price=25; fixed fee=8.\nCH-026: units=4; unit price=13; fixed fee=4.\nCH-027: units=11; unit price=24; fixed fee=0.\nCH-028: units=18; unit price=12; fixed fee=5.\nCH-029: units=7; unit price=23; fixed fee=1.\nCH-030: units=14; unit price=11; fixed fee=6.\nCH-031: units=3; unit price=22; fixed fee=2.\nCH-032: units=10; unit price=10; fixed fee=7.\nCH-033: units=17; unit price=21; fixed fee=3.\nCH-034: units=6; unit price=9; fixed fee=8.\nCH-035: units=13; unit price=20; fixed fee=4.\nCH-036: units=2; unit price=8; fixed fee=0.\nCH-037: units=9; unit price=19; fixed fee=5.\nCH-038: units=16; unit price=7; fixed fee=1.\nCH-039: units=5; unit price=18; fixed fee=6.\nCH-040: units=12; unit price=6; fixed fee=2.\nCH-041: units=19; unit price=17; fixed fee=7.\nCH-042: units=8; unit price=5; fixed fee=3.\nCH-043: units=15; unit price=16; fixed fee=8.\nCH-044: units=4; unit price=4; fixed fee=4.\nCH-045: units=11; unit price=15; fixed fee=0.\nCH-046: units=18; unit price=3; fixed fee=5.\nCH-047: units=7; unit price=14; fixed fee=1.\nCH-048: units=14; unit price=25; fixed fee=6.\nCH-049: units=3; unit price=13; fixed fee=2.\nCH-050: units=10; unit price=24; fixed fee=7.\nCH-051: units=17; unit price=12; fixed fee=3.\nCH-052: units=6; unit price=23; fixed fee=8.\nCH-053: units=13; unit price=11; fixed fee=4.\nCH-054: units=2; unit price=22; fixed fee=0.\nCH-055: units=9; unit price=10; fixed fee=5.\nCH-056: units=16; unit price=21; fixed fee=1.\nCH-057: units=5; unit price=9; fixed fee=6.\nCH-058: units=12; unit price=20; fixed fee=2.\nCH-059: units=19; unit price=8; fixed fee=7.\nCH-060: units=8; unit price=19; fixed fee=3.\nCH-061: units=15; unit price=7; fixed fee=8.\nCH-062: units=4; unit price=18; fixed fee=4.\nCH-063: units=11; unit price=6; fixed fee=0.\nCH-064: units=18; unit price=17; fixed fee=5.\nCH-065: units=7; unit price=5; fixed fee=1.\nCH-066: units=14; unit price=16; fixed fee=6.\nCH-067: units=3; unit price=4; fixed fee=2.\nCH-068: units=10; unit price=15; fixed fee=7.\nCH-069: units=17; unit price=3; fixed fee=3.\nCH-070: units=6; unit price=14; fixed fee=8.\nCH-071: units=13; unit price=25; fixed fee=4.\nCH-072: units=2; unit price=13; fixed fee=0.\nCH-073: units=9; unit price=24; fixed fee=5.\nCH-074: units=16; unit price=12; fixed fee=1.\nCH-075: units=5; unit price=23; fixed fee=6.\nCH-076: units=12; unit price=11; fixed fee=2.\nCH-077: units=19; unit price=22; fixed fee=7.\nCH-078: units=8; unit price=10; fixed fee=3.\nCH-079: units=15; unit price=21; fixed fee=8.\nCH-080: units=4; unit price=9; fixed fee=4.\nCH-081: units=11; unit price=20; fixed fee=0.\nCH-082: units=18; unit price=8; fixed fee=5.\nCH-083: units=7; unit price=19; fixed fee=1.\nCH-084: units=14; unit price=7; fixed fee=6.\nCH-085: units=3; unit price=18; fixed fee=2.\nCH-086: units=10; unit price=6; fixed fee=7.\nCH-087: units=17; unit price=17; fixed fee=3.\nCH-088: units=6; unit price=5; fixed fee=8.\nCH-089: units=13; unit price=16; fixed fee=4.\nCH-090: units=2; unit price=4; fixed fee=0.\nCH-091: units=9; unit price=15; fixed fee=5.\nCH-092: units=16; unit price=3; fixed fee=1.\nCH-093: units=5; unit price=14; fixed fee=6.\nCH-094: units=12; unit price=25; fixed fee=2.\nCH-095: units=19; unit price=13; fixed fee=7.\nCH-096: units=8; unit price=24; fixed fee=3.\nCH-097: units=15; unit price=12; fixed fee=8.\nCH-098: units=4; unit price=23; fixed fee=4.\nCH-099: units=11; unit price=11; fixed fee=0.\nCH-100: units=18; unit price=22; fixed fee=5.\nCH-101: units=7; unit price=10; fixed fee=1.\nCH-102: units=14; unit price=21; fixed fee=6.\nCH-103: units=3; unit price=9; fixed fee=2.\nCH-104: units=10; unit price=20; fixed fee=7.\nCH-105: units=17; unit price=8; fixed fee=3.\nCH-106: units=6; unit price=19; fixed fee=8.\nCH-107: units=13; unit price=7; fixed fee=4.\nCH-108: units=2; unit price=18; fixed fee=0.\nCH-109: units=9; unit price=6; fixed fee=5.\nCH-110: units=16; unit price=17; fixed fee=1.\nCH-111: units=5; unit price=5; fixed fee=6.\nCH-112: units=12; unit price=16; fixed fee=2.\nCH-113: units=19; unit price=4; fixed fee=7.\nCH-114: units=8; unit price=15; fixed fee=3.\nCH-115: units=15; unit price=3; fixed fee=8.\nCH-116: units=4; unit price=14; fixed fee=4.\nCH-117: units=11; unit price=25; fixed fee=0.\nCH-118: units=18; unit price=13; fixed fee=5.\nCH-119: units=7; unit price=24; fixed fee=1.",
+    "question_count": 120
+  },
+  "model": "gpt-5.6-luna",
+  "elapsed_s": 14.33051615299999,
+  "input_tokens": 9478,
+  "output_tokens": 1690,
+  "estimated_cost_usd": 0.0039236,
+  "correct_count": 120,
+  "accuracy": 1.0,
+  "answers": [
+    {
+      "id": "a000",
+      "text": "The total charge for CH-000 is 6.",
+      "category": "total",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "2*3+0=6."
+    },
+    {
+      "id": "a001",
+      "text": "The total charge for CH-001 is 133.",
+      "category": "total",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "9*14+5=131."
+    },
+    {
+      "id": "a002",
+      "text": "The total charge for CH-002 is 401.",
+      "category": "total",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "16*25+1=401."
+    },
+    {
+      "id": "a003",
+      "text": "The total charge for CH-003 is 72.",
+      "category": "total",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "5*13+6=71."
+    },
+    {
+      "id": "a004",
+      "text": "The total charge for CH-004 is 290.",
+      "category": "total",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "12*24+2=290."
+    },
+    {
+      "id": "a005",
+      "text": "The total charge for CH-005 is 238.",
+      "category": "total",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "19*12+7=235."
+    },
+    {
+      "id": "a006",
+      "text": "The total charge for CH-006 is 187.",
+      "category": "total",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "8*23+3=187."
+    },
+    {
+      "id": "a007",
+      "text": "The total charge for CH-007 is 175.",
+      "category": "total",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "15*11+8=173."
+    },
+    {
+      "id": "a008",
+      "text": "The total charge for CH-008 is 92.",
+      "category": "total",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "4*22+4=92."
+    },
+    {
+      "id": "a009",
+      "text": "The total charge for CH-009 is 111.",
+      "category": "total",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "11*10+0=110."
+    },
+    {
+      "id": "a010",
+      "text": "The total charge for CH-010 is 383.",
+      "category": "total",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "18*21+5=383."
+    },
+    {
+      "id": "a011",
+      "text": "The total charge for CH-011 is 67.",
+      "category": "total",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "7*9+1=64."
+    },
+    {
+      "id": "a012",
+      "text": "The total charge for CH-012 is 286.",
+      "category": "total",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "14*20+6=286."
+    },
+    {
+      "id": "a013",
+      "text": "The total charge for CH-013 is 28.",
+      "category": "total",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "3*8+2=26."
+    },
+    {
+      "id": "a014",
+      "text": "The total charge for CH-014 is 197.",
+      "category": "total",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "10*19+7=197."
+    },
+    {
+      "id": "a015",
+      "text": "The total charge for CH-015 is 123.",
+      "category": "total",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "17*7+3=122."
+    },
+    {
+      "id": "a016",
+      "text": "The total charge for CH-016 is 116.",
+      "category": "total",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "6*18+8=116."
+    },
+    {
+      "id": "a017",
+      "text": "The total charge for CH-017 is 85.",
+      "category": "total",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "13*6+4=82."
+    },
+    {
+      "id": "a018",
+      "text": "The total charge for CH-018 is 34.",
+      "category": "total",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "2*17+0=34."
+    },
+    {
+      "id": "a019",
+      "text": "The total charge for CH-019 is 52.",
+      "category": "total",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "9*5+5=50."
+    },
+    {
+      "id": "a020",
+      "text": "The total charge for CH-020 is 257.",
+      "category": "total",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "16*16+1=257."
+    },
+    {
+      "id": "a021",
+      "text": "The total charge for CH-021 is 27.",
+      "category": "total",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "5*4+6=26."
+    },
+    {
+      "id": "a022",
+      "text": "The total charge for CH-022 is 182.",
+      "category": "total",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "12*15+2=182."
+    },
+    {
+      "id": "a023",
+      "text": "The total charge for CH-023 is 67.",
+      "category": "total",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "19*3+7=64."
+    },
+    {
+      "id": "a024",
+      "text": "The total charge for CH-024 is 115.",
+      "category": "total",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "8*14+3=115."
+    },
+    {
+      "id": "a025",
+      "text": "The total charge for CH-025 is 385.",
+      "category": "total",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "15*25+8=383."
+    },
+    {
+      "id": "a026",
+      "text": "The total charge for CH-026 is 56.",
+      "category": "total",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "4*13+4=56."
+    },
+    {
+      "id": "a027",
+      "text": "The total charge for CH-027 is 265.",
+      "category": "total",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "11*24+0=264."
+    },
+    {
+      "id": "a028",
+      "text": "The total charge for CH-028 is 221.",
+      "category": "total",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "18*12+5=221."
+    },
+    {
+      "id": "a029",
+      "text": "The total charge for CH-029 is 165.",
+      "category": "total",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "7*23+1=162."
+    },
+    {
+      "id": "a030",
+      "text": "The total charge for CH-030 is 160.",
+      "category": "total",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "14*11+6=160."
+    },
+    {
+      "id": "a031",
+      "text": "The total charge for CH-031 is 70.",
+      "category": "total",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "3*22+2=68."
+    },
+    {
+      "id": "a032",
+      "text": "The total charge for CH-032 is 107.",
+      "category": "total",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "10*10+7=107."
+    },
+    {
+      "id": "a033",
+      "text": "The total charge for CH-033 is 361.",
+      "category": "total",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "17*21+3=360."
+    },
+    {
+      "id": "a034",
+      "text": "The total charge for CH-034 is 62.",
+      "category": "total",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "6*9+8=62."
+    },
+    {
+      "id": "a035",
+      "text": "The total charge for CH-035 is 267.",
+      "category": "total",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "13*20+4=264."
+    },
+    {
+      "id": "a036",
+      "text": "The total charge for CH-036 is 16.",
+      "category": "total",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "2*8+0=16."
+    },
+    {
+      "id": "a037",
+      "text": "The total charge for CH-037 is 178.",
+      "category": "total",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "9*19+5=176."
+    },
+    {
+      "id": "a038",
+      "text": "The total charge for CH-038 is 113.",
+      "category": "total",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "16*7+1=113."
+    },
+    {
+      "id": "a039",
+      "text": "The total charge for CH-039 is 97.",
+      "category": "total",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "5*18+6=96."
+    },
+    {
+      "id": "a040",
+      "text": "The total charge for CH-040 is 74.",
+      "category": "total",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "12*6+2=74."
+    },
+    {
+      "id": "a041",
+      "text": "The total charge for CH-041 is 333.",
+      "category": "total",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "19*17+7=330."
+    },
+    {
+      "id": "a042",
+      "text": "The total charge for CH-042 is 43.",
+      "category": "total",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "8*5+3=43."
+    },
+    {
+      "id": "a043",
+      "text": "The total charge for CH-043 is 250.",
+      "category": "total",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "15*16+8=248."
+    },
+    {
+      "id": "a044",
+      "text": "The total charge for CH-044 is 20.",
+      "category": "total",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "4*4+4=20."
+    },
+    {
+      "id": "a045",
+      "text": "The total charge for CH-045 is 166.",
+      "category": "total",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "11*15+0=165."
+    },
+    {
+      "id": "a046",
+      "text": "The total charge for CH-046 is 59.",
+      "category": "total",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "18*3+5=59."
+    },
+    {
+      "id": "a047",
+      "text": "The total charge for CH-047 is 102.",
+      "category": "total",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "7*14+1=99."
+    },
+    {
+      "id": "a048",
+      "text": "The total charge for CH-048 is 356.",
+      "category": "total",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "14*25+6=356."
+    },
+    {
+      "id": "a049",
+      "text": "The total charge for CH-049 is 43.",
+      "category": "total",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "3*13+2=41."
+    },
+    {
+      "id": "a050",
+      "text": "The total charge for CH-050 is 247.",
+      "category": "total",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "10*24+7=247."
+    },
+    {
+      "id": "a051",
+      "text": "The total charge for CH-051 is 208.",
+      "category": "total",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "17*12+3=207."
+    },
+    {
+      "id": "a052",
+      "text": "The total charge for CH-052 is 146.",
+      "category": "total",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "6*23+8=146."
+    },
+    {
+      "id": "a053",
+      "text": "The total charge for CH-053 is 150.",
+      "category": "total",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "13*11+4=147."
+    },
+    {
+      "id": "a054",
+      "text": "The total charge for CH-054 is 44.",
+      "category": "total",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "2*22+0=44."
+    },
+    {
+      "id": "a055",
+      "text": "The total charge for CH-055 is 97.",
+      "category": "total",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "9*10+5=95."
+    },
+    {
+      "id": "a056",
+      "text": "The total charge for CH-056 is 337.",
+      "category": "total",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "16*21+1=337."
+    },
+    {
+      "id": "a057",
+      "text": "The total charge for CH-057 is 52.",
+      "category": "total",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "5*9+6=51."
+    },
+    {
+      "id": "a058",
+      "text": "The total charge for CH-058 is 242.",
+      "category": "total",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "12*20+2=242."
+    },
+    {
+      "id": "a059",
+      "text": "The total charge for CH-059 is 162.",
+      "category": "total",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "19*8+7=159."
+    },
+    {
+      "id": "a060",
+      "text": "The total charge for CH-060 is 155.",
+      "category": "total",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "8*19+3=155."
+    },
+    {
+      "id": "a061",
+      "text": "The total charge for CH-061 is 115.",
+      "category": "total",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "15*7+8=113."
+    },
+    {
+      "id": "a062",
+      "text": "The total charge for CH-062 is 76.",
+      "category": "total",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "4*18+4=76."
+    },
+    {
+      "id": "a063",
+      "text": "The total charge for CH-063 is 67.",
+      "category": "total",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "11*6+0=66."
+    },
+    {
+      "id": "a064",
+      "text": "The total charge for CH-064 is 311.",
+      "category": "total",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "18*17+5=311."
+    },
+    {
+      "id": "a065",
+      "text": "The total charge for CH-065 is 39.",
+      "category": "total",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "7*5+1=36."
+    },
+    {
+      "id": "a066",
+      "text": "The total charge for CH-066 is 230.",
+      "category": "total",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "14*16+6=230."
+    },
+    {
+      "id": "a067",
+      "text": "The total charge for CH-067 is 16.",
+      "category": "total",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "3*4+2=14."
+    },
+    {
+      "id": "a068",
+      "text": "The total charge for CH-068 is 157.",
+      "category": "total",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "10*15+7=157."
+    },
+    {
+      "id": "a069",
+      "text": "The total charge for CH-069 is 55.",
+      "category": "total",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "17*3+3=54."
+    },
+    {
+      "id": "a070",
+      "text": "The total charge for CH-070 is 92.",
+      "category": "total",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "6*14+8=92."
+    },
+    {
+      "id": "a071",
+      "text": "The total charge for CH-071 is 332.",
+      "category": "total",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "13*25+4=329."
+    },
+    {
+      "id": "a072",
+      "text": "The total charge for CH-072 is 26.",
+      "category": "total",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "2*13+0=26."
+    },
+    {
+      "id": "a073",
+      "text": "The total charge for CH-073 is 223.",
+      "category": "total",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "9*24+5=221."
+    },
+    {
+      "id": "a074",
+      "text": "The total charge for CH-074 is 193.",
+      "category": "total",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "16*12+1=193."
+    },
+    {
+      "id": "a075",
+      "text": "The total charge for CH-075 is 122.",
+      "category": "total",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "5*23+6=121."
+    },
+    {
+      "id": "a076",
+      "text": "The total charge for CH-076 is 134.",
+      "category": "total",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "12*11+2=134."
+    },
+    {
+      "id": "a077",
+      "text": "The total charge for CH-077 is 428.",
+      "category": "total",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "19*22+7=425."
+    },
+    {
+      "id": "a078",
+      "text": "The total charge for CH-078 is 83.",
+      "category": "total",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "8*10+3=83."
+    },
+    {
+      "id": "a079",
+      "text": "The total charge for CH-079 is 325.",
+      "category": "total",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "15*21+8=323."
+    },
+    {
+      "id": "a080",
+      "text": "The total charge for CH-080 is 40.",
+      "category": "total",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "4*9+4=40."
+    },
+    {
+      "id": "a081",
+      "text": "The total charge for CH-081 is 221.",
+      "category": "total",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "11*20+0=220."
+    },
+    {
+      "id": "a082",
+      "text": "The total charge for CH-082 is 149.",
+      "category": "total",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "18*8+5=149."
+    },
+    {
+      "id": "a083",
+      "text": "The total charge for CH-083 is 137.",
+      "category": "total",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "7*19+1=134."
+    },
+    {
+      "id": "a084",
+      "text": "The total charge for CH-084 is 104.",
+      "category": "total",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "14*7+6=104."
+    },
+    {
+      "id": "a085",
+      "text": "The total charge for CH-085 is 58.",
+      "category": "total",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "3*18+2=56."
+    },
+    {
+      "id": "a086",
+      "text": "The total charge for CH-086 is 67.",
+      "category": "total",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "10*6+7=67."
+    },
+    {
+      "id": "a087",
+      "text": "The total charge for CH-087 is 293.",
+      "category": "total",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "17*17+3=292."
+    },
+    {
+      "id": "a088",
+      "text": "The total charge for CH-088 is 38.",
+      "category": "total",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "6*5+8=38."
+    },
+    {
+      "id": "a089",
+      "text": "The total charge for CH-089 is 215.",
+      "category": "total",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "13*16+4=212."
+    },
+    {
+      "id": "a090",
+      "text": "The total charge for CH-090 is 8.",
+      "category": "total",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "2*4+0=8."
+    },
+    {
+      "id": "a091",
+      "text": "The total charge for CH-091 is 142.",
+      "category": "total",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "9*15+5=140."
+    },
+    {
+      "id": "a092",
+      "text": "The total charge for CH-092 is 49.",
+      "category": "total",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "16*3+1=49."
+    },
+    {
+      "id": "a093",
+      "text": "The total charge for CH-093 is 77.",
+      "category": "total",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "5*14+6=76."
+    },
+    {
+      "id": "a094",
+      "text": "The total charge for CH-094 is 302.",
+      "category": "total",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "12*25+2=302."
+    },
+    {
+      "id": "a095",
+      "text": "The total charge for CH-095 is 257.",
+      "category": "total",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "19*13+7=254."
+    },
+    {
+      "id": "a096",
+      "text": "The total charge for CH-096 is 195.",
+      "category": "total",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "8*24+3=195."
+    },
+    {
+      "id": "a097",
+      "text": "The total charge for CH-097 is 190.",
+      "category": "total",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "15*12+8=188."
+    },
+    {
+      "id": "a098",
+      "text": "The total charge for CH-098 is 96.",
+      "category": "total",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "4*23+4=96."
+    },
+    {
+      "id": "a099",
+      "text": "The total charge for CH-099 is 122.",
+      "category": "total",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "11*11+0=121."
+    },
+    {
+      "id": "a100",
+      "text": "The total charge for CH-100 is 401.",
+      "category": "total",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "18*22+5=401."
+    },
+    {
+      "id": "a101",
+      "text": "The total charge for CH-101 is 74.",
+      "category": "total",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "7*10+1=71."
+    },
+    {
+      "id": "a102",
+      "text": "The total charge for CH-102 is 300.",
+      "category": "total",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "14*21+6=300."
+    },
+    {
+      "id": "a103",
+      "text": "The total charge for CH-103 is 31.",
+      "category": "total",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "3*9+2=29."
+    },
+    {
+      "id": "a104",
+      "text": "The total charge for CH-104 is 207.",
+      "category": "total",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "10*20+7=207."
+    },
+    {
+      "id": "a105",
+      "text": "The total charge for CH-105 is 140.",
+      "category": "total",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "17*8+3=139."
+    },
+    {
+      "id": "a106",
+      "text": "The total charge for CH-106 is 122.",
+      "category": "total",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "6*19+8=122."
+    },
+    {
+      "id": "a107",
+      "text": "The total charge for CH-107 is 98.",
+      "category": "total",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "13*7+4=95."
+    },
+    {
+      "id": "a108",
+      "text": "The total charge for CH-108 is 36.",
+      "category": "total",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "2*18+0=36."
+    },
+    {
+      "id": "a109",
+      "text": "The total charge for CH-109 is 61.",
+      "category": "total",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "9*6+5=59."
+    },
+    {
+      "id": "a110",
+      "text": "The total charge for CH-110 is 273.",
+      "category": "total",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "16*17+1=273."
+    },
+    {
+      "id": "a111",
+      "text": "The total charge for CH-111 is 32.",
+      "category": "total",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "5*5+6=31."
+    },
+    {
+      "id": "a112",
+      "text": "The total charge for CH-112 is 194.",
+      "category": "total",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "12*16+2=194."
+    },
+    {
+      "id": "a113",
+      "text": "The total charge for CH-113 is 86.",
+      "category": "total",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "19*4+7=83."
+    },
+    {
+      "id": "a114",
+      "text": "The total charge for CH-114 is 123.",
+      "category": "total",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "8*15+3=123."
+    },
+    {
+      "id": "a115",
+      "text": "The total charge for CH-115 is 55.",
+      "category": "total",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "15*3+8=53."
+    },
+    {
+      "id": "a116",
+      "text": "The total charge for CH-116 is 60.",
+      "category": "total",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "4*14+4=60."
+    },
+    {
+      "id": "a117",
+      "text": "The total charge for CH-117 is 276.",
+      "category": "total",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "11*25+0=275."
+    },
+    {
+      "id": "a118",
+      "text": "The total charge for CH-118 is 239.",
+      "category": "total",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "18*13+5=239."
+    },
+    {
+      "id": "a119",
+      "text": "The total charge for CH-119 is 172.",
+      "category": "total",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "7*24+1=169."
+    }
+  ]
+}

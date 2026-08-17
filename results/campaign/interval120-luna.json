@@ -1,0 +1,1224 @@
+{
+  "schema_version": 2,
+  "created_at": "2026-08-16T20:49:14.453158+00:00",
+  "location": "US-west orb",
+  "host": {
+    "hostname": "e2b.local",
+    "platform": "Linux-6.1.158+-x86_64-with-glibc2.36"
+  },
+  "candidate": {
+    "id": "interval120",
+    "title": "Inclusive date-window evaluation",
+    "document": "PERMIT WINDOWS\nA permit is active from its start day through its end day, inclusive.\n\nPM-000: start day 1; end day 4.\nPM-001: start day 8; end day 16.\nPM-002: start day 15; end day 28.\nPM-003: start day 22; end day 25.\nPM-004: start day 29; end day 37.\nPM-005: start day 36; end day 49.\nPM-006: start day 43; end day 46.\nPM-007: start day 50; end day 58.\nPM-008: start day 57; end day 70.\nPM-009: start day 4; end day 7.\nPM-010: start day 11; end day 19.\nPM-011: start day 18; end day 31.\nPM-012: start day 25; end day 28.\nPM-013: start day 32; end day 40.\nPM-014: start day 39; end day 52.\nPM-015: start day 46; end day 49.\nPM-016: start day 53; end day 61.\nPM-017: start day 60; end day 73.\nPM-018: start day 7; end day 10.\nPM-019: start day 14; end day 22.\nPM-020: start day 21; end day 34.\nPM-021: start day 28; end day 31.\nPM-022: start day 35; end day 43.\nPM-023: start day 42; end day 55.\nPM-024: start day 49; end day 52.\nPM-025: start day 56; end day 64.\nPM-026: start day 3; end day 16.\nPM-027: start day 10; end day 13.\nPM-028: start day 17; end day 25.\nPM-029: start day 24; end day 37.\nPM-030: start day 31; end day 34.\nPM-031: start day 38; end day 46.\nPM-032: start day 45; end day 58.\nPM-033: start day 52; end day 55.\nPM-034: start day 59; end day 67.\nPM-035: start day 6; end day 19.\nPM-036: start day 13; end day 16.\nPM-037: start day 20; end day 28.\nPM-038: start day 27; end day 40.\nPM-039: start day 34; end day 37.\nPM-040: start day 41; end day 49.\nPM-041: start day 48; end day 61.\nPM-042: start day 55; end day 58.\nPM-043: start day 2; end day 10.\nPM-044: start day 9; end day 22.\nPM-045: start day 16; end day 19.\nPM-046: start day 23; end day 31.\nPM-047: start day 30; end day 43.\nPM-048: start day 37; end day 40.\nPM-049: start day 44; end day 52.\nPM-050: start day 51; end day 64.\nPM-051: start day 58; end day 61.\nPM-052: start day 5; end day 13.\nPM-053: start day 12; end day 25.\nPM-054: start day 19; end day 22.\nPM-055: start day 26; end day 34.\nPM-056: start day 33; end day 46.\nPM-057: start day 40; end day 43.\nPM-058: start day 47; end day 55.\nPM-059: start day 54; end day 67.\nPM-060: start day 1; end day 4.\nPM-061: start day 8; end day 16.\nPM-062: start day 15; end day 28.\nPM-063: start day 22; end day 25.\nPM-064: start day 29; end day 37.\nPM-065: start day 36; end day 49.\nPM-066: start day 43; end day 46.\nPM-067: start day 50; end day 58.\nPM-068: start day 57; end day 70.\nPM-069: start day 4; end day 7.\nPM-070: start day 11; end day 19.\nPM-071: start day 18; end day 31.\nPM-072: start day 25; end day 28.\nPM-073: start day 32; end day 40.\nPM-074: start day 39; end day 52.\nPM-075: start day 46; end day 49.\nPM-076: start day 53; end day 61.\nPM-077: start day 60; end day 73.\nPM-078: start day 7; end day 10.\nPM-079: start day 14; end day 22.\nPM-080: start day 21; end day 34.\nPM-081: start day 28; end day 31.\nPM-082: start day 35; end day 43.\nPM-083: start day 42; end day 55.\nPM-084: start day 49; end day 52.\nPM-085: start day 56; end day 64.\nPM-086: start day 3; end day 16.\nPM-087: start day 10; end day 13.\nPM-088: start day 17; end day 25.\nPM-089: start day 24; end day 37.\nPM-090: start day 31; end day 34.\nPM-091: start day 38; end day 46.\nPM-092: start day 45; end day 58.\nPM-093: start day 52; end day 55.\nPM-094: start day 59; end day 67.\nPM-095: start day 6; end day 19.\nPM-096: start day 13; end day 16.\nPM-097: start day 20; end day 28.\nPM-098: start day 27; end day 40.\nPM-099: start day 34; end day 37.\nPM-100: start day 41; end day 49.\nPM-101: start day 48; end day 61.\nPM-102: start day 55; end day 58.\nPM-103: start day 2; end day 10.\nPM-104: start day 9; end day 22.\nPM-105: start day 16; end day 19.\nPM-106: start day 23; end day 31.\nPM-107: start day 30; end day 43.\nPM-108: start day 37; end day 40.\nPM-109: start day 44; end day 52.\nPM-110: start day 51; end day 64.\nPM-111: start day 58; end day 61.\nPM-112: start day 5; end day 13.\nPM-113: start day 12; end day 25.\nPM-114: start day 19; end day 22.\nPM-115: start day 26; end day 34.\nPM-116: start day 33; end day 46.\nPM-117: start day 40; end day 43.\nPM-118: start day 47; end day 55.\nPM-119: start day 54; end day 67.",
+    "question_count": 120
+  },
+  "model": "gpt-5.6-luna",
+  "elapsed_s": 9.528215964999987,
+  "input_tokens": 8993,
+  "output_tokens": 1854,
+  "estimated_cost_usd": 0.0040234,
+  "correct_count": 120,
+  "accuracy": 1.0,
+  "answers": [
+    {
+      "id": "i000",
+      "text": "Permit PM-000 is active on day 1.",
+      "category": "active",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "Window is [1, 4]; queried day=1."
+    },
+    {
+      "id": "i001",
+      "text": "Permit PM-001 is active on day 18.",
+      "category": "inactive",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "Window is [8, 16]; queried day=18."
+    },
+    {
+      "id": "i002",
+      "text": "Permit PM-002 is active on day 17.",
+      "category": "active",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "Window is [15, 28]; queried day=17."
+    },
+    {
+      "id": "i003",
+      "text": "Permit PM-003 is active on day 29.",
+      "category": "inactive",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "Window is [22, 25]; queried day=29."
+    },
+    {
+      "id": "i004",
+      "text": "Permit PM-004 is active on day 33.",
+      "category": "active",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "Window is [29, 37]; queried day=33."
+    },
+    {
+      "id": "i005",
+      "text": "Permit PM-005 is active on day 51.",
+      "category": "inactive",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "Window is [36, 49]; queried day=51."
+    },
+    {
+      "id": "i006",
+      "text": "Permit PM-006 is active on day 45.",
+      "category": "active",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "Window is [43, 46]; queried day=45."
+    },
+    {
+      "id": "i007",
+      "text": "Permit PM-007 is active on day 62.",
+      "category": "inactive",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "Window is [50, 58]; queried day=62."
+    },
+    {
+      "id": "i008",
+      "text": "Permit PM-008 is active on day 65.",
+      "category": "active",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "Window is [57, 70]; queried day=65."
+    },
+    {
+      "id": "i009",
+      "text": "Permit PM-009 is active on day 9.",
+      "category": "inactive",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "Window is [4, 7]; queried day=9."
+    },
+    {
+      "id": "i010",
+      "text": "Permit PM-010 is active on day 12.",
+      "category": "active",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "Window is [11, 19]; queried day=12."
+    },
+    {
+      "id": "i011",
+      "text": "Permit PM-011 is active on day 35.",
+      "category": "inactive",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "Window is [18, 31]; queried day=35."
+    },
+    {
+      "id": "i012",
+      "text": "Permit PM-012 is active on day 25.",
+      "category": "active",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "Window is [25, 28]; queried day=25."
+    },
+    {
+      "id": "i013",
+      "text": "Permit PM-013 is active on day 42.",
+      "category": "inactive",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "Window is [32, 40]; queried day=42."
+    },
+    {
+      "id": "i014",
+      "text": "Permit PM-014 is active on day 39.",
+      "category": "active",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "Window is [39, 52]; queried day=39."
+    },
+    {
+      "id": "i015",
+      "text": "Permit PM-015 is active on day 53.",
+      "category": "inactive",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "Window is [46, 49]; queried day=53."
+    },
+    {
+      "id": "i016",
+      "text": "Permit PM-016 is active on day 60.",
+      "category": "active",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "Window is [53, 61]; queried day=60."
+    },
+    {
+      "id": "i017",
+      "text": "Permit PM-017 is active on day 75.",
+      "category": "inactive",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "Window is [60, 73]; queried day=75."
+    },
+    {
+      "id": "i018",
+      "text": "Permit PM-018 is active on day 9.",
+      "category": "active",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "Window is [7, 10]; queried day=9."
+    },
+    {
+      "id": "i019",
+      "text": "Permit PM-019 is active on day 26.",
+      "category": "inactive",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "Window is [14, 22]; queried day=26."
+    },
+    {
+      "id": "i020",
+      "text": "Permit PM-020 is active on day 27.",
+      "category": "active",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "Window is [21, 34]; queried day=27."
+    },
+    {
+      "id": "i021",
+      "text": "Permit PM-021 is active on day 33.",
+      "category": "inactive",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "Window is [28, 31]; queried day=33."
+    },
+    {
+      "id": "i022",
+      "text": "Permit PM-022 is active on day 39.",
+      "category": "active",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "Window is [35, 43]; queried day=39."
+    },
+    {
+      "id": "i023",
+      "text": "Permit PM-023 is active on day 59.",
+      "category": "inactive",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "Window is [42, 55]; queried day=59."
+    },
+    {
+      "id": "i024",
+      "text": "Permit PM-024 is active on day 49.",
+      "category": "active",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "Window is [49, 52]; queried day=49."
+    },
+    {
+      "id": "i025",
+      "text": "Permit PM-025 is active on day 66.",
+      "category": "inactive",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "Window is [56, 64]; queried day=66."
+    },
+    {
+      "id": "i026",
+      "text": "Permit PM-026 is active on day 15.",
+      "category": "active",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "Window is [3, 16]; queried day=15."
+    },
+    {
+      "id": "i027",
+      "text": "Permit PM-027 is active on day 17.",
+      "category": "inactive",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "Window is [10, 13]; queried day=17."
+    },
+    {
+      "id": "i028",
+      "text": "Permit PM-028 is active on day 18.",
+      "category": "active",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "Window is [17, 25]; queried day=18."
+    },
+    {
+      "id": "i029",
+      "text": "Permit PM-029 is active on day 39.",
+      "category": "inactive",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "Window is [24, 37]; queried day=39."
+    },
+    {
+      "id": "i030",
+      "text": "Permit PM-030 is active on day 33.",
+      "category": "active",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "Window is [31, 34]; queried day=33."
+    },
+    {
+      "id": "i031",
+      "text": "Permit PM-031 is active on day 50.",
+      "category": "inactive",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "Window is [38, 46]; queried day=50."
+    },
+    {
+      "id": "i032",
+      "text": "Permit PM-032 is active on day 49.",
+      "category": "active",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "Window is [45, 58]; queried day=49."
+    },
+    {
+      "id": "i033",
+      "text": "Permit PM-033 is active on day 57.",
+      "category": "inactive",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "Window is [52, 55]; queried day=57."
+    },
+    {
+      "id": "i034",
+      "text": "Permit PM-034 is active on day 66.",
+      "category": "active",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "Window is [59, 67]; queried day=66."
+    },
+    {
+      "id": "i035",
+      "text": "Permit PM-035 is active on day 23.",
+      "category": "inactive",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "Window is [6, 19]; queried day=23."
+    },
+    {
+      "id": "i036",
+      "text": "Permit PM-036 is active on day 13.",
+      "category": "active",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "Window is [13, 16]; queried day=13."
+    },
+    {
+      "id": "i037",
+      "text": "Permit PM-037 is active on day 30.",
+      "category": "inactive",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "Window is [20, 28]; queried day=30."
+    },
+    {
+      "id": "i038",
+      "text": "Permit PM-038 is active on day 37.",
+      "category": "active",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "Window is [27, 40]; queried day=37."
+    },
+    {
+      "id": "i039",
+      "text": "Permit PM-039 is active on day 41.",
+      "category": "inactive",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "Window is [34, 37]; queried day=41."
+    },
+    {
+      "id": "i040",
+      "text": "Permit PM-040 is active on day 45.",
+      "category": "active",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "Window is [41, 49]; queried day=45."
+    },
+    {
+      "id": "i041",
+      "text": "Permit PM-041 is active on day 63.",
+      "category": "inactive",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "Window is [48, 61]; queried day=63."
+    },
+    {
+      "id": "i042",
+      "text": "Permit PM-042 is active on day 57.",
+      "category": "active",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "Window is [55, 58]; queried day=57."
+    },
+    {
+      "id": "i043",
+      "text": "Permit PM-043 is active on day 14.",
+      "category": "inactive",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "Window is [2, 10]; queried day=14."
+    },
+    {
+      "id": "i044",
+      "text": "Permit PM-044 is active on day 11.",
+      "category": "active",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "Window is [9, 22]; queried day=11."
+    },
+    {
+      "id": "i045",
+      "text": "Permit PM-045 is active on day 21.",
+      "category": "inactive",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "Window is [16, 19]; queried day=21."
+    },
+    {
+      "id": "i046",
+      "text": "Permit PM-046 is active on day 24.",
+      "category": "active",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "Window is [23, 31]; queried day=24."
+    },
+    {
+      "id": "i047",
+      "text": "Permit PM-047 is active on day 47.",
+      "category": "inactive",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "Window is [30, 43]; queried day=47."
+    },
+    {
+      "id": "i048",
+      "text": "Permit PM-048 is active on day 37.",
+      "category": "active",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "Window is [37, 40]; queried day=37."
+    },
+    {
+      "id": "i049",
+      "text": "Permit PM-049 is active on day 54.",
+      "category": "inactive",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "Window is [44, 52]; queried day=54."
+    },
+    {
+      "id": "i050",
+      "text": "Permit PM-050 is active on day 59.",
+      "category": "active",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "Window is [51, 64]; queried day=59."
+    },
+    {
+      "id": "i051",
+      "text": "Permit PM-051 is active on day 65.",
+      "category": "inactive",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "Window is [58, 61]; queried day=65."
+    },
+    {
+      "id": "i052",
+      "text": "Permit PM-052 is active on day 12.",
+      "category": "active",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "Window is [5, 13]; queried day=12."
+    },
+    {
+      "id": "i053",
+      "text": "Permit PM-053 is active on day 27.",
+      "category": "inactive",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "Window is [12, 25]; queried day=27."
+    },
+    {
+      "id": "i054",
+      "text": "Permit PM-054 is active on day 21.",
+      "category": "active",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "Window is [19, 22]; queried day=21."
+    },
+    {
+      "id": "i055",
+      "text": "Permit PM-055 is active on day 38.",
+      "category": "inactive",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "Window is [26, 34]; queried day=38."
+    },
+    {
+      "id": "i056",
+      "text": "Permit PM-056 is active on day 33.",
+      "category": "active",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "Window is [33, 46]; queried day=33."
+    },
+    {
+      "id": "i057",
+      "text": "Permit PM-057 is active on day 45.",
+      "category": "inactive",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "Window is [40, 43]; queried day=45."
+    },
+    {
+      "id": "i058",
+      "text": "Permit PM-058 is active on day 51.",
+      "category": "active",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "Window is [47, 55]; queried day=51."
+    },
+    {
+      "id": "i059",
+      "text": "Permit PM-059 is active on day 71.",
+      "category": "inactive",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "Window is [54, 67]; queried day=71."
+    },
+    {
+      "id": "i060",
+      "text": "Permit PM-060 is active on day 1.",
+      "category": "active",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "Window is [1, 4]; queried day=1."
+    },
+    {
+      "id": "i061",
+      "text": "Permit PM-061 is active on day 18.",
+      "category": "inactive",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "Window is [8, 16]; queried day=18."
+    },
+    {
+      "id": "i062",
+      "text": "Permit PM-062 is active on day 21.",
+      "category": "active",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "Window is [15, 28]; queried day=21."
+    },
+    {
+      "id": "i063",
+      "text": "Permit PM-063 is active on day 29.",
+      "category": "inactive",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "Window is [22, 25]; queried day=29."
+    },
+    {
+      "id": "i064",
+      "text": "Permit PM-064 is active on day 30.",
+      "category": "active",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "Window is [29, 37]; queried day=30."
+    },
+    {
+      "id": "i065",
+      "text": "Permit PM-065 is active on day 51.",
+      "category": "inactive",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "Window is [36, 49]; queried day=51."
+    },
+    {
+      "id": "i066",
+      "text": "Permit PM-066 is active on day 45.",
+      "category": "active",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "Window is [43, 46]; queried day=45."
+    },
+    {
+      "id": "i067",
+      "text": "Permit PM-067 is active on day 62.",
+      "category": "inactive",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "Window is [50, 58]; queried day=62."
+    },
+    {
+      "id": "i068",
+      "text": "Permit PM-068 is active on day 69.",
+      "category": "active",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "Window is [57, 70]; queried day=69."
+    },
+    {
+      "id": "i069",
+      "text": "Permit PM-069 is active on day 9.",
+      "category": "inactive",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "Window is [4, 7]; queried day=9."
+    },
+    {
+      "id": "i070",
+      "text": "Permit PM-070 is active on day 18.",
+      "category": "active",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "Window is [11, 19]; queried day=18."
+    },
+    {
+      "id": "i071",
+      "text": "Permit PM-071 is active on day 35.",
+      "category": "inactive",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "Window is [18, 31]; queried day=35."
+    },
+    {
+      "id": "i072",
+      "text": "Permit PM-072 is active on day 25.",
+      "category": "active",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "Window is [25, 28]; queried day=25."
+    },
+    {
+      "id": "i073",
+      "text": "Permit PM-073 is active on day 42.",
+      "category": "inactive",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "Window is [32, 40]; queried day=42."
+    },
+    {
+      "id": "i074",
+      "text": "Permit PM-074 is active on day 43.",
+      "category": "active",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "Window is [39, 52]; queried day=43."
+    },
+    {
+      "id": "i075",
+      "text": "Permit PM-075 is active on day 53.",
+      "category": "inactive",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "Window is [46, 49]; queried day=53."
+    },
+    {
+      "id": "i076",
+      "text": "Permit PM-076 is active on day 57.",
+      "category": "active",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "Window is [53, 61]; queried day=57."
+    },
+    {
+      "id": "i077",
+      "text": "Permit PM-077 is active on day 75.",
+      "category": "inactive",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "Window is [60, 73]; queried day=75."
+    },
+    {
+      "id": "i078",
+      "text": "Permit PM-078 is active on day 9.",
+      "category": "active",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "Window is [7, 10]; queried day=9."
+    },
+    {
+      "id": "i079",
+      "text": "Permit PM-079 is active on day 26.",
+      "category": "inactive",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "Window is [14, 22]; queried day=26."
+    },
+    {
+      "id": "i080",
+      "text": "Permit PM-080 is active on day 31.",
+      "category": "active",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "Window is [21, 34]; queried day=31."
+    },
+    {
+      "id": "i081",
+      "text": "Permit PM-081 is active on day 33.",
+      "category": "inactive",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "Window is [28, 31]; queried day=33."
+    },
+    {
+      "id": "i082",
+      "text": "Permit PM-082 is active on day 36.",
+      "category": "active",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "Window is [35, 43]; queried day=36."
+    },
+    {
+      "id": "i083",
+      "text": "Permit PM-083 is active on day 59.",
+      "category": "inactive",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "Window is [42, 55]; queried day=59."
+    },
+    {
+      "id": "i084",
+      "text": "Permit PM-084 is active on day 49.",
+      "category": "active",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "Window is [49, 52]; queried day=49."
+    },
+    {
+      "id": "i085",
+      "text": "Permit PM-085 is active on day 66.",
+      "category": "inactive",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "Window is [56, 64]; queried day=66."
+    },
+    {
+      "id": "i086",
+      "text": "Permit PM-086 is active on day 5.",
+      "category": "active",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "Window is [3, 16]; queried day=5."
+    },
+    {
+      "id": "i087",
+      "text": "Permit PM-087 is active on day 17.",
+      "category": "inactive",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "Window is [10, 13]; queried day=17."
+    },
+    {
+      "id": "i088",
+      "text": "Permit PM-088 is active on day 24.",
+      "category": "active",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "Window is [17, 25]; queried day=24."
+    },
+    {
+      "id": "i089",
+      "text": "Permit PM-089 is active on day 39.",
+      "category": "inactive",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "Window is [24, 37]; queried day=39."
+    },
+    {
+      "id": "i090",
+      "text": "Permit PM-090 is active on day 33.",
+      "category": "active",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "Window is [31, 34]; queried day=33."
+    },
+    {
+      "id": "i091",
+      "text": "Permit PM-091 is active on day 50.",
+      "category": "inactive",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "Window is [38, 46]; queried day=50."
+    },
+    {
+      "id": "i092",
+      "text": "Permit PM-092 is active on day 53.",
+      "category": "active",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "Window is [45, 58]; queried day=53."
+    },
+    {
+      "id": "i093",
+      "text": "Permit PM-093 is active on day 57.",
+      "category": "inactive",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "Window is [52, 55]; queried day=57."
+    },
+    {
+      "id": "i094",
+      "text": "Permit PM-094 is active on day 63.",
+      "category": "active",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "Window is [59, 67]; queried day=63."
+    },
+    {
+      "id": "i095",
+      "text": "Permit PM-095 is active on day 23.",
+      "category": "inactive",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "Window is [6, 19]; queried day=23."
+    },
+    {
+      "id": "i096",
+      "text": "Permit PM-096 is active on day 13.",
+      "category": "active",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "Window is [13, 16]; queried day=13."
+    },
+    {
+      "id": "i097",
+      "text": "Permit PM-097 is active on day 30.",
+      "category": "inactive",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "Window is [20, 28]; queried day=30."
+    },
+    {
+      "id": "i098",
+      "text": "Permit PM-098 is active on day 27.",
+      "category": "active",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "Window is [27, 40]; queried day=27."
+    },
+    {
+      "id": "i099",
+      "text": "Permit PM-099 is active on day 41.",
+      "category": "inactive",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "Window is [34, 37]; queried day=41."
+    },
+    {
+      "id": "i100",
+      "text": "Permit PM-100 is active on day 42.",
+      "category": "active",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "Window is [41, 49]; queried day=42."
+    },
+    {
+      "id": "i101",
+      "text": "Permit PM-101 is active on day 63.",
+      "category": "inactive",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "Window is [48, 61]; queried day=63."
+    },
+    {
+      "id": "i102",
+      "text": "Permit PM-102 is active on day 57.",
+      "category": "active",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "Window is [55, 58]; queried day=57."
+    },
+    {
+      "id": "i103",
+      "text": "Permit PM-103 is active on day 14.",
+      "category": "inactive",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "Window is [2, 10]; queried day=14."
+    },
+    {
+      "id": "i104",
+      "text": "Permit PM-104 is active on day 15.",
+      "category": "active",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "Window is [9, 22]; queried day=15."
+    },
+    {
+      "id": "i105",
+      "text": "Permit PM-105 is active on day 21.",
+      "category": "inactive",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "Window is [16, 19]; queried day=21."
+    },
+    {
+      "id": "i106",
+      "text": "Permit PM-106 is active on day 30.",
+      "category": "active",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "Window is [23, 31]; queried day=30."
+    },
+    {
+      "id": "i107",
+      "text": "Permit PM-107 is active on day 47.",
+      "category": "inactive",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "Window is [30, 43]; queried day=47."
+    },
+    {
+      "id": "i108",
+      "text": "Permit PM-108 is active on day 37.",
+      "category": "active",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "Window is [37, 40]; queried day=37."
+    },
+    {
+      "id": "i109",
+      "text": "Permit PM-109 is active on day 54.",
+      "category": "inactive",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "Window is [44, 52]; queried day=54."
+    },
+    {
+      "id": "i110",
+      "text": "Permit PM-110 is active on day 63.",
+      "category": "active",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "Window is [51, 64]; queried day=63."
+    },
+    {
+      "id": "i111",
+      "text": "Permit PM-111 is active on day 65.",
+      "category": "inactive",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "Window is [58, 61]; queried day=65."
+    },
+    {
+      "id": "i112",
+      "text": "Permit PM-112 is active on day 9.",
+      "category": "active",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "Window is [5, 13]; queried day=9."
+    },
+    {
+      "id": "i113",
+      "text": "Permit PM-113 is active on day 27.",
+      "category": "inactive",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "Window is [12, 25]; queried day=27."
+    },
+    {
+      "id": "i114",
+      "text": "Permit PM-114 is active on day 21.",
+      "category": "active",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "Window is [19, 22]; queried day=21."
+    },
+    {
+      "id": "i115",
+      "text": "Permit PM-115 is active on day 38.",
+      "category": "inactive",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "Window is [26, 34]; queried day=38."
+    },
+    {
+      "id": "i116",
+      "text": "Permit PM-116 is active on day 37.",
+      "category": "active",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "Window is [33, 46]; queried day=37."
+    },
+    {
+      "id": "i117",
+      "text": "Permit PM-117 is active on day 45.",
+      "category": "inactive",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "Window is [40, 43]; queried day=45."
+    },
+    {
+      "id": "i118",
+      "text": "Permit PM-118 is active on day 48.",
+      "category": "active",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "Window is [47, 55]; queried day=48."
+    },
+    {
+      "id": "i119",
+      "text": "Permit PM-119 is active on day 71.",
+      "category": "inactive",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "Window is [54, 67]; queried day=71."
+    }
+  ]
+}

@@ -1,0 +1,1224 @@
+{
+  "schema_version": 2,
+  "created_at": "2026-08-16T20:49:09.509453+00:00",
+  "location": "US-west orb",
+  "host": {
+    "hostname": "e2b.local",
+    "platform": "Linux-6.1.158+-x86_64-with-glibc2.36"
+  },
+  "candidate": {
+    "id": "alias120",
+    "title": "Alias resolution plus updates",
+    "document": "VESSEL ALIAS LOG\nEach vessel has a code and alias. Later STATE lines replace earlier color for that same vessel.\n\nREGISTER VS-000: alias=Aurora-00; color=red.\nSTATE Aurora-00: color=green.\nREGISTER VS-001: alias=Beacon-00; color=blue.\nSTATE Beacon-00: color=blue.\nREGISTER VS-002: alias=Comet-00; color=green.\nSTATE Comet-00: color=red.\nREGISTER VS-003: alias=Drift-00; color=white.\nSTATE Drift-00: color=gold.\nREGISTER VS-004: alias=Echo-00; color=black.\nSTATE Echo-00: color=black.\nREGISTER VS-005: alias=Fable-00; color=gold.\nSTATE Fable-00: color=white.\nREGISTER VS-006: alias=Aurora-01; color=red.\nSTATE Aurora-01: color=green.\nREGISTER VS-007: alias=Beacon-01; color=blue.\nSTATE Beacon-01: color=blue.\nREGISTER VS-008: alias=Comet-01; color=green.\nSTATE Comet-01: color=red.\nREGISTER VS-009: alias=Drift-01; color=white.\nSTATE Drift-01: color=gold.\nREGISTER VS-010: alias=Echo-01; color=black.\nSTATE Echo-01: color=black.\nREGISTER VS-011: alias=Fable-01; color=gold.\nSTATE Fable-01: color=white.\nREGISTER VS-012: alias=Aurora-02; color=red.\nSTATE Aurora-02: color=green.\nREGISTER VS-013: alias=Beacon-02; color=blue.\nSTATE Beacon-02: color=blue.\nREGISTER VS-014: alias=Comet-02; color=green.\nSTATE Comet-02: color=red.\nREGISTER VS-015: alias=Drift-02; color=white.\nSTATE Drift-02: color=gold.\nREGISTER VS-016: alias=Echo-02; color=black.\nSTATE Echo-02: color=black.\nREGISTER VS-017: alias=Fable-02; color=gold.\nSTATE Fable-02: color=white.\nREGISTER VS-018: alias=Aurora-03; color=red.\nSTATE Aurora-03: color=green.\nREGISTER VS-019: alias=Beacon-03; color=blue.\nSTATE Beacon-03: color=blue.\nREGISTER VS-020: alias=Comet-03; color=green.\nSTATE Comet-03: color=red.\nREGISTER VS-021: alias=Drift-03; color=white.\nSTATE Drift-03: color=gold.\nREGISTER VS-022: alias=Echo-03; color=black.\nSTATE Echo-03: color=black.\nREGISTER VS-023: alias=Fable-03; color=gold.\nSTATE Fable-03: color=white.\nREGISTER VS-024: alias=Aurora-04; color=red.\nSTATE Aurora-04: color=green.\nREGISTER VS-025: alias=Beacon-04; color=blue.\nSTATE Beacon-04: color=blue.\nREGISTER VS-026: alias=Comet-04; color=green.\nSTATE Comet-04: color=red.\nREGISTER VS-027: alias=Drift-04; color=white.\nSTATE Drift-04: color=gold.\nREGISTER VS-028: alias=Echo-04; color=black.\nSTATE Echo-04: color=black.\nREGISTER VS-029: alias=Fable-04; color=gold.\nSTATE Fable-04: color=white.\nREGISTER VS-030: alias=Aurora-05; color=red.\nSTATE Aurora-05: color=green.\nREGISTER VS-031: alias=Beacon-05; color=blue.\nSTATE Beacon-05: color=blue.\nREGISTER VS-032: alias=Comet-05; color=green.\nSTATE Comet-05: color=red.\nREGISTER VS-033: alias=Drift-05; color=white.\nSTATE Drift-05: color=gold.\nREGISTER VS-034: alias=Echo-05; color=black.\nSTATE Echo-05: color=black.\nREGISTER VS-035: alias=Fable-05; color=gold.\nSTATE Fable-05: color=white.\nREGISTER VS-036: alias=Aurora-06; color=red.\nSTATE Aurora-06: color=green.\nREGISTER VS-037: alias=Beacon-06; color=blue.\nSTATE Beacon-06: color=blue.\nREGISTER VS-038: alias=Comet-06; color=green.\nSTATE Comet-06: color=red.\nREGISTER VS-039: alias=Drift-06; color=white.\nSTATE Drift-06: color=gold.\nREGISTER VS-040: alias=Echo-06; color=black.\nSTATE Echo-06: color=black.\nREGISTER VS-041: alias=Fable-06; color=gold.\nSTATE Fable-06: color=white.\nREGISTER VS-042: alias=Aurora-07; color=red.\nSTATE Aurora-07: color=green.\nREGISTER VS-043: alias=Beacon-07; color=blue.\nSTATE Beacon-07: color=blue.\nREGISTER VS-044: alias=Comet-07; color=green.\nSTATE Comet-07: color=red.\nREGISTER VS-045: alias=Drift-07; color=white.\nSTATE Drift-07: color=gold.\nREGISTER VS-046: alias=Echo-07; color=black.\nSTATE Echo-07: color=black.\nREGISTER VS-047: alias=Fable-07; color=gold.\nSTATE Fable-07: color=white.\nREGISTER VS-048: alias=Aurora-08; color=red.\nSTATE Aurora-08: color=green.\nREGISTER VS-049: alias=Beacon-08; color=blue.\nSTATE Beacon-08: color=blue.\nREGISTER VS-050: alias=Comet-08; color=green.\nSTATE Comet-08: color=red.\nREGISTER VS-051: alias=Drift-08; color=white.\nSTATE Drift-08: color=gold.\nREGISTER VS-052: alias=Echo-08; color=black.\nSTATE Echo-08: color=black.\nREGISTER VS-053: alias=Fable-08; color=gold.\nSTATE Fable-08: color=white.\nREGISTER VS-054: alias=Aurora-09; color=red.\nSTATE Aurora-09: color=green.\nREGISTER VS-055: alias=Beacon-09; color=blue.\nSTATE Beacon-09: color=blue.\nREGISTER VS-056: alias=Comet-09; color=green.\nSTATE Comet-09: color=red.\nREGISTER VS-057: alias=Drift-09; color=white.\nSTATE Drift-09: color=gold.\nREGISTER VS-058: alias=Echo-09; color=black.\nSTATE Echo-09: color=black.\nREGISTER VS-059: alias=Fable-09; color=gold.\nSTATE Fable-09: color=white.\nREGISTER VS-060: alias=Aurora-10; color=red.\nSTATE Aurora-10: color=green.\nREGISTER VS-061: alias=Beacon-10; color=blue.\nSTATE Beacon-10: color=blue.\nREGISTER VS-062: alias=Comet-10; color=green.\nSTATE Comet-10: color=red.\nREGISTER VS-063: alias=Drift-10; color=white.\nSTATE Drift-10: color=gold.\nREGISTER VS-064: alias=Echo-10; color=black.\nSTATE Echo-10: color=black.\nREGISTER VS-065: alias=Fable-10; color=gold.\nSTATE Fable-10: color=white.\nREGISTER VS-066: alias=Aurora-11; color=red.\nSTATE Aurora-11: color=green.\nREGISTER VS-067: alias=Beacon-11; color=blue.\nSTATE Beacon-11: color=blue.\nREGISTER VS-068: alias=Comet-11; color=green.\nSTATE Comet-11: color=red.\nREGISTER VS-069: alias=Drift-11; color=white.\nSTATE Drift-11: color=gold.\nREGISTER VS-070: alias=Echo-11; color=black.\nSTATE Echo-11: color=black.\nREGISTER VS-071: alias=Fable-11; color=gold.\nSTATE Fable-11: color=white.\nREGISTER VS-072: alias=Aurora-12; color=red.\nSTATE Aurora-12: color=green.\nREGISTER VS-073: alias=Beacon-12; color=blue.\nSTATE Beacon-12: color=blue.\nREGISTER VS-074: alias=Comet-12; color=green.\nSTATE Comet-12: color=red.\nREGISTER VS-075: alias=Drift-12; color=white.\nSTATE Drift-12: color=gold.\nREGISTER VS-076: alias=Echo-12; color=black.\nSTATE Echo-12: color=black.\nREGISTER VS-077: alias=Fable-12; color=gold.\nSTATE Fable-12: color=white.\nREGISTER VS-078: alias=Aurora-13; color=red.\nSTATE Aurora-13: color=green.\nREGISTER VS-079: alias=Beacon-13; color=blue.\nSTATE Beacon-13: color=blue.\nREGISTER VS-080: alias=Comet-13; color=green.\nSTATE Comet-13: color=red.\nREGISTER VS-081: alias=Drift-13; color=white.\nSTATE Drift-13: color=gold.\nREGISTER VS-082: alias=Echo-13; color=black.\nSTATE Echo-13: color=black.\nREGISTER VS-083: alias=Fable-13; color=gold.\nSTATE Fable-13: color=white.\nREGISTER VS-084: alias=Aurora-14; color=red.\nSTATE Aurora-14: color=green.\nREGISTER VS-085: alias=Beacon-14; color=blue.\nSTATE Beacon-14: color=blue.\nREGISTER VS-086: alias=Comet-14; color=green.\nSTATE Comet-14: color=red.\nREGISTER VS-087: alias=Drift-14; color=white.\nSTATE Drift-14: color=gold.\nREGISTER VS-088: alias=Echo-14; color=black.\nSTATE Echo-14: color=black.\nREGISTER VS-089: alias=Fable-14; color=gold.\nSTATE Fable-14: color=white.\nREGISTER VS-090: alias=Aurora-15; color=red.\nSTATE Aurora-15: color=green.\nREGISTER VS-091: alias=Beacon-15; color=blue.\nSTATE Beacon-15: color=blue.\nREGISTER VS-092: alias=Comet-15; color=green.\nSTATE Comet-15: color=red.\nREGISTER VS-093: alias=Drift-15; color=white.\nSTATE Drift-15: color=gold.\nREGISTER VS-094: alias=Echo-15; color=black.\nSTATE Echo-15: color=black.\nREGISTER VS-095: alias=Fable-15; color=gold.\nSTATE Fable-15: color=white.\nREGISTER VS-096: alias=Aurora-16; color=red.\nSTATE Aurora-16: color=green.\nREGISTER VS-097: alias=Beacon-16; color=blue.\nSTATE Beacon-16: color=blue.\nREGISTER VS-098: alias=Comet-16; color=green.\nSTATE Comet-16: color=red.\nREGISTER VS-099: alias=Drift-16; color=white.\nSTATE Drift-16: color=gold.\nREGISTER VS-100: alias=Echo-16; color=black.\nSTATE Echo-16: color=black.\nREGISTER VS-101: alias=Fable-16; color=gold.\nSTATE Fable-16: color=white.\nREGISTER VS-102: alias=Aurora-17; color=red.\nSTATE Aurora-17: color=green.\nREGISTER VS-103: alias=Beacon-17; color=blue.\nSTATE Beacon-17: color=blue.\nREGISTER VS-104: alias=Comet-17; color=green.\nSTATE Comet-17: color=red.\nREGISTER VS-105: alias=Drift-17; color=white.\nSTATE Drift-17: color=gold.\nREGISTER VS-106: alias=Echo-17; color=black.\nSTATE Echo-17: color=black.\nREGISTER VS-107: alias=Fable-17; color=gold.\nSTATE Fable-17: color=white.\nREGISTER VS-108: alias=Aurora-18; color=red.\nSTATE Aurora-18: color=green.\nREGISTER VS-109: alias=Beacon-18; color=blue.\nSTATE Beacon-18: color=blue.\nREGISTER VS-110: alias=Comet-18; color=green.\nSTATE Comet-18: color=red.\nREGISTER VS-111: alias=Drift-18; color=white.\nSTATE Drift-18: color=gold.\nREGISTER VS-112: alias=Echo-18; color=black.\nSTATE Echo-18: color=black.\nREGISTER VS-113: alias=Fable-18; color=gold.\nSTATE Fable-18: color=white.\nREGISTER VS-114: alias=Aurora-19; color=red.\nSTATE Aurora-19: color=green.\nREGISTER VS-115: alias=Beacon-19; color=blue.\nSTATE Beacon-19: color=blue.\nREGISTER VS-116: alias=Comet-19; color=green.\nSTATE Comet-19: color=red.\nREGISTER VS-117: alias=Drift-19; color=white.\nSTATE Drift-19: color=gold.\nREGISTER VS-118: alias=Echo-19; color=black.\nSTATE Echo-19: color=black.\nREGISTER VS-119: alias=Fable-19; color=gold.\nSTATE Fable-19: color=white.",
+    "question_count": 120
+  },
+  "model": "gpt-5.6-luna",
+  "elapsed_s": 6.887362544999974,
+  "input_tokens": 10439,
+  "output_tokens": 788,
+  "estimated_cost_usd": 0.0030334,
+  "correct_count": 120,
+  "accuracy": 1.0,
+  "answers": [
+    {
+      "id": "v000",
+      "text": "The final color of vessel VS-000 is green.",
+      "category": "alias-update",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "VS-000 aliases Aurora-00; latest color=green."
+    },
+    {
+      "id": "v001",
+      "text": "The final color of vessel VS-001 is green.",
+      "category": "alias-update",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "VS-001 aliases Beacon-00; latest color=blue."
+    },
+    {
+      "id": "v002",
+      "text": "The final color of vessel VS-002 is red.",
+      "category": "alias-update",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "VS-002 aliases Comet-00; latest color=red."
+    },
+    {
+      "id": "v003",
+      "text": "The final color of vessel VS-003 is red.",
+      "category": "alias-update",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "VS-003 aliases Drift-00; latest color=gold."
+    },
+    {
+      "id": "v004",
+      "text": "The final color of vessel VS-004 is black.",
+      "category": "alias-update",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "VS-004 aliases Echo-00; latest color=black."
+    },
+    {
+      "id": "v005",
+      "text": "The final color of vessel VS-005 is black.",
+      "category": "alias-update",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "VS-005 aliases Fable-00; latest color=white."
+    },
+    {
+      "id": "v006",
+      "text": "The final color of vessel VS-006 is green.",
+      "category": "alias-update",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "VS-006 aliases Aurora-01; latest color=green."
+    },
+    {
+      "id": "v007",
+      "text": "The final color of vessel VS-007 is green.",
+      "category": "alias-update",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "VS-007 aliases Beacon-01; latest color=blue."
+    },
+    {
+      "id": "v008",
+      "text": "The final color of vessel VS-008 is red.",
+      "category": "alias-update",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "VS-008 aliases Comet-01; latest color=red."
+    },
+    {
+      "id": "v009",
+      "text": "The final color of vessel VS-009 is red.",
+      "category": "alias-update",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "VS-009 aliases Drift-01; latest color=gold."
+    },
+    {
+      "id": "v010",
+      "text": "The final color of vessel VS-010 is black.",
+      "category": "alias-update",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "VS-010 aliases Echo-01; latest color=black."
+    },
+    {
+      "id": "v011",
+      "text": "The final color of vessel VS-011 is black.",
+      "category": "alias-update",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "VS-011 aliases Fable-01; latest color=white."
+    },
+    {
+      "id": "v012",
+      "text": "The final color of vessel VS-012 is green.",
+      "category": "alias-update",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "VS-012 aliases Aurora-02; latest color=green."
+    },
+    {
+      "id": "v013",
+      "text": "The final color of vessel VS-013 is green.",
+      "category": "alias-update",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "VS-013 aliases Beacon-02; latest color=blue."
+    },
+    {
+      "id": "v014",
+      "text": "The final color of vessel VS-014 is red.",
+      "category": "alias-update",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "VS-014 aliases Comet-02; latest color=red."
+    },
+    {
+      "id": "v015",
+      "text": "The final color of vessel VS-015 is red.",
+      "category": "alias-update",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "VS-015 aliases Drift-02; latest color=gold."
+    },
+    {
+      "id": "v016",
+      "text": "The final color of vessel VS-016 is black.",
+      "category": "alias-update",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "VS-016 aliases Echo-02; latest color=black."
+    },
+    {
+      "id": "v017",
+      "text": "The final color of vessel VS-017 is black.",
+      "category": "alias-update",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "VS-017 aliases Fable-02; latest color=white."
+    },
+    {
+      "id": "v018",
+      "text": "The final color of vessel VS-018 is green.",
+      "category": "alias-update",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "VS-018 aliases Aurora-03; latest color=green."
+    },
+    {
+      "id": "v019",
+      "text": "The final color of vessel VS-019 is green.",
+      "category": "alias-update",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "VS-019 aliases Beacon-03; latest color=blue."
+    },
+    {
+      "id": "v020",
+      "text": "The final color of vessel VS-020 is red.",
+      "category": "alias-update",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "VS-020 aliases Comet-03; latest color=red."
+    },
+    {
+      "id": "v021",
+      "text": "The final color of vessel VS-021 is red.",
+      "category": "alias-update",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "VS-021 aliases Drift-03; latest color=gold."
+    },
+    {
+      "id": "v022",
+      "text": "The final color of vessel VS-022 is black.",
+      "category": "alias-update",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "VS-022 aliases Echo-03; latest color=black."
+    },
+    {
+      "id": "v023",
+      "text": "The final color of vessel VS-023 is black.",
+      "category": "alias-update",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "VS-023 aliases Fable-03; latest color=white."
+    },
+    {
+      "id": "v024",
+      "text": "The final color of vessel VS-024 is green.",
+      "category": "alias-update",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "VS-024 aliases Aurora-04; latest color=green."
+    },
+    {
+      "id": "v025",
+      "text": "The final color of vessel VS-025 is green.",
+      "category": "alias-update",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "VS-025 aliases Beacon-04; latest color=blue."
+    },
+    {
+      "id": "v026",
+      "text": "The final color of vessel VS-026 is red.",
+      "category": "alias-update",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "VS-026 aliases Comet-04; latest color=red."
+    },
+    {
+      "id": "v027",
+      "text": "The final color of vessel VS-027 is red.",
+      "category": "alias-update",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "VS-027 aliases Drift-04; latest color=gold."
+    },
+    {
+      "id": "v028",
+      "text": "The final color of vessel VS-028 is black.",
+      "category": "alias-update",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "VS-028 aliases Echo-04; latest color=black."
+    },
+    {
+      "id": "v029",
+      "text": "The final color of vessel VS-029 is black.",
+      "category": "alias-update",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "VS-029 aliases Fable-04; latest color=white."
+    },
+    {
+      "id": "v030",
+      "text": "The final color of vessel VS-030 is green.",
+      "category": "alias-update",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "VS-030 aliases Aurora-05; latest color=green."
+    },
+    {
+      "id": "v031",
+      "text": "The final color of vessel VS-031 is green.",
+      "category": "alias-update",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "VS-031 aliases Beacon-05; latest color=blue."
+    },
+    {
+      "id": "v032",
+      "text": "The final color of vessel VS-032 is red.",
+      "category": "alias-update",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "VS-032 aliases Comet-05; latest color=red."
+    },
+    {
+      "id": "v033",
+      "text": "The final color of vessel VS-033 is red.",
+      "category": "alias-update",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "VS-033 aliases Drift-05; latest color=gold."
+    },
+    {
+      "id": "v034",
+      "text": "The final color of vessel VS-034 is black.",
+      "category": "alias-update",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "VS-034 aliases Echo-05; latest color=black."
+    },
+    {
+      "id": "v035",
+      "text": "The final color of vessel VS-035 is black.",
+      "category": "alias-update",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "VS-035 aliases Fable-05; latest color=white."
+    },
+    {
+      "id": "v036",
+      "text": "The final color of vessel VS-036 is green.",
+      "category": "alias-update",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "VS-036 aliases Aurora-06; latest color=green."
+    },
+    {
+      "id": "v037",
+      "text": "The final color of vessel VS-037 is green.",
+      "category": "alias-update",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "VS-037 aliases Beacon-06; latest color=blue."
+    },
+    {
+      "id": "v038",
+      "text": "The final color of vessel VS-038 is red.",
+      "category": "alias-update",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "VS-038 aliases Comet-06; latest color=red."
+    },
+    {
+      "id": "v039",
+      "text": "The final color of vessel VS-039 is red.",
+      "category": "alias-update",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "VS-039 aliases Drift-06; latest color=gold."
+    },
+    {
+      "id": "v040",
+      "text": "The final color of vessel VS-040 is black.",
+      "category": "alias-update",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "VS-040 aliases Echo-06; latest color=black."
+    },
+    {
+      "id": "v041",
+      "text": "The final color of vessel VS-041 is black.",
+      "category": "alias-update",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "VS-041 aliases Fable-06; latest color=white."
+    },
+    {
+      "id": "v042",
+      "text": "The final color of vessel VS-042 is green.",
+      "category": "alias-update",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "VS-042 aliases Aurora-07; latest color=green."
+    },
+    {
+      "id": "v043",
+      "text": "The final color of vessel VS-043 is green.",
+      "category": "alias-update",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "VS-043 aliases Beacon-07; latest color=blue."
+    },
+    {
+      "id": "v044",
+      "text": "The final color of vessel VS-044 is red.",
+      "category": "alias-update",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "VS-044 aliases Comet-07; latest color=red."
+    },
+    {
+      "id": "v045",
+      "text": "The final color of vessel VS-045 is red.",
+      "category": "alias-update",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "VS-045 aliases Drift-07; latest color=gold."
+    },
+    {
+      "id": "v046",
+      "text": "The final color of vessel VS-046 is black.",
+      "category": "alias-update",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "VS-046 aliases Echo-07; latest color=black."
+    },
+    {
+      "id": "v047",
+      "text": "The final color of vessel VS-047 is black.",
+      "category": "alias-update",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "VS-047 aliases Fable-07; latest color=white."
+    },
+    {
+      "id": "v048",
+      "text": "The final color of vessel VS-048 is green.",
+      "category": "alias-update",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "VS-048 aliases Aurora-08; latest color=green."
+    },
+    {
+      "id": "v049",
+      "text": "The final color of vessel VS-049 is green.",
+      "category": "alias-update",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "VS-049 aliases Beacon-08; latest color=blue."
+    },
+    {
+      "id": "v050",
+      "text": "The final color of vessel VS-050 is red.",
+      "category": "alias-update",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "VS-050 aliases Comet-08; latest color=red."
+    },
+    {
+      "id": "v051",
+      "text": "The final color of vessel VS-051 is red.",
+      "category": "alias-update",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "VS-051 aliases Drift-08; latest color=gold."
+    },
+    {
+      "id": "v052",
+      "text": "The final color of vessel VS-052 is black.",
+      "category": "alias-update",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "VS-052 aliases Echo-08; latest color=black."
+    },
+    {
+      "id": "v053",
+      "text": "The final color of vessel VS-053 is black.",
+      "category": "alias-update",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "VS-053 aliases Fable-08; latest color=white."
+    },
+    {
+      "id": "v054",
+      "text": "The final color of vessel VS-054 is green.",
+      "category": "alias-update",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "VS-054 aliases Aurora-09; latest color=green."
+    },
+    {
+      "id": "v055",
+      "text": "The final color of vessel VS-055 is green.",
+      "category": "alias-update",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "VS-055 aliases Beacon-09; latest color=blue."
+    },
+    {
+      "id": "v056",
+      "text": "The final color of vessel VS-056 is red.",
+      "category": "alias-update",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "VS-056 aliases Comet-09; latest color=red."
+    },
+    {
+      "id": "v057",
+      "text": "The final color of vessel VS-057 is red.",
+      "category": "alias-update",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "VS-057 aliases Drift-09; latest color=gold."
+    },
+    {
+      "id": "v058",
+      "text": "The final color of vessel VS-058 is black.",
+      "category": "alias-update",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "VS-058 aliases Echo-09; latest color=black."
+    },
+    {
+      "id": "v059",
+      "text": "The final color of vessel VS-059 is black.",
+      "category": "alias-update",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "VS-059 aliases Fable-09; latest color=white."
+    },
+    {
+      "id": "v060",
+      "text": "The final color of vessel VS-060 is green.",
+      "category": "alias-update",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "VS-060 aliases Aurora-10; latest color=green."
+    },
+    {
+      "id": "v061",
+      "text": "The final color of vessel VS-061 is green.",
+      "category": "alias-update",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "VS-061 aliases Beacon-10; latest color=blue."
+    },
+    {
+      "id": "v062",
+      "text": "The final color of vessel VS-062 is red.",
+      "category": "alias-update",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "VS-062 aliases Comet-10; latest color=red."
+    },
+    {
+      "id": "v063",
+      "text": "The final color of vessel VS-063 is red.",
+      "category": "alias-update",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "VS-063 aliases Drift-10; latest color=gold."
+    },
+    {
+      "id": "v064",
+      "text": "The final color of vessel VS-064 is black.",
+      "category": "alias-update",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "VS-064 aliases Echo-10; latest color=black."
+    },
+    {
+      "id": "v065",
+      "text": "The final color of vessel VS-065 is black.",
+      "category": "alias-update",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "VS-065 aliases Fable-10; latest color=white."
+    },
+    {
+      "id": "v066",
+      "text": "The final color of vessel VS-066 is green.",
+      "category": "alias-update",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "VS-066 aliases Aurora-11; latest color=green."
+    },
+    {
+      "id": "v067",
+      "text": "The final color of vessel VS-067 is green.",
+      "category": "alias-update",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "VS-067 aliases Beacon-11; latest color=blue."
+    },
+    {
+      "id": "v068",
+      "text": "The final color of vessel VS-068 is red.",
+      "category": "alias-update",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "VS-068 aliases Comet-11; latest color=red."
+    },
+    {
+      "id": "v069",
+      "text": "The final color of vessel VS-069 is red.",
+      "category": "alias-update",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "VS-069 aliases Drift-11; latest color=gold."
+    },
+    {
+      "id": "v070",
+      "text": "The final color of vessel VS-070 is black.",
+      "category": "alias-update",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "VS-070 aliases Echo-11; latest color=black."
+    },
+    {
+      "id": "v071",
+      "text": "The final color of vessel VS-071 is black.",
+      "category": "alias-update",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "VS-071 aliases Fable-11; latest color=white."
+    },
+    {
+      "id": "v072",
+      "text": "The final color of vessel VS-072 is green.",
+      "category": "alias-update",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "VS-072 aliases Aurora-12; latest color=green."
+    },
+    {
+      "id": "v073",
+      "text": "The final color of vessel VS-073 is green.",
+      "category": "alias-update",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "VS-073 aliases Beacon-12; latest color=blue."
+    },
+    {
+      "id": "v074",
+      "text": "The final color of vessel VS-074 is red.",
+      "category": "alias-update",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "VS-074 aliases Comet-12; latest color=red."
+    },
+    {
+      "id": "v075",
+      "text": "The final color of vessel VS-075 is red.",
+      "category": "alias-update",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "VS-075 aliases Drift-12; latest color=gold."
+    },
+    {
+      "id": "v076",
+      "text": "The final color of vessel VS-076 is black.",
+      "category": "alias-update",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "VS-076 aliases Echo-12; latest color=black."
+    },
+    {
+      "id": "v077",
+      "text": "The final color of vessel VS-077 is black.",
+      "category": "alias-update",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "VS-077 aliases Fable-12; latest color=white."
+    },
+    {
+      "id": "v078",
+      "text": "The final color of vessel VS-078 is green.",
+      "category": "alias-update",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "VS-078 aliases Aurora-13; latest color=green."
+    },
+    {
+      "id": "v079",
+      "text": "The final color of vessel VS-079 is green.",
+      "category": "alias-update",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "VS-079 aliases Beacon-13; latest color=blue."
+    },
+    {
+      "id": "v080",
+      "text": "The final color of vessel VS-080 is red.",
+      "category": "alias-update",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "VS-080 aliases Comet-13; latest color=red."
+    },
+    {
+      "id": "v081",
+      "text": "The final color of vessel VS-081 is red.",
+      "category": "alias-update",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "VS-081 aliases Drift-13; latest color=gold."
+    },
+    {
+      "id": "v082",
+      "text": "The final color of vessel VS-082 is black.",
+      "category": "alias-update",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "VS-082 aliases Echo-13; latest color=black."
+    },
+    {
+      "id": "v083",
+      "text": "The final color of vessel VS-083 is black.",
+      "category": "alias-update",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "VS-083 aliases Fable-13; latest color=white."
+    },
+    {
+      "id": "v084",
+      "text": "The final color of vessel VS-084 is green.",
+      "category": "alias-update",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "VS-084 aliases Aurora-14; latest color=green."
+    },
+    {
+      "id": "v085",
+      "text": "The final color of vessel VS-085 is green.",
+      "category": "alias-update",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "VS-085 aliases Beacon-14; latest color=blue."
+    },
+    {
+      "id": "v086",
+      "text": "The final color of vessel VS-086 is red.",
+      "category": "alias-update",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "VS-086 aliases Comet-14; latest color=red."
+    },
+    {
+      "id": "v087",
+      "text": "The final color of vessel VS-087 is red.",
+      "category": "alias-update",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "VS-087 aliases Drift-14; latest color=gold."
+    },
+    {
+      "id": "v088",
+      "text": "The final color of vessel VS-088 is black.",
+      "category": "alias-update",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "VS-088 aliases Echo-14; latest color=black."
+    },
+    {
+      "id": "v089",
+      "text": "The final color of vessel VS-089 is black.",
+      "category": "alias-update",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "VS-089 aliases Fable-14; latest color=white."
+    },
+    {
+      "id": "v090",
+      "text": "The final color of vessel VS-090 is green.",
+      "category": "alias-update",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "VS-090 aliases Aurora-15; latest color=green."
+    },
+    {
+      "id": "v091",
+      "text": "The final color of vessel VS-091 is green.",
+      "category": "alias-update",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "VS-091 aliases Beacon-15; latest color=blue."
+    },
+    {
+      "id": "v092",
+      "text": "The final color of vessel VS-092 is red.",
+      "category": "alias-update",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "VS-092 aliases Comet-15; latest color=red."
+    },
+    {
+      "id": "v093",
+      "text": "The final color of vessel VS-093 is red.",
+      "category": "alias-update",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "VS-093 aliases Drift-15; latest color=gold."
+    },
+    {
+      "id": "v094",
+      "text": "The final color of vessel VS-094 is black.",
+      "category": "alias-update",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "VS-094 aliases Echo-15; latest color=black."
+    },
+    {
+      "id": "v095",
+      "text": "The final color of vessel VS-095 is black.",
+      "category": "alias-update",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "VS-095 aliases Fable-15; latest color=white."
+    },
+    {
+      "id": "v096",
+      "text": "The final color of vessel VS-096 is green.",
+      "category": "alias-update",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "VS-096 aliases Aurora-16; latest color=green."
+    },
+    {
+      "id": "v097",
+      "text": "The final color of vessel VS-097 is green.",
+      "category": "alias-update",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "VS-097 aliases Beacon-16; latest color=blue."
+    },
+    {
+      "id": "v098",
+      "text": "The final color of vessel VS-098 is red.",
+      "category": "alias-update",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "VS-098 aliases Comet-16; latest color=red."
+    },
+    {
+      "id": "v099",
+      "text": "The final color of vessel VS-099 is red.",
+      "category": "alias-update",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "VS-099 aliases Drift-16; latest color=gold."
+    },
+    {
+      "id": "v100",
+      "text": "The final color of vessel VS-100 is black.",
+      "category": "alias-update",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "VS-100 aliases Echo-16; latest color=black."
+    },
+    {
+      "id": "v101",
+      "text": "The final color of vessel VS-101 is black.",
+      "category": "alias-update",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "VS-101 aliases Fable-16; latest color=white."
+    },
+    {
+      "id": "v102",
+      "text": "The final color of vessel VS-102 is green.",
+      "category": "alias-update",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "VS-102 aliases Aurora-17; latest color=green."
+    },
+    {
+      "id": "v103",
+      "text": "The final color of vessel VS-103 is green.",
+      "category": "alias-update",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "VS-103 aliases Beacon-17; latest color=blue."
+    },
+    {
+      "id": "v104",
+      "text": "The final color of vessel VS-104 is red.",
+      "category": "alias-update",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "VS-104 aliases Comet-17; latest color=red."
+    },
+    {
+      "id": "v105",
+      "text": "The final color of vessel VS-105 is red.",
+      "category": "alias-update",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "VS-105 aliases Drift-17; latest color=gold."
+    },
+    {
+      "id": "v106",
+      "text": "The final color of vessel VS-106 is black.",
+      "category": "alias-update",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "VS-106 aliases Echo-17; latest color=black."
+    },
+    {
+      "id": "v107",
+      "text": "The final color of vessel VS-107 is black.",
+      "category": "alias-update",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "VS-107 aliases Fable-17; latest color=white."
+    },
+    {
+      "id": "v108",
+      "text": "The final color of vessel VS-108 is green.",
+      "category": "alias-update",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "VS-108 aliases Aurora-18; latest color=green."
+    },
+    {
+      "id": "v109",
+      "text": "The final color of vessel VS-109 is green.",
+      "category": "alias-update",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "VS-109 aliases Beacon-18; latest color=blue."
+    },
+    {
+      "id": "v110",
+      "text": "The final color of vessel VS-110 is red.",
+      "category": "alias-update",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "VS-110 aliases Comet-18; latest color=red."
+    },
+    {
+      "id": "v111",
+      "text": "The final color of vessel VS-111 is red.",
+      "category": "alias-update",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "VS-111 aliases Drift-18; latest color=gold."
+    },
+    {
+      "id": "v112",
+      "text": "The final color of vessel VS-112 is black.",
+      "category": "alias-update",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "VS-112 aliases Echo-18; latest color=black."
+    },
+    {
+      "id": "v113",
+      "text": "The final color of vessel VS-113 is black.",
+      "category": "alias-update",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "VS-113 aliases Fable-18; latest color=white."
+    },
+    {
+      "id": "v114",
+      "text": "The final color of vessel VS-114 is green.",
+      "category": "alias-update",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "VS-114 aliases Aurora-19; latest color=green."
+    },
+    {
+      "id": "v115",
+      "text": "The final color of vessel VS-115 is green.",
+      "category": "alias-update",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "VS-115 aliases Beacon-19; latest color=blue."
+    },
+    {
+      "id": "v116",
+      "text": "The final color of vessel VS-116 is red.",
+      "category": "alias-update",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "VS-116 aliases Comet-19; latest color=red."
+    },
+    {
+      "id": "v117",
+      "text": "The final color of vessel VS-117 is red.",
+      "category": "alias-update",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "VS-117 aliases Drift-19; latest color=gold."
+    },
+    {
+      "id": "v118",
+      "text": "The final color of vessel VS-118 is black.",
+      "category": "alias-update",
+      "expected": true,
+      "probability_yes": 1.0,
+      "predicted": true,
+      "correct": true,
+      "proof": "VS-118 aliases Echo-19; latest color=black."
+    },
+    {
+      "id": "v119",
+      "text": "The final color of vessel VS-119 is black.",
+      "category": "alias-update",
+      "expected": false,
+      "probability_yes": 0.0,
+      "predicted": false,
+      "correct": true,
+      "proof": "VS-119 aliases Fable-19; latest color=white."
+    }
+  ]
+}

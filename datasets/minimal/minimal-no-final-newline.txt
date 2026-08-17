@@ -1,0 +1,13 @@
+ASSET LEDGER
+For each asset and field, the latest timestamp is final.
+An update changes only the fields that it names.
+Earlier values remain in the ledger but are not final.
+
+T10 NX-001: status=held, bay=C1, owner=Dorado.
+T10 NX-002: status=inspection, bay=D1, owner=Aster.
+T22 NX-002: bay=C1.
+T23 NX-001: status=inspection.
+T32 NX-001: bay=C2.
+T32 NX-002: owner=Cygnus.
+T44 NX-001: owner=Cygnus.
+T44 NX-002: status=ready.
