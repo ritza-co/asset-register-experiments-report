@@ -18,7 +18,6 @@ from typesafe_client_adapter import TypeSafeClientAdapter
 
 ROOT = Path(__file__).resolve().parent
 MODELS = {"typesafe": "speed_latest", "luna": "gpt-5.6-luna"}
-PRICES = {"speed_latest": (0.10, 0.30), "gpt-5.6-luna": (0.20, 1.20)}
 
 
 def run(dataset: dict, model_name: str) -> dict:
@@ -58,7 +57,6 @@ def run(dataset: dict, model_name: str) -> dict:
                 "correct": predicted == question["expected"],
             }
         )
-    input_price, output_price = PRICES[model]
     return {
         "schema_version": 2,
         "created_at": datetime.now(UTC).isoformat(),
@@ -74,9 +72,6 @@ def run(dataset: dict, model_name: str) -> dict:
         "elapsed_s": elapsed,
         "input_tokens": input_tokens,
         "output_tokens": output_tokens,
-        "estimated_cost_usd": (
-            input_tokens * input_price + output_tokens * output_price
-        ) / 1_000_000,
         "correct_count": sum(row["correct"] for row in answers),
         "accuracy": sum(row["correct"] for row in answers) / len(answers),
         "answers": answers,

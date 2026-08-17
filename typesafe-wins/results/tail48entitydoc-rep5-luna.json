@@ -1,7 +1,6 @@
 {
   "schema_version": 2,
   "created_at": "2026-08-16T21:02:08.801824+00:00",
-  "location": "US-west orb",
   "host": {
     "hostname": "e2b.local",
     "platform": "Linux-6.1.158+-x86_64-with-glibc2.36"
@@ -16,7 +15,6 @@
   "elapsed_s": 8.672033947000017,
   "input_tokens": 7082,
   "output_tokens": 1198,
-  "estimated_cost_usd": 0.002854,
   "correct_count": 26,
   "accuracy": 0.3611111111111111,
   "answers": [

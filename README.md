@@ -4,7 +4,7 @@ This repository contains two experiments.
 
 The first is a small failure case. TypeSafe answered the same question incorrectly 10/10 times. Luna answered it correctly 10/10 times. Adding one final newline to the document changed TypeSafe to 10/10 correct.
 
-The second is a larger batched task. TypeSafe is more accurate and consistent than Luna across six runs. It is also faster and cheaper under the prices used by the test harness.
+The second is a larger batched task. TypeSafe is more accurate and consistent than Luna across six runs. It is also faster.
 
 These are exact reproductions, not a general benchmark of either model.
 
@@ -72,7 +72,7 @@ export OPENAI_API_KEY=...
 
 Change `--model` to `luna`, or change the document to `document-with-final-newline.txt`, to reproduce the other three arms.
 
-The four original result files are in [`newline-bug/results/`](newline-bug/results/).
+The four recorded result files are in [`newline-bug/results/`](newline-bug/results/).
 
 ## 2. TypeSafe wins on a batched asset register
 
@@ -84,7 +84,7 @@ The document contains 48 assets and 192 update rows. Rows are grouped by asset. 
 
 One `system_one` request asks 72 distinct true-or-false questions about the final status, bay, or owner of the last 24 assets.
 
-We froze the exact document, questions, gold labels, and question order. We then ran the same request six times per model in separate US-west orb workspaces.
+We froze the exact document, questions, gold labels, and question order. We then ran the same request six times per model.
 
 ### Luna results
 
@@ -102,7 +102,6 @@ Combined Luna result:
 - Accuracy: 319/432, or 73.8%
 - Score range: 36.1% to 100.0%
 - Total wall time: 57.251 seconds
-- Estimated cost: $0.017926
 
 ### TypeSafe results
 
@@ -113,7 +112,6 @@ Combined TypeSafe result:
 - Accuracy: 408/432, or 94.4%
 - Score range: 94.4% to 94.4%
 - Total wall time: 1.765 seconds
-- Estimated cost: $0.005020
 
 ### Comparison
 
@@ -121,7 +119,6 @@ On this task, TypeSafe was:
 
 - 20.6 percentage points more accurate
 - 32.4 times faster by measured wall time
-- 3.6 times cheaper by the prices in the harness
 - identical across all six runs, while Luna ranged from 36.1% to 100.0%
 
 This is a narrow result for one frozen task. It does not show that TypeSafe is better on all asset registers or classification problems.
@@ -136,15 +133,8 @@ This is a narrow result for one frozen task. It does not show that TypeSafe is b
 
 Run that command six times with separate output directories. Each invocation makes one request per model.
 
-The frozen dataset is [`typesafe-wins/dataset.json`](typesafe-wins/dataset.json). The 12 original result files are in [`typesafe-wins/results/`](typesafe-wins/results/).
+The frozen dataset is [`typesafe-wins/dataset.json`](typesafe-wins/dataset.json). The 12 recorded result files are in [`typesafe-wins/results/`](typesafe-wins/results/).
 
-## Model names and costs
+## Model aliases
 
 The original experiments used the production aliases `speed_latest` and `gpt-5.6-luna`. These are not pinned model versions. Reproducing the experiment later tests whatever those aliases point to at that time.
-
-Estimated prices used by the harness:
-
-| Model | Input | Output |
-|---|---:|---:|
-| TypeSafe `speed_latest` | $0.10/M tokens | $0.30/M tokens |
-| Luna `gpt-5.6-luna` | $0.20/M tokens | $1.20/M tokens |

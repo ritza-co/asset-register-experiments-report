@@ -1,6 +1,5 @@
 {
   "created_at": "2026-08-16T20:57:28.687799+00:00",
-  "location": "US-west VM",
   "model": "speed_latest",
   "prompt": "baseline",
   "document": "ASSET LEDGER\nFor each asset and field, the latest timestamp is final.\nAn update changes only the fields that it names.\nEarlier values remain in the ledger but are not final.\n\nT10 NX-001: status=held, bay=C1, owner=Dorado.\nT10 NX-002: status=inspection, bay=D1, owner=Aster.\nT22 NX-002: bay=C1.\nT23 NX-001: status=inspection.\nT32 NX-001: bay=C2.\nT32 NX-002: owner=Cygnus.\nT44 NX-001: owner=Cygnus.\nT44 NX-002: status=ready.",
@@ -10,7 +9,6 @@
   "correct_count": 0,
   "mean_wall_latency_s": 0.13597234809999464,
   "median_wall_latency_s": 0.08312128050000922,
-  "total_estimated_cost_usd": 0.000489,
   "runs": [
     {
       "run": 1,
@@ -20,8 +18,7 @@
       "wall_latency_s": 0.5198740479999913,
       "reported_latency_s": null,
       "input_tokens": 435,
-      "output_tokens": 18,
-      "estimated_cost_usd": 4.8899999999999996e-05
+      "output_tokens": 18
     },
     {
       "run": 2,
@@ -31,8 +28,7 @@
       "wall_latency_s": 0.07770660499997462,
       "reported_latency_s": null,
       "input_tokens": 435,
-      "output_tokens": 18,
-      "estimated_cost_usd": 4.8899999999999996e-05
+      "output_tokens": 18
     },
     {
       "run": 3,
@@ -42,8 +38,7 @@
       "wall_latency_s": 0.13650443399998835,
       "reported_latency_s": null,
       "input_tokens": 435,
-      "output_tokens": 18,
-      "estimated_cost_usd": 4.8899999999999996e-05
+      "output_tokens": 18
     },
     {
       "run": 4,
@@ -53,8 +48,7 @@
       "wall_latency_s": 0.07957638999999972,
       "reported_latency_s": null,
       "input_tokens": 435,
-      "output_tokens": 18,
-      "estimated_cost_usd": 4.8899999999999996e-05
+      "output_tokens": 18
     },
     {
       "run": 5,
@@ -64,8 +58,7 @@
       "wall_latency_s": 0.13645523700000695,
       "reported_latency_s": null,
       "input_tokens": 435,
-      "output_tokens": 18,
-      "estimated_cost_usd": 4.8899999999999996e-05
+      "output_tokens": 18
     },
     {
       "run": 6,
@@ -75,8 +68,7 @@
       "wall_latency_s": 0.08064994099999012,
       "reported_latency_s": null,
       "input_tokens": 435,
-      "output_tokens": 18,
-      "estimated_cost_usd": 4.8899999999999996e-05
+      "output_tokens": 18
     },
     {
       "run": 7,
@@ -86,8 +78,7 @@
       "wall_latency_s": 0.08410790100001009,
       "reported_latency_s": null,
       "input_tokens": 435,
-      "output_tokens": 18,
-      "estimated_cost_usd": 4.8899999999999996e-05
+      "output_tokens": 18
     },
     {
       "run": 8,
@@ -97,8 +88,7 @@
       "wall_latency_s": 0.0846572179999896,
       "reported_latency_s": null,
       "input_tokens": 435,
-      "output_tokens": 18,
-      "estimated_cost_usd": 4.8899999999999996e-05
+      "output_tokens": 18
     },
     {
       "run": 9,
@@ -108,8 +98,7 @@
       "wall_latency_s": 0.08213466000000835,
       "reported_latency_s": null,
       "input_tokens": 435,
-      "output_tokens": 18,
-      "estimated_cost_usd": 4.8899999999999996e-05
+      "output_tokens": 18
     },
     {
       "run": 10,
@@ -119,8 +108,7 @@
       "wall_latency_s": 0.07805704699998728,
       "reported_latency_s": null,
       "input_tokens": 435,
-      "output_tokens": 18,
-      "estimated_cost_usd": 4.8899999999999996e-05
+      "output_tokens": 18
     }
   ]
 }

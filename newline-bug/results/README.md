@@ -1,4 +1,4 @@
-# Original results
+# Recorded results
 
 | File | Document | Model |
 |---|---|---|
@@ -7,4 +7,4 @@
 | `repro-typesafe-baseline.json` | With final newline | TypeSafe |
 | `repro-luna-baseline.json` | With final newline | Luna |
 
-Each file contains all ten calls, probabilities, answers, latency, token usage, and estimated cost.
+Each file contains all ten calls, probabilities, answers, latency, and token usage.

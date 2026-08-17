@@ -17,7 +17,6 @@ from typesafe_client_adapter import TypeSafeClientAdapter
 
 QUESTION = "The final status for NX-001 is inspection."
 MODELS = {"typesafe": "speed_latest", "luna": "gpt-5.6-luna"}
-PRICES = {"speed_latest": (0.10, 0.30), "gpt-5.6-luna": (0.20, 1.20)}
 
 
 def main() -> None:
@@ -40,7 +39,6 @@ def main() -> None:
             n_retry_malformed_structure=0,
         )
 
-    input_price, output_price = PRICES[model]
     runs = []
     for run_number in range(1, args.runs + 1):
         started = perf_counter()
@@ -64,9 +62,6 @@ def main() -> None:
                 "reported_latency_s": getattr(usage, "latency", None),
                 "input_tokens": input_tokens,
                 "output_tokens": output_tokens,
-                "estimated_cost_usd": (
-                    input_tokens * input_price + output_tokens * output_price
-                ) / 1_000_000,
             }
         )
         print(f"run={run_number}: p(true)={probability:.2f}, elapsed={elapsed:.3f}s")
@@ -81,7 +76,6 @@ def main() -> None:
         "correct_count": sum(row["correct"] for row in runs),
         "mean_wall_latency_s": statistics.mean(row["wall_latency_s"] for row in runs),
         "median_wall_latency_s": statistics.median(row["wall_latency_s"] for row in runs),
-        "total_estimated_cost_usd": sum(row["estimated_cost_usd"] for row in runs),
         "runs": runs,
     }
     args.output.parent.mkdir(parents=True, exist_ok=True)
