@@ -1,4 +1,0 @@
-{
-  "baseline": "The final status for NX-001 is inspection.",
-  "evidence-assisted": "Relevant NX-001 rows are: T10 status=held, bay=C1, owner=Dorado; T23 status=inspection; T32 bay=C2; T44 owner=Cygnus. Apply the ledger rules. The final status for NX-001 is inspection."
-}

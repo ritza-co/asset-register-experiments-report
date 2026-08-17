@@ -1,103 +1,150 @@
-# Asset register experiments
+# TypeSafe asset-register reproductions
 
-This folder combines two studies of the same asset-ledger rule.
+This repository contains two experiments.
 
-> For each asset and field, the value at the latest timestamp is final. An update changes only the fields it names.
+The first is a small failure case. TypeSafe answered the same question incorrectly 10/10 times. Luna answered it correctly 10/10 times. Adding one final newline to the document changed TypeSafe to 10/10 correct.
 
-The studies reach different results. That is the interesting part.
+The second is a larger batched task. TypeSafe is more accurate and consistent than Luna across six runs. It is also faster and cheaper under the prices used by the test harness.
 
-## What was tested
+These are exact reproductions, not a general benchmark of either model.
 
-The discovery campaign tested 20 generated tasks. Each task was sent once to TypeSafe and once to Luna. Two promising asset-ledger tasks were then repeated five more times in separate US-west orb workspaces. Each campaign run used one `system_one` request containing one document and many true-or-false questions.
+## 1. Final-newline failure
 
-The selected example, `tail48entitydoc`, contains 48 assets and 192 update rows. Rows are grouped by asset. The request asks 72 distinct questions about the final status, bay, or owner of the last 24 assets.
+Everything for this experiment is in [`newline-bug/`](newline-bug/).
 
-The minimal reproduction uses the same rule but only two assets and eight update rows. It asks one question: whether the final status of `NX-001` is `inspection`. The same request was made ten times per arm. The two document files differ by one final newline byte.
+### What we found
 
-## Results
+The document describes eight updates to two assets. The rule says that an update changes only the fields it names.
 
-### Selected campaign example
+The question is:
 
-Six runs used the same frozen document and question order.
+> The final status for NX-001 is inspection.
 
-| Model | Correct | Accuracy | Total wall time | Estimated cost |
-|---|---:|---:|---:|---:|
-| TypeSafe `speed_latest` | 408/432 | 94.4% | 1.765 s | $0.005020 |
-| Luna `gpt-5.6-luna` | 319/432 | 73.8% | 57.251 s | $0.017926 |
+The correct answer is `true`. NX-001 changes from `status=held` at T10 to `status=inspection` at T23. Its later updates change only its bay and owner.
 
-TypeSafe scored 68/72 in every run. Luna scored 54, 72, 60, 72, 35, and 26. On this selected task, TypeSafe was 20.6 percentage points more accurate, 32.4 times faster by measured wall time, and 3.6 times cheaper by the prices in the harness.
+TypeSafe answered `false` in all ten calls when the document had no final newline. Luna answered `true` in all ten calls.
 
-### Minimal reproduction
+Adding one final newline changed TypeSafe's answer from `false` to `true` in all ten calls.
 
-| Document | Prompt | TypeSafe | Luna |
-|---|---|---:|---:|
-| No final newline | Baseline | 0/10, p(true)=0.40 | 10/10, p(true)=1.00 |
-| Final newline | Baseline | 10/10, p(true)=0.56 | 9/10, p(true)=0.00–1.00 |
-| No final newline | Evidence-assisted | 10/10, p(true)=0.92 | 10/10, p(true)=1.00 |
-| Final newline | Evidence-assisted | 10/10, p(true)=0.87 | 10/10, p(true)=1.00 |
+### What we did
 
-The evidence-assisted question copies the relevant `NX-001` rows into the question. It therefore tests less retrieval work than the baseline.
+We created two document files:
 
-## Why the contrast matters
+- `document-no-final-newline.txt`: 422 bytes
+- `document-with-final-newline.txt`: 423 bytes
 
-The minimal case shows that deterministic output is not the same as robust output. TypeSafe made the same wrong decision ten times for one exact byte sequence. Adding a semantically irrelevant newline moved its probability across the 0.5 threshold.
+The second file is exactly the first file plus `\n`. The facts, rules, and question are unchanged.
 
-The selected campaign case shows a different property. On a larger grouped document with 72 questions in one request, TypeSafe produced the same 68 answers in every run. Luna varied from 36.1% to 100% accuracy.
+For each document, we sent the same true-or-false question to TypeSafe and Luna ten times. Each call used one `system_one` request with one `NoulQuestion`.
 
-The newline is not a general explanation. Every campaign document, including the selected winner, has no final newline. The studies instead show exact-input sensitivity: document size, row order, question order, batching, and formatting can all change the result.
+### What we expected
 
-The campaign result was selected after 20 exploratory screens. It is evidence about this frozen task, not a general ranking of TypeSafe, Luna, or asset tracking. The minimal ten-run arms repeat one question; they are not ten distinct classification examples.
+Both files have the same meaning. We expected each model to give the same answer for both files.
 
-## Contents
+The gold answer was `true`.
 
-- `datasets/campaign/`: all 20 campaign documents, questions, gold labels, and proofs as frozen JSON and text
-- `datasets/minimal/`: the exact 422-byte and 423-byte document variants plus both questions
-- `results/campaign/`: all 60 raw campaign result files
-- `results/minimal-repro/`: all eight raw ten-run arms used by `REPRO_REPORT.html`
-- `experiments.sqlite`: datasets, hypotheses, aggregate runs, and individual answers in one database
-- `reports/`: the two original HTML reports and the campaign blog draft
-- `scripts/`: scripts to rerun either study and validate this bundle
-- `scripts/reference/`: the original generators, runners, validators, database code, and report renderers
-- `manifest.json`: machine-readable dataset-to-result mapping
-- `MANIFEST.sha256`: checksums for the complete bundle
+### What actually happened
 
-No API keys are included.
+| Document | TypeSafe `speed_latest` | Luna `gpt-5.6-luna` |
+|---|---:|---:|
+| No final newline | 0/10; p(true)=0.40 every time | 10/10; p(true)=1.00 every time |
+| With final newline | 10/10; p(true)=0.56 every time | 9/10; p(true)=0.00 once and 1.00 nine times |
 
-## Reproduce
+This is a formatting-sensitivity bug. The newline does not change the correct answer, but it moves TypeSafe's probability across the 0.5 decision threshold.
 
-Python 3.11 or newer is required. The commands below assume this folder remains beside `TypeSafeClientAdapter`.
+The ten calls repeat one question. They are evidence of consistency for these exact bytes, not ten independent classification examples.
+
+### Reproduce it
 
 ```bash
+git clone git@github.com:typesafe-ai/TypeSafeClientAdapter.git ../TypeSafeClientAdapter
 python3 -m venv .venv --clear
 .venv/bin/pip install --extra-index-url https://pypi.typesafe.ai/ -r requirements.txt
 .venv/bin/pip install -e ../TypeSafeClientAdapter
 export TYPESAFE_API_KEY=...
 export OPENAI_API_KEY=...
+
+.venv/bin/python newline-bug/run.py \
+  --document newline-bug/document-no-final-newline.txt \
+  --model typesafe --runs 10 \
+  --output reproduced-results/newline-bug/typesafe-no-newline.json
 ```
 
-Run one frozen campaign candidate once on both models:
+Change `--model` to `luna`, or change the document to `document-with-final-newline.txt`, to reproduce the other three arms.
+
+The four original result files are in [`newline-bug/results/`](newline-bug/results/).
+
+## 2. TypeSafe wins on a batched asset register
+
+Everything for this experiment is in [`typesafe-wins/`](typesafe-wins/).
+
+### The task
+
+The document contains 48 assets and 192 update rows. Rows are grouped by asset. For each field, the update with the latest timestamp is final. An update changes only the fields it names.
+
+One `system_one` request asks 72 distinct true-or-false questions about the final status, bay, or owner of the last 24 assets.
+
+We froze the exact document, questions, gold labels, and question order. We then ran the same request six times per model in separate US-west orb workspaces.
+
+### Luna results
+
+| Run | Correct | Accuracy |
+|---:|---:|---:|
+| 1 | 54/72 | 75.0% |
+| 2 | 72/72 | 100.0% |
+| 3 | 60/72 | 83.3% |
+| 4 | 72/72 | 100.0% |
+| 5 | 35/72 | 48.6% |
+| 6 | 26/72 | 36.1% |
+
+Combined Luna result:
+
+- Accuracy: 319/432, or 73.8%
+- Score range: 36.1% to 100.0%
+- Total wall time: 57.251 seconds
+- Estimated cost: $0.017926
+
+### TypeSafe results
+
+TypeSafe scored 68/72, or 94.4%, in every run.
+
+Combined TypeSafe result:
+
+- Accuracy: 408/432, or 94.4%
+- Score range: 94.4% to 94.4%
+- Total wall time: 1.765 seconds
+- Estimated cost: $0.005020
+
+### Comparison
+
+On this task, TypeSafe was:
+
+- 20.6 percentage points more accurate
+- 32.4 times faster by measured wall time
+- 3.6 times cheaper by the prices in the harness
+- identical across all six runs, while Luna ranged from 36.1% to 100.0%
+
+This is a narrow result for one frozen task. It does not show that TypeSafe is better on all asset registers or classification problems.
+
+### Reproduce it
 
 ```bash
-.venv/bin/python scripts/run_campaign.py \
-  --dataset datasets/campaign/tail48entitydoc.json \
-  --model both --output-dir reproduced-results/entitydoc-run-1
+.venv/bin/python typesafe-wins/run.py \
+  --model both \
+  --output-dir reproduced-results/typesafe-wins/run-1
 ```
 
-Run one ten-call minimal arm:
+Run that command six times with separate output directories. Each invocation makes one request per model.
 
-```bash
-.venv/bin/python scripts/run_minimal.py \
-  --document datasets/minimal/minimal-no-final-newline.txt \
-  --question baseline --model typesafe --runs 10 \
-  --output reproduced-results/minimal-no-newline-typesafe-baseline.json
-```
+The frozen dataset is [`typesafe-wins/dataset.json`](typesafe-wins/dataset.json). The 12 original result files are in [`typesafe-wins/results/`](typesafe-wins/results/).
 
-Use `bash scripts/reproduce_all.sh` to run all 20 screen pairs, six repetitions of both finalists, and all eight minimal arms. It makes 60 campaign requests and 80 minimal requests. API aliases can change over time, so a new run tests the current `speed_latest` and `gpt-5.6-luna`, not a pinned historical model.
+## Model names and costs
 
-Validate the frozen files without making API calls:
+The original experiments used the production aliases `speed_latest` and `gpt-5.6-luna`. These are not pinned model versions. Reproducing the experiment later tests whatever those aliases point to at that time.
 
-```bash
-python3 scripts/validate_bundle.py
-```
+Estimated prices used by the harness:
 
-Costs are estimates. The harness used $0.10/M input and $0.30/M output tokens for TypeSafe, and $0.20/M input and $1.20/M output tokens for Luna.
+| Model | Input | Output |
+|---|---:|---:|
+| TypeSafe `speed_latest` | $0.10/M tokens | $0.30/M tokens |
+| Luna `gpt-5.6-luna` | $0.20/M tokens | $1.20/M tokens |
